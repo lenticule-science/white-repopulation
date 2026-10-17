@@ -159,6 +159,30 @@ Wolfe, Patrick. 2006. “Settler Colonialism and the Elimination of the Native.�
 
 Younis, Musab. 2026. “Lineages of a Conspiracy: The ‘Great Replacement’ and Demography.” *Race & Class*. https://doi.org/10.1177/03063968261422608.
 
+## Commission-specific source critical receiving
+
+The **[annotated bibliography and claim-to-evidence crosswalk](../../../../bibliographies/bibliography-and-evidence-crosswalk-2026-10-17.md)** connects the manuscript's claims to currently held source annotations (WI-01–WI-23). Readers should consult those rather than treating the number of works cited as a proof of the argument. The [original commission dossier](2026-10-17-client-publication-commission.md), [historical demographic-estimand note](2026-10-17-white-fertility-estimand-conflicts.md), and [captive reproduction source-criticism note](2026-10-17-reproductive-expropriation-source-criticism.md) retain methodological disagreements and the client-derived inquiry without reauthoring its original statement.
+
+**Crucial prior scholarship not to misclaim as original:** [Cheryl I. Harris (1993), *Whiteness as Property*](../../../../bibliographies/harris1993.md), established the juridical-property account of whiteness; [Heidi Nicholls (2026)](../../../../bibliographies/nicholls2026.md) demonstrates both segregating and amalgamating eugenic settler sociology, while [Musab Younis (2026)](../../../../bibliographies/younis2026.md) traces demography's colonial political genealogy. The manuscript's proposed contribution is the different question of revealed preference when *actual subjects' generational continuity*, *imagined future reproductive legitimacy*, and *elite/property continuity* conflict. The evidence so far demonstrates the contradiction's intelligibility, not that a whole white-classified population was historically sacrificed unto extinction.
+
+**Virginia legislative boundary:** The [1924 enacted law](../../../../bibliographies/virginia-assembly1924.md) contained the one-sixteenth Indigenous ancestry exception; a [1926 House proposal](../../../../bibliographies/virginia-humanities1926.md) sought and obtained an amendment expanding it to one-eighth. The **Senate indefinitely postponed that proposal**. It was a meaningful contested *legislative preference*, not an enacted replacement for the 1924 law. The history must also attend to the [dispossession of Indigenous identity and community recognition](../../../../bibliographies/nps-racial-integrity.md) and [Arica L. Coleman's Black-Indigenous histories](../../../../bibliographies/coleman2013.md); white elite family status was not the sole harmed or protected interest.
+
+**Materiality and demographic counterevidence:** [Haines and Hacker (2006)](../../../../bibliographies/haines-hacker2006.md) report a declining white child–woman ratio in 1800–1860, but [Hacker (2003)](../../../../bibliographies/hacker2003.md) dates the onset of **reconstructed fertility** decline differently. [Hacker, Haines and Jaremski (2021)](../../../../bibliographies/hacker-haines-jaremski2021.md) compare explanations using complete-count censuses; these are competing estimator designs, not proof that purifying ideology caused demographic shortfall. The [direct coerced reproduction study by Djeliid (2024)](../../../../bibliographies/djeliid2024.md) and [Virginia's 1662 statute](../../../../bibliographies/virginia-assembly1662.md) concern different but materially connected mechanisms by which actual existing lives reproduced slaveholding property, kinship harm and labor.
+
+### Additional substantive sources requiring review before submission
+
+Harris, Cheryl I. 1993. “Whiteness as Property.” *Harvard Law Review* 106 (8): 1707–1791. https://harvardlawreview.org/wp-content/uploads/1993/06/1707-1791_Online.pdf.
+
+Djeliid, Aisha. 2024. “‘The master wished to reproduce’: slavery, forced intimacy, and enslavers’ interference in sexual relationships in the antebellum South, 1808–1861.” *American Nineteenth Century History* 25 (1): 21–43. https://doi.org/10.1080/14664658.2024.2317499.
+
+Hacker, J. David. 2003. “Rethinking the ‘Early’ Decline of Marital Fertility in the United States.” *Demography* 40 (4): 605–620. https://doi.org/10.1353/dem.2003.0035.
+
+Haines, Michael R., and J. David Hacker. 2006. “The Puzzle of the Antebellum Fertility Decline in the United States: New Evidence and Reconsideration.” NBER Working Paper 12571. https://www.nber.org/papers/w12571.
+
+Hacker, J. David, Michael R. Haines, and Matthew Jaremski. 2021. “Early Fertility Decline in the United States: Tests of Alternative Hypotheses Using New IPUMS Complete-Count Census Microdata and Enhanced County-Level Data.” *Research in Economic History* 37: 89–128. https://pmc.ncbi.nlm.nih.gov/articles/PMC9409409/.
+
+Coleman, Arica L. 2013. *That the Blood Stay Pure: African Americans, Native Americans, and the Predicament of Race and Identity in Virginia.* Indiana University Press. https://www.jstor.org/stable/j.ctt16gzn5n.
+
 ## Declarations and review boundary
 
 **Data availability:** All cited original-text and research materials are referenced by stable URLs. The companion demographic dataset and independently executable Engineering reader reside in the 561 Group's private source corpus. No confidential client quotation or identifying information is reproduced in this manuscript.
