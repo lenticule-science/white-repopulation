@@ -119,3 +119,62 @@ This inquiry extends the established [racial capitalism after Robinson](../../..
 New annotated sources in this **existing bibliography** are Stubblefield (2007), Caron (2008), Murray (2022), Solinger (2017), Clymer (2012), Alphonso (2023), Hacker (2020), Wanamaker (2014), Wolfe (2006), Guglielmo (2003), and Pérez-Pereira et al. (2022). Review grades are explicit in each record; most are checked via first-party publisher/university abstracts, not fully read monographs or a systematic review. The paper's derived hypotheses are **not empirical findings**. No biological-race ontology, microdata statistical analysis, proof claim, deployment or independent receiving is asserted.
 
 **Next inquiry:** identify the strongest archival case for H1/H2 in which a race-preserving policy demonstrably sacrificed reproductive continuity among some of its own designated members, and document whether it actually contracted the total favored group or only the politically approved subset.
+
+
+## Quantitative case study: sterilization inside whiteness (2026-10-17)
+
+**Result and limit.** Archival records document the deliberate exclusion of thousands of people classified *white* from future reproduction. Those exclusions were neither synonymous with the total reproductive dynamics of white-classified populations nor a fixed, monotonically narrowing racial-selection policy. The numeric source ledger lives at [white-increase-eugenic-selection-measurements-2026-10-17.json](../../../../../../../data/records/white-increase-eugenic-selection-measurements-2026-10-17.json); it records exact original integers, operations, formulas, and observation limits. The following figures are descriptive administrative observations, not estimates of white births prevented or biological "fitness."
+
+### Number 1: 4,218 persons classified white sterilized in North Carolina, July 1929–June 1966
+
+The North Carolina Eugenics Board's own 1964–1966 report, *Table 16*, records **6,851** cumulative sterilization operations, **4,218** on people administratively recorded as white (61.57% of operations), 2,590 on people it classified Black, and 43 other. The 4,218 white-classified operations include **3,436 performed on women** (81.46%) and 782 on men, determined from the listed operations (3,409 salpingectomies + 27 ovariectomies, versus 746 vasectomies + 36 castrations). This direct administrative count demonstrates a substantial **internal reproduction-disqualifying practice** against persons classified white. It cannot establish how many births were prevented: some patients had existing children, some procedures may have had no incremental demographic effect, coerced consent was systematically obscured, and age-specific person-years at risk are absent.
+
+**Source:** [1964–1966 North Carolina primary report](https://archive.org/stream/biennialreporteug16nort/biennialreporteug16nort_djvu.txt), printed p. 30, historical Table 16. Keep the state's racial wording within quotation/context, not as our racial ontology.
+
+### Number 2: the targets *changed*: white share 81.79% to 34.83% of operations (−46.96 percentage points)
+
+In the **1946–1948** biennium, the reconstructed reports record **238 white / 53 Black / 0 Indigenous**, total 291: 238/291 = **81.79% white**. In **1964–1966** they record **124 white / 228 Black / 4 Indigenous**, total 356: 124/356 = **34.83% white**. The contrast is **−46.96 percentage points**, while the recorded Black share moves from 53/291=18.21% to 228/356=64.04%. This is a comparison of the **composition of people sterilized**, *not* race-specific population risk (no age-sex/class/marital denominators here) or a time trend in total fertility.
+
+**Sources:** Alfred L. Brophy and Elizabeth Troutman (2016), *North Carolina Law Review* 94, Appendix Table 5 (historical 1946–1966 biennia), [publisher record](https://scholarship.law.unc.edu/nclr/vol94/iss6/2/), with the 1964–1966 endpoint independently found in the [Board's primary report](https://archive.org/stream/biennialreporteug16nort/biennialreporteug16nort_djvu.txt), printed p. 9.
+
+The result complicates rather than confirms a simple "ever-narrower white purity" story. An initially substantial campaign directed against people recorded as white was later redirected dramatically toward Black residents. That is evidence of historically changing reproductive priorities and racialized administrative control. The precise causes, whether welfare-agency changes, class sorting, local politics or evolving racial objectives, require causal research.
+
+In the same late biennium **261/356 = 73.31%** of people sterilized had already borne children, and **298/356 = 83.71%** were noninstitutional cases petitioned from county public-welfare departments. Neither fraction has a race cross-tabulation in the cited narrative; attributing either exclusively to white victims would be a mistake. Their institutional implication is narrower and firmer: sterilization was applied to existing families and welfare-system clients, not only to hypothetical future parents. [Primary report](https://archive.org/stream/biennialreporteug16nort/biennialreporteug16nort_djvu.txt), printed pp. 8–9.
+
+### Number 3 (counterevidence): the population classified white in North Carolina still rose 13.95% from 1950 to 1960
+
+The U.S. Census Bureau's historical Table 48 gives North Carolina white-category headcounts **2,983,121 in 1950** and **3,399,285 in 1960**, an increase of **416,164** persons, or **13.95%** of the 1950 count. Its recorded share in total state population rose from 73.4% to 74.6%. This does **not** show that sterilization did no individual harm or had no marginal effect on births. It *does* refute an easy inference from sterilizing thousands of nominal whites to aggregate white-category demographic collapse in this case. The change could include births, deaths, migration and classification effects; the aggregate census counts do not separate them. The comparison is not a matched-cohort causal estimate.
+
+**Source:** Campbell Gibson and Kay Jung (2002), [Census Table 48](https://www2.census.gov/library/working-papers/2002/demo/pop-twps0056/table48.pdf), source rows 1950 and 1960.
+
+### Number 4: Utah archives independently identify 665 known white-classified victims of 830 cases, with missing race recorded
+
+Tabery, Novak, Sarafraz, and Mansfield (2023), *Victims of eugenic sterilisation in Utah*, reconstruct **830 cases** under Utah's law (1925–1974), of which **665 explicitly recorded as non-Hispanic white**, **15** other classified backgrounds, and **150** have no usable race/ethnicity information. Thus 665/830 = **80.12% of all observed cases** and 665/680 = **97.79% of cases with known race**, *but 18.07% of race entries are missing*. We cannot infer that missingness is random; the possible white fraction of the 830 recorded cases is 80.12% to 98.19%, conditional on this recorded cohort being complete and all 150 missing statuses being alternatively nonwhite or white.
+
+In **1961 Utah's legislature changed the rationale** for eugenic sterilization from a supposed scientifically identifiable genetic impairment to a more permissive classification of unfitness to parent, permitting the practice to continue after its scientific rationale weakened. This is direct evidence of **adaptive selection authority**, not direct evidence of endlessly tightening white racial purity. It offers a discriminating mechanism to study: when an ideology fails on scientific grounds, governance may shift criteria rather than stop reproductive control.
+
+**Source:** [Tabery et al. (2023), Table 1 and discussion](https://pmc.ncbi.nlm.nih.gov/articles/PMC10025421/). Its 830 confirmed Utah cases are not the same population or denominator as North Carolina's 6,851 recorded operations; do not pool them without a comparative ascertainment model.
+
+### The user's two-"super specimens" limit has a quantitative genealogical contradiction
+
+For **two unrelated, non-inbred diploid founders** A and B, each has only two copies per autosomal locus: at most **four founder alleles** at any such locus. If their children (full siblings) alone reproduce, the first sibling-mating descendants have an **expected inbreeding coefficient F = 1/4 = 25%** by the standard parent-coancestry pedigree formula: the two common unrelated founders each contribute (1/2)^(1+1+1) = 1/8 to the offspring's F. This is an expected identical-by-descent probability in that offspring, not a claim that 25% of children die or are infertile. New mutation, additional founders, immigration and technological intervention change assumptions. First-generation children of the original unrelated founders are **not** inbred by virtue of having the same two parents; the inbreeding emerges once they produce descendants together.
+
+Therefore maximizing alleged *individual purity* is **not** a demographic or conservation-genetic recipe for a viable reproducing population. This mathematical result is independent of the nonexistent biological definition of a white human race: the hypothesis concerns **selection ideologies and social institutions**, not real racial breeding pools. Source for pedigree inbreeding definition: [Pemberton (2008), §2](https://pmc.ncbi.nlm.nih.gov/articles/PMC2386891/). This calculation is a conditional theoretical bound, not historical evidence that white populations were reduced to two founders.
+
+### Decision against the original hypothesis: what these numbers settle
+
+1. **Supported:** eugenic governance claimed authority to restrict reproduction of substantial numbers of people *already labeled white* (NC 4,218; Utah at least 665 known), demonstrating the internal frontier.
+2. **Supported:** reproductive classification and intervention changed direction over time (North Carolina's near-47-point compositional shift; Utah's 1961 rationale revision), showing **mutable regimes**, not a static binary.
+3. **Supported counterexample:** in the NC period the white-classified state's census population grew markedly even as the eugenic program sterilized white-classified persons. The evidence refutes claiming that white population collapse was demonstrated.
+4. **Rejected limit in its literal human-population form:** two reproductively viable adult founders are not an adequate indefinitely sustainable sexually reproducing genetic population, under ordinary pedigree assumptions.
+5. **Unassayed:** whether a policy *ratchet* endogenously restricted eligibility until it causally reduced aggregate reproduction, the number of births foregone per sterilization, changes in reproduction among nonsterilized white households, and whether any race-preserving regime actually sacrificed its population's continuity on the required scale.
+
+**More research needed to estimate foregone births rather than sterilization operations:** longitudinal sterilization files linked to age/parity/consent and births before and after, lawful survivor protections, matched unaffected comparison groups, and age-sex-year cohort rates. Never multiply sterilization operations by an assumed fertility rate and report that speculative product as a measured result. The period composition series also needs the *eligible* population denominator to estimate race-specific targeting rather than shares among selected victims.
+
+### Additional primary-source bibliography entries
+
+- [NC Eugenics Board 1966](../../../../bibliographies/nc-eugenics-board1966.md) — source-record and table location.
+- [Brophy–Troutman 2016](../../../../bibliographies/brophy-troutman2016.md) — long-run compositional series.
+- [Gibson–Jung 2002](../../../../bibliographies/gibson-jung2002.md) — exact Census denominator and category warnings.
+- [Tabery et al. 2023](../../../../bibliographies/tabery-et-al2023.md) — reconstructed Utah cohort, missing race, statute shift.
+- [Pemberton 2008](../../../../bibliographies/pemberton2008.md) — parent kinship and theoretical F.
