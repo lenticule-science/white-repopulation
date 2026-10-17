@@ -40,6 +40,27 @@ description: "Source-owned editorial and scientific receiving plan for two genui
 
 **Remaining acceptance gates:** independently reproduce both publishers' series under explicit licenses; model Hacker numerator assumptions and additional error; reconcile shifting historical boundaries and 1790s assumptions; perform period-specific consistency tests, including excluding late-seventies slave import counts from the birth numerator; secure external demography review; and publish an openly addressable, credited, fixed-version data/code deposit if the client authorizes publication. The project is a *source-reconstruction and interpretive audit*, not independent discovery of individual-level birth records.
 
+## Comparative settler-society lane: what migration measures
+
+The client explicitly asks whether settler societies increasingly reproduce their resident populations through **net inward migration** rather than local births in excess of deaths. The historical U.S. counterexample does not settle that comparison for later settler states.
+
+An initial **national-accounting contrast**, keeping country, period and definition fixed:
+
+| Case and period | Net international/overseas migration share of total national population growth | Original provider | Strict interpretation |
+| --- | ---: | --- | --- |
+| United States, 1790–1800 | 11.9% | Haines, Historical Statistics Aa15–Aa21 | Component of growth under a retrospective U.S. state population, not white-specific |
+| United States, 1850–1860 | 32.3% | Haines, Historical Statistics Aa15–Aa21 | Rapidly increasing migration share, still minority of national growth |
+| Canada, calendar 2023 | **97.6%** | Statistics Canada, *The Daily*, 27 March 2024 | Includes permanent and non-permanent migration; not the migration of white people alone |
+| Australia, year ended 31 December 2024 | **76.4%** (340,800 of 445,900) | Australian Bureau of Statistics, released 19 June 2025 | National net overseas migration; 105,200 additional population by natural increase; figures subject to revision |
+
+Provider references: [Statistics Canada 2023 population accounting](https://www150.statcan.gc.ca/n1/daily-quotidien/240327/dq240327c-eng.htm); [ABS annual 2024 population composition](https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2024); and [Haines Table Aa15–Aa21](https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdAa15-21.html). The Australian 340,800 migration plus 105,200 natural increase is 446,000 rather than published rounded 445,900 net growth, because the official reported totals are rounded/estimated. Do **not** force a false arithmetic identity from rounded source statistics.
+
+**The national aggregate is not white increase.** Racial categories, self-identifications, immigrant cohorts, Indigenous polities, citizenship and household age structures differ dramatically across countries. It is analytically wrong to label immigration into Canada or Australia *white migration* without origin/identity classification. Conversely, foreign-born parents can produce locally born children, so a year's domestic births may reflect longer-term imperial migration recruitment. These observations prove neither that historical settlers generally fail to replace themselves nor that *whiteness as institutional rule* needs any particular number of white births. They motivate a comparative case design.
+
+N. Ginsburgh and W. Jackson's 2019 chapter *Settler Societies*, on African white settler minorities, identifies a particularly useful **dual dependence**: European metropolitan support and Indigenous African labor/land. That differs from both the U.S. national natural-increase trajectory and contemporary Canadian/Australian immigration-heavy aggregate growth. In all three settings the material question is who must reproduce what for the **settler order** to continue, rather than whether all persons living within its boundaries are increasing.
+
+**Candidate third paper, not falsely declared complete:** “Which population reproduces settler rule? Natural increase, migration, incorporated descendants and expropriated reproduction across settler polities.” Minimum design: pick two or three named local jurisdictions per polity, align the population boundary and decade, recover cohort birth/death and interregional/international migration (by sex, age and historically dated status categories), identify the relation to land/household/labor institutions, distinguish temporary migrants from permanent settlers, and reconstruct Indigenous continuities not counted by colonial censuses. Register category changes and the birth cohorts of immigrants separately. Critical reviewer may otherwise reject the paper for ecological fallacy and treating *national growth* as *white settler lineage reproduction*. That paper cannot become an empirical manuscript from the four percentages alone.
+
 ## Source custody and actually executing knowledge software
 
 Science retains the source-of-truth notes, bibliographies, hypotheses, source measures, and both papers under **Sociology Science**, not under MetroPlat. The quantitative carrier is:
