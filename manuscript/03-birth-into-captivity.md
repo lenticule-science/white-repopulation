@@ -195,7 +195,7 @@ The original legal conversion of some such newborns into hereditary bondage is e
 
 **White-fertility competing models:** [Haines–Hacker (2006)](../../../../bibliographies/haines-hacker2006.md), [Hacker (2003)](../../../../bibliographies/hacker2003.md), and [Hacker–Haines–Jaremski (2021)](../../../../bibliographies/hacker-haines-jaremski2021.md) differ in age-, marriage- and mortality-sensitive estimands. Their tension must be resolved before testing the client's proposed local settler self-replacement mechanism. The nationally high 1790–1860 natural-increase contribution is not a claim that every local white settler lineage replaced itself without migration.
 
-**Reproducible scope:** The [Science-source data carrier](../../../../../../../data/records/2026-10-17-captive-birth-shares-source-series.json) preserves historical inputs, the assumed 1790s crude birth rate, and sensitivity calculations. It is software-readable through Engineering's CAIRN record-reader when the real authorized Science source is mounted; writing the JSON file does not prove the current L-Space service has ingested it.
+**Reproducible scope:** The [Science-source data carrier](../../../../../../../../data/records/2026-10-17-captive-birth-shares-source-series.json) preserves historical inputs, the assumed 1790s crude birth rate, and sensitivity calculations. It is software-readable through Engineering's CAIRN record-reader when the real authorized Science source is mounted; writing the JSON file does not prove the current L-Space service has ingested it.
 
 ### Additional substantive sources requiring review before submission
 

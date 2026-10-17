@@ -174,7 +174,7 @@ New annotated sources in this **existing bibliography** are Stubblefield (2007),
 
 ## Quantitative case study: sterilization inside whiteness (2026-10-17)
 
-**Result and limit.** Archival records document the deliberate exclusion of thousands of people classified *white* from future reproduction. Those exclusions were neither synonymous with the total reproductive dynamics of white-classified populations nor a fixed, monotonically narrowing racial-selection policy. The numeric source ledger lives at [white-increase-eugenic-selection-measurements-2026-10-17.json](../../../../../../../data/records/white-increase-eugenic-selection-measurements-2026-10-17.json); it records exact original integers, operations, formulas, and observation limits. The following figures are descriptive administrative observations, not estimates of white births prevented or biological "fitness."
+**Result and limit.** Archival records document the deliberate exclusion of thousands of people classified *white* from future reproduction. Those exclusions were neither synonymous with the total reproductive dynamics of white-classified populations nor a fixed, monotonically narrowing racial-selection policy. The numeric source ledger lives at [white-increase-eugenic-selection-measurements-2026-10-17.json](../../../../../../../../data/records/white-increase-eugenic-selection-measurements-2026-10-17.json); it records exact original integers, operations, formulas, and observation limits. The following figures are descriptive administrative observations, not estimates of white births prevented or biological "fitness."
 
 ### Number 1: 4,218 sterilization operations recorded for the white-classified population in North Carolina, July 1929–June 1966
 
