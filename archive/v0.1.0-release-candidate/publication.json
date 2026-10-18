@@ -78,8 +78,8 @@
       "bytes": 224867
     },
     "paper/bibliography-transcription.md": {
-      "sha256": "7049136aa8b82b9f3b876f3bd3c5055a3fb2ddca16ef22a3f7da283372e19db6",
-      "bytes": 47703
+      "sha256": "aeedc5d89dc57f52b32bd0d46feac81bd0e79adeb363b7ae3908464f4ac4e880",
+      "bytes": 46164
     },
     "data/births-1790-1859.csv": {
       "sha256": "9a0c4d25118ec94dc1bc38af73e4901854608e88355d8da2df35794eae63454c",
@@ -90,5 +90,8 @@
       "bytes": 372
     }
   },
-  "artifact_custody": "Prepared portable research release bundle exists; PDF and infographic are not yet uploaded to a public GitHub release."
+  "artifact_custody": "Prepared portable research release bundle exists; PDF and infographic are not yet uploaded to a public GitHub release.",
+  "paper_id": "white-repopulation",
+  "prepared_at": "2026-10-17",
+  "license_scope": "Original authored editorial synthesis only; historical texts, documents, images and third-party sources retain their own rights."
 }
