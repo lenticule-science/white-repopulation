@@ -1,0 +1,120 @@
+{
+  "kind": "lenticule.science.sociology.primary-testimony-extraction.v1",
+  "date": "2026-10-17",
+  "status": "source-attributed-testimony-not-prevalence",
+  "source_identity": {
+    "catalog_url": "https://digitalcommons.usf.edu/formerly_enslaved_narratives/5/",
+    "catalog_identifier": "SFS0021855_00001",
+    "date": "1936-10-08",
+    "interviewee_names": [
+      "Sam Everett",
+      "Louisa Everett"
+    ],
+    "field_worker": "Pearl Randolph",
+    "editor": "John A. Simms",
+    "source_transcription": "https://www.genealogytrails.com/fla/SlaveNarratives.htm",
+    "source_transcription_location": "SAM AND LOUISA EVERETT, after 8 Oct 1936 FWP heading; public web lines 949-981",
+    "original_loc_collection": "https://www.loc.gov/item/mesn030/",
+    "usf_original_pdf_collated": false,
+    "textual_mediation": [
+      "retrospective oral testimony",
+      "field worker interview",
+      "period dialect transcription",
+      "editorial narrative",
+      "modern public reprint"
+    ],
+    "year_disagreement": {
+      "original_archive_date": "1936-10-08",
+      "secondary_djeliid2024_opening_year": 1937,
+      "disposition": "preserve as unresolved editorial/source difference pending original-scan collation"
+    }
+  },
+  "observations": [
+    {
+      "id": "EV-01",
+      "source_voice": "interviewer-editor narrative",
+      "claim": "The account describes more than 100 people enslaved on McClain's Virginia plantation.",
+      "location": "FWP reprint around lines 961-963",
+      "observation_grade": "reported-not-independently-counted",
+      "valid_for": "context about plantation as described",
+      "not_valid_for": "confirmed slave registry, precise denominator or sample size"
+    },
+    {
+      "id": "EV-02",
+      "source_voice": "interviewer-editor narrative",
+      "claim": "The account reports enslaver-directed pairing including disruption of existing family unions.",
+      "location": "FWP reprint lines 962-963",
+      "observation_grade": "reported-historical-practice",
+      "valid_for": "existence of described coercive policy at one site",
+      "not_valid_for": "estimation of prevalence across plantations"
+    },
+    {
+      "id": "EV-03",
+      "source_voice": "direct first-person utterance attributed to Louisa, mediated by interviewer and editor",
+      "claim": "Louisa described McClain threatening violence and compelling her and Sam to engage in sexual activity in his presence.",
+      "location": "FWP reprint lines 964-967",
+      "observation_grade": "primary-retrospective-testimony",
+      "valid_for": "specific attributed account of directed sexual coercion",
+      "not_valid_for": "unmediated audio record, verified pregnancy attribution or spontaneous consent"
+    },
+    {
+      "id": "EV-04",
+      "source_voice": "direct first-person utterance attributed to Louisa, mediated",
+      "claim": "Louisa reported that the couple subsequently had children.",
+      "location": "FWP reprint line 967",
+      "observation_grade": "primary-retrospective-testimony",
+      "valid_for": "reported reproductive outcome after coerced pairing",
+      "not_valid_for": "precise births, dates, causality or their status at each date"
+    },
+    {
+      "id": "EV-05",
+      "source_voice": "direct first-person utterance attributed to Louisa, mediated",
+      "claim": "Louisa also reported kindness and later affection in the relationship with Sam.",
+      "location": "FWP reprint line 967",
+      "observation_grade": "primary-retrospective-testimony",
+      "valid_for": "testimony of subsequent relationship and affect",
+      "not_valid_for": "inference that initial sexual coercion was consensual"
+    },
+    {
+      "id": "EV-06",
+      "source_voice": "interviewer-editor narrative",
+      "claim": "The couple moved to Georgia after emancipation, later acquired a farm and lived near descendants in Florida.",
+      "location": "FWP reprint lines 977-979",
+      "observation_grade": "reported-biographical-context",
+      "valid_for": "interview-mediated post-emancipation family history",
+      "not_valid_for": "legal chain of title or precise genealogy without records"
+    }
+  ],
+  "secondary_interpretations": [
+    {
+      "id": "EV-DJ-2024",
+      "source": "https://doi.org/10.1080/14664658.2024.2317499",
+      "location": "article first page, opening",
+      "claim": "Djeliid uses Everett case in history of coerced reproduction",
+      "grade": "secondary-historical-analysis",
+      "chronology_note": "Article opening 1937 versus primary 1936"
+    },
+    {
+      "id": "EV-READER-2023",
+      "source": "https://doi.org/10.1017/S0021875823000270",
+      "location": "Journal of American Studies 57(4), p.484 and footnote116",
+      "claim": "Reader reads coercion and later love as compatible experiences, not opposites",
+      "grade": "peer-reviewed-historiographic-interpretation"
+    }
+  ],
+  "unmeasured": [
+    "number of directed pairings at this site",
+    "number of pregnancies deliberately compelled",
+    "number of children conceived and born due to specific command",
+    "prevalence across the U.S. slaveholding system",
+    "independent archival verification of McClain property roster",
+    "general causal effect on settler demography",
+    "unmediated first-person audio"
+  ],
+  "research_consumer": {
+    "method_note": "content/text/documents/articles/notes/2026/10/17/2026-10-17-reproductive-expropriation-source-criticism.md",
+    "claim_id": "WI-08",
+    "reading_engine": "@red-cup-engineering/knowledge-system-server/record-reading",
+    "installation_status": "source-controlled-not-independent-live-cairn-install-received"
+  }
+}
