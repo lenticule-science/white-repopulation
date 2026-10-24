@@ -24,7 +24,9 @@ statement.
 ## What this means for a reader
 
 - Every quantitative claim is recomputed from the archived records by
-  `analysis/reproduce.py`. `make check` fails if a stated number disagrees.
+  the claim specification in `claims/claims.json`, evaluated by
+  `@red-cup-engineering/research-claim-reproduction-service`. `make check` fails
+  if a stated number disagrees.
 - Every source carries a reading grade (`research/evidence-crosswalk.md`,
   Appendix A) recording how much of it was read, from full primary text down
   to a publisher's abstract. AI-retrieved sources were not all read in full.

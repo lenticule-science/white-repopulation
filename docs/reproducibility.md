@@ -1,38 +1,49 @@
 # Reproducing the paper
 
-## Numbers (no dependencies beyond Python 3.11+)
+This repository holds knowledge and data. Every computation is done by a FOSS
+Red Cup Engineering service, pinned by commit (`package.json`, and the
+conformance service in `.github/workflows/build.yml`), so the paper and its
+tooling are versioned separately and each tool can be reused for other papers.
 
-    python -m analysis.reproduce     # writes data/derived/, checks every stated number
-    python -m unittest discover -s tests -t .
+    npm install
+    pip install "git+https://github.com/red-cup-engineering/rdf-vocabulary-conformance-service@9dc0e77e9b165d61969b2146e78bdac0f74ac749"
+    make check                 # claims, figures, metadata, ontology, records
+    make paper provenance      # the paper in four formats, its receipt, PROV-O
 
-`data/derived/claims.json` lists each claim, the value the manuscript states,
-the value derived from the records, and the arithmetic used.
+## Numbers
+
+`claims/claims.json` restates each of the paper's 26 quantitative claims as an
+expression over JSON Pointers into `data/records/` (exact decimal arithmetic,
+half-even rounding). `research-claim-reproduction-service` evaluates them and
+fails on any disagreement; `claims/tables.json` defines the derived CSVs and
+Appendix A. `data/derived/claims.json` lists every claim, the stated value, the
+derived value and its basis.
 
 ## Figures
 
-    python -m pip install -r requirements.txt
-    python -m analysis.figures
-
-SVG output is byte-reproducible: it uses a fixed hash salt and no timestamps.
+`figures/*.vl.json` are Vega-Lite specifications over `data/`;
+`chart-specification-rendering-service` renders them to SVG with fixed text
+metrics, so the bytes do not depend on installed fonts.
 
 ## Manuscript
 
-    make paper        # PDF, HTML, DOCX and JATS into build/
+`manuscript/manuscript.json` is the render request for
+`project-document-through-pandoc-service`: parts, metadata, bibliography,
+style, formats, filters and the required pandoc version (3.1.3). The renderer
+writes `build/receipt.json` with the toolchain, every argument vector and the
+`ni:` address of every input and output. HTML, DOCX and JATS are
+byte-reproducible under `SOURCE_DATE_EPOCH`; the XeLaTeX PDF is reproducible on
+the pinned toolchain (fixed trailer /ID), and each release lists its digest.
 
-The pinned toolchain is the one CI uses (`.github/workflows/build.yml`). Each
-build writes `build/build-receipt.json`, which records the toolchain versions,
-the exact arguments and the SHA-256 of every input and output. The receipt is
-projected into `provenance/prov.ttl` (W3C PROV-O).
+## Provenance
 
-HTML, DOCX and JATS outputs are byte-reproducible under `SOURCE_DATE_EPOCH`.
-PDF output from LaTeX is reproducible only to the limits documented by the
-renderer service. Each release lists its PDF digest, and a reader should
-compare against that digest rather than expect an identical rebuild on a
-different TeX installation.
+`make provenance` composes the renderer's receipt with `provenance/agents.json`
+(`compose-provenance-manifest`) and projects it as W3C PROV-O
+(`project-provenance-as-prov-o`): `build/prov.nt` (RDFC-1.0 canonical) and
+`build/prov.jsonld`.
 
 ## Provenance of the v0.1.0 bundle
 
 The unreleased v0.1.0 candidate bundle recorded SHA-256 digests for its CSV
-tables. Those digests were computed over CRLF line endings. The test
-`test_tables_match_the_v0_1_0_release_bundle` regenerates both tables from the
-records and reproduces those exact digests.
+tables. Those digests were computed over CRLF line endings. `claims/tables.json` declares a CRLF digest check for both tables, so
+`make check` reproduces those exact digests.

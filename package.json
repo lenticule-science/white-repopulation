@@ -1,0 +1,21 @@
+{
+  "name": "white-repopulation",
+  "version": "0.2.0",
+  "private": true,
+  "description": "White Repopulation: Reproduction without Preservation. The paper's data and build parameters; all executable tooling comes from Red Cup Engineering.",
+  "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenticule-science/white-repopulation.git"
+  },
+  "engines": {
+    "node": ">=24.2.0"
+  },
+  "devDependencies": {
+    "@red-cup-engineering/research-claim-reproduction-service": "github:red-cup-engineering/research-claim-reproduction-service#24e9230278f4877fdf8b4125f640e83efbacdac9",
+    "@red-cup-engineering/chart-specification-rendering-service": "github:red-cup-engineering/chart-specification-rendering-service#7b940f136318d60b0b6c859baa3b3c5e38057240",
+    "@red-cup-engineering/project-document-through-pandoc-service": "github:red-cup-engineering/project-document-through-pandoc-service#aa25b41dc165b9a8fe75842e7fe3163f2baf52f3",
+    "@red-cup-engineering/prov-o-provenance-service": "github:red-cup-engineering/prov-o-provenance-service#6f067ec6cfb9d27b7fe508bdaa6d7672210e9888",
+    "@red-cup-engineering/research-release-metadata-service": "github:red-cup-engineering/research-release-metadata-service#f34761238cc85282ba708ae7d245f5dfe8d5f065"
+  }
+}

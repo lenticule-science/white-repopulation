@@ -1,0 +1,28 @@
+{
+  "agents": [
+    {
+      "id": "agent/morgan-sennhauser",
+      "name": "Morgan Sennhauser",
+      "kind": "person"
+    },
+    {
+      "id": "agent/lenticule-science",
+      "name": "Lenticule Science",
+      "kind": "organization"
+    },
+    {
+      "id": "agent/codex-6-1",
+      "name": "Codex 6.1",
+      "kind": "ai-system",
+      "actedOnBehalfOf": "agent/morgan-sennhauser"
+    },
+    {
+      "id": "agent/claude",
+      "name": "Claude (Anthropic)",
+      "kind": "ai-system",
+      "actedOnBehalfOf": "agent/morgan-sennhauser"
+    }
+  ],
+  "activities": [],
+  "entities": []
+}

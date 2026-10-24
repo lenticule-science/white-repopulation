@@ -1,0 +1,369 @@
+{
+  "$schema": "https://561.group/schema/rdf-vocabulary-conformance/conformance.schema.json",
+  "formatVersion": 1,
+  "parse": {
+    "rdf": {
+      "glob": "ontology/**/*.ttl",
+      "minimum": 4
+    },
+    "json": {
+      "glob": "ontology/*.jsonld",
+      "exactly": [
+        "ontology/records.context.jsonld",
+        "ontology/white-repopulation.skos.jsonld"
+      ]
+    }
+  },
+  "vocabulary": {
+    "files": [
+      "ontology/white-repopulation.ttl"
+    ],
+    "namespace": "https://561.group/knowledge/white-repopulation#",
+    "declaredTermsAtLeast": 61,
+    "ontology": {
+      "iri": "https://561.group/knowledge/white-repopulation",
+      "versionIri": "https://561.group/knowledge/white-repopulation/0.2.0",
+      "imports": [
+        "https://561.group/ns/"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "versionInfoFrom": {
+        "file": "paper.yaml",
+        "pattern": "^version:\\s*[\"']?([^\"'\\s]+)"
+      }
+    }
+  },
+  "root": {
+    "ontology": "ontology/vendor/561-ns-root.ttl",
+    "shapes": "ontology/vendor/561-ns-root.shapes.ttl",
+    "iri": "https://561.group/ns/",
+    "recordClass": "https://561.group/ns/Record",
+    "validate": [
+      "ontology/white-repopulation.ttl",
+      "ontology/vendor/561-ns-root.ttl",
+      "ontology/shapes.ttl"
+    ]
+  },
+  "skos": {
+    "scheme": "https://561.group/knowledge/white-repopulation#terms",
+    "minimumTopConcepts": 5,
+    "conceptCount": 38,
+    "minimumCollectionMembers": 3,
+    "glossary": {
+      "iriPrefix": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/",
+      "count": 21,
+      "source": {
+        "pattern": "^https://github\\.com/lenticule-science/science-services-section/blob/[0-9a-f]{40}/.+/glossary/terms/[a-z0-9-]+\\.md$",
+        "commitPattern": "/blob/([0-9a-f]{40})/",
+        "singleCommit": true
+      },
+      "derivedFrom": {
+        "pattern": "^swh:1:cnt:[0-9a-f]{40}$"
+      }
+    },
+    "projection": {
+      "file": "ontology/white-repopulation.skos.jsonld",
+      "definitionPrefixLength": 80,
+      "countPointer": "/accounting/concepts"
+    }
+  },
+  "closedSets": [
+    {
+      "class": "https://561.group/knowledge/white-repopulation#History",
+      "size": 4
+    },
+    {
+      "class": "https://561.group/knowledge/white-repopulation#JuridicalOperation",
+      "size": 4
+    },
+    {
+      "class": "https://561.group/knowledge/white-repopulation#EvidenceStatus",
+      "size": 3
+    },
+    {
+      "class": "https://561.group/knowledge/white-repopulation#ReadingGrade",
+      "size": 4
+    },
+    {
+      "class": "https://561.group/knowledge/white-repopulation#LegislativeState",
+      "size": 3
+    }
+  ],
+  "labelSets": [
+    {
+      "class": "https://561.group/knowledge/white-repopulation#EvidenceStatus",
+      "labels": [
+        "observed",
+        "mechanistically plausible",
+        "not established"
+      ]
+    }
+  ],
+  "records": {
+    "glob": "data/records/*.json",
+    "context": "ontology/records.context.jsonld",
+    "shapes": "ontology/shapes.ttl",
+    "baseIri": "https://561.group/knowledge/white-repopulation/record/",
+    "unmappedPrefix": "https://561.group/knowledge/white-repopulation/field#",
+    "kinds": {
+      "data/records/2026-10-17-captive-birth-shares-source-series.json": "https://561.group/knowledge/white-repopulation#BirthReconstruction",
+      "data/records/2026-10-17-antebellum-property-law-case-register.json": "https://561.group/knowledge/white-repopulation#CaseRegister",
+      "data/records/2026-10-17-everett-directed-reproduction-case-extract.json": "https://561.group/knowledge/white-repopulation#TestimonyExtraction",
+      "data/records/2026-10-17-virginia-racial-integrity-legislative-sequence.json": "https://561.group/knowledge/white-repopulation#LegislativeEventSequence",
+      "data/records/us-net-migration-share-of-growth-1790-1860.json": "https://561.group/knowledge/white-repopulation#GrowthComponents",
+      "data/records/white-increase-eugenic-selection-measurements-2026-10-17.json": "https://561.group/knowledge/white-repopulation#QuantitativeDocumentaryEvidence"
+    },
+    "graphExpectations": [
+      {
+        "id": "case-register-has-seven-cases-of-four-kinds",
+        "record": "data/records/2026-10-17-antebellum-property-law-case-register.json",
+        "predicate": "https://561.group/knowledge/white-repopulation#hasCase",
+        "count": 7,
+        "objectTypes": [
+          "https://561.group/knowledge/white-repopulation#JudicialOpinion",
+          "https://561.group/knowledge/white-repopulation#FreedomPetitionOpinion",
+          "https://561.group/knowledge/white-repopulation#SecondaryExtractedOpinion",
+          "https://561.group/knowledge/white-repopulation#EnslaverCorrespondence"
+        ]
+      }
+    ]
+  },
+  "shapeTests": [
+    {
+      "id": "unmodified-2026-10-17-captive-birth-shares-source-series",
+      "record": "data/records/2026-10-17-captive-birth-shares-source-series.json",
+      "mutation": [],
+      "expect": "conforms",
+      "reason": "The untouched record takes the same path as every mutated copy and must pass, so a violation below is caused by the mutation."
+    },
+    {
+      "id": "unmodified-2026-10-17-antebellum-property-law-case-register",
+      "record": "data/records/2026-10-17-antebellum-property-law-case-register.json",
+      "mutation": [],
+      "expect": "conforms",
+      "reason": "The untouched record takes the same path as every mutated copy and must pass, so a violation below is caused by the mutation."
+    },
+    {
+      "id": "unmodified-2026-10-17-everett-directed-reproduction-case-extract",
+      "record": "data/records/2026-10-17-everett-directed-reproduction-case-extract.json",
+      "mutation": [],
+      "expect": "conforms",
+      "reason": "The untouched record takes the same path as every mutated copy and must pass, so a violation below is caused by the mutation."
+    },
+    {
+      "id": "unmodified-2026-10-17-virginia-racial-integrity-legislative-sequence",
+      "record": "data/records/2026-10-17-virginia-racial-integrity-legislative-sequence.json",
+      "mutation": [],
+      "expect": "conforms",
+      "reason": "The untouched record takes the same path as every mutated copy and must pass, so a violation below is caused by the mutation."
+    },
+    {
+      "id": "unmodified-us-net-migration-share-of-growth-1790-1860",
+      "record": "data/records/us-net-migration-share-of-growth-1790-1860.json",
+      "mutation": [],
+      "expect": "conforms",
+      "reason": "The untouched record takes the same path as every mutated copy and must pass, so a violation below is caused by the mutation."
+    },
+    {
+      "id": "unmodified-white-increase-eugenic-selection-measurements-2026-10-17",
+      "record": "data/records/white-increase-eugenic-selection-measurements-2026-10-17.json",
+      "mutation": [],
+      "expect": "conforms",
+      "reason": "The untouched record takes the same path as every mutated copy and must pass, so a violation below is caused by the mutation."
+    },
+    {
+      "id": "birth-reconstruction-without-limitations",
+      "record": "data/records/2026-10-17-captive-birth-shares-source-series.json",
+      "mutation": [
+        {
+          "op": "remove",
+          "path": "/limitations"
+        }
+      ],
+      "expect": "violates",
+      "reason": "A birth reconstruction must state its limitations."
+    },
+    {
+      "id": "birth-reconstruction-without-a-sensitivity",
+      "record": "data/records/2026-10-17-captive-birth-shares-source-series.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/sensitivities",
+          "value": []
+        }
+      ],
+      "expect": "violates",
+      "reason": "A birth reconstruction must carry at least one sensitivity."
+    },
+    {
+      "id": "birth-share-over-one-hundred",
+      "record": "data/records/2026-10-17-captive-birth-shares-source-series.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/sensitivities/0/share_1790_1849_pct",
+          "value": 117.37
+        }
+      ],
+      "expect": "violates",
+      "reason": "A share expressed in percent cannot exceed 100."
+    },
+    {
+      "id": "case-register-claiming-a-known-universe",
+      "record": "data/records/2026-10-17-antebellum-property-law-case-register.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/universe_not_ascertained",
+          "value": false
+        }
+      ],
+      "expect": "violates",
+      "reason": "A case register is a non-exhaustive sample; it may not claim the universe of cases is known."
+    },
+    {
+      "id": "case-without-read-status",
+      "record": "data/records/2026-10-17-antebellum-property-law-case-register.json",
+      "mutation": [
+        {
+          "op": "remove",
+          "path": "/records/0/read_status"
+        }
+      ],
+      "expect": "violates",
+      "reason": "Every case must say how much of it was read."
+    },
+    {
+      "id": "case-with-an-unknown-kind-is-caught-by-the-context-check",
+      "record": "data/records/2026-10-17-antebellum-property-law-case-register.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/records/0/kind",
+          "value": "judicial-memo"
+        }
+      ],
+      "expect": "violates",
+      "via": "context",
+      "reason": "A case kind the context does not map falls through to the field vocabulary; the context check, not SHACL, catches it."
+    },
+    {
+      "id": "testimony-observation-without-a-validity-bound",
+      "record": "data/records/2026-10-17-everett-directed-reproduction-case-extract.json",
+      "mutation": [
+        {
+          "op": "remove",
+          "path": "/observations/0/not_valid_for"
+        }
+      ],
+      "expect": "violates",
+      "reason": "Every testimony observation must bound what it is not valid for."
+    },
+    {
+      "id": "testimony-without-unmeasured",
+      "record": "data/records/2026-10-17-everett-directed-reproduction-case-extract.json",
+      "mutation": [
+        {
+          "op": "remove",
+          "path": "/unmeasured"
+        }
+      ],
+      "expect": "violates",
+      "reason": "A testimony extraction must list what it did not measure."
+    },
+    {
+      "id": "postponed-bill-without-a-later-disposition",
+      "record": "data/records/2026-10-17-virginia-racial-integrity-legislative-sequence.json",
+      "mutation": [
+        {
+          "op": "remove",
+          "path": "/events/2/later_disposition"
+        }
+      ],
+      "expect": "violates",
+      "reason": "A postponed bill must record its later disposition."
+    },
+    {
+      "id": "unknown-legislative-state",
+      "record": "data/records/2026-10-17-virginia-racial-integrity-legislative-sequence.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/events/0/state",
+          "value": "repealed"
+        }
+      ],
+      "expect": "violates",
+      "reason": "A legislative state must be one of the closed set of legislative states."
+    },
+    {
+      "id": "growth-interval-running-backwards",
+      "record": "data/records/us-net-migration-share-of-growth-1790-1860.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/intervals/0/start_year",
+          "value": 1810
+        },
+        {
+          "op": "replace",
+          "path": "/intervals/0/end_year",
+          "value": 1800
+        }
+      ],
+      "expect": "violates",
+      "reason": "A growth interval must start before it ends."
+    },
+    {
+      "id": "growth-without-forbidden-inferences",
+      "record": "data/records/us-net-migration-share-of-growth-1790-1860.json",
+      "mutation": [
+        {
+          "op": "remove",
+          "path": "/forbidden_inferences"
+        }
+      ],
+      "expect": "violates",
+      "reason": "Growth components must state the inferences they forbid."
+    },
+    {
+      "id": "measurement-with-an-impossible-percentage",
+      "record": "data/records/white-increase-eugenic-selection-measurements-2026-10-17.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/computed_statistics/nc_share_classified_white_cumulative_pct",
+          "value": 161.568
+        }
+      ],
+      "expect": "violates",
+      "reason": "A percentage cannot exceed 100."
+    },
+    {
+      "id": "measurement-whose-parts-do-not-sum-to-the-total",
+      "record": "data/records/white-increase-eugenic-selection-measurements-2026-10-17.json",
+      "mutation": [
+        {
+          "op": "replace",
+          "path": "/raw_counts/nc_cumulative/white",
+          "value": 4000
+        }
+      ],
+      "expect": "violates",
+      "reason": "Raw-count parts must sum to their total."
+    },
+    {
+      "id": "measurement-without-its-not-pooled-list",
+      "record": "data/records/white-increase-eugenic-selection-measurements-2026-10-17.json",
+      "mutation": [
+        {
+          "op": "remove",
+          "path": "/not_pooled"
+        }
+      ],
+      "expect": "violates",
+      "reason": "A measurement record must list the series it does not pool."
+    }
+  ]
+}

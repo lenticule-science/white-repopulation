@@ -16,12 +16,9 @@ colorlinks: true
 linkcolor: wrlink
 urlcolor: wrlink
 citecolor: wrlink
-# A fixed PDF trailer /ID: with SOURCE_DATE_EPOCH this makes the XeLaTeX PDF
-# byte-reproducible on the pinned toolchain.
-header-includes:
-  - '\definecolor{wrlink}{HTML}{2A78D6}'
-  - '\special{pdf:trailerid [<57686974655265706f70756c6174696f> <57686974655265706f70756c6174696f>]}'
-# Declarations rendered by filters/paper-metadata.lua (not citation metadata).
+# The link colour wrlink is defined by headerIncludes in manuscript.json; the
+# renderer also adds the reproducibility header (fixed PDF trailer /ID).
+# Declarations rendered by the renderer's shipped paper-declarations filter (not citation metadata).
 ethics: >-
   Documentary historical analysis of published and archival sources. No human
   participants were recruited and no private personal data were collected.

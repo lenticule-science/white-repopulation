@@ -97,7 +97,7 @@ ai-disclosure:
     AI systems performed most source retrieval, drafting, quantitative
     reconstruction and release engineering under direction of the accountable
     author. Every quantitative claim is recomputed from the archived records by
-    `analysis/reproduce.py`; every source carries a reading grade recording how
+    the claim specification in claims/; every source carries a reading grade recording how
     much of it was actually read. Readers should weigh claims by those grades.
 care:
   collective-benefit: >-

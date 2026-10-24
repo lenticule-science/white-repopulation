@@ -10,7 +10,14 @@ The first standalone, reproducible edition.
 
 - Integrated the four part manuscripts into one paper with a new introduction
   and conclusion, built from source by CI into PDF, HTML, DOCX and JATS.
-- Added executable reproduction of all 26 quantitative claims, byte-reproducible
+- The repository holds knowledge and data only (house rule
+  science-engineering-operations-parameterize-in-order). Every computation is a
+  pinned Red Cup Engineering service: claims and tables
+  (`research-claim-reproduction-service`), Vega-Lite figures
+  (`chart-specification-rendering-service`), rendering with shipped filters
+  (`project-document-through-pandoc-service`), release metadata, CSL-YAML,
+  ontology and record conformance, and PROV-O composition.
+- Added reproduction of all 26 quantitative claims stated as data, byte-reproducible
   figures, a Frictionless Data Package, CSL-YAML references projected from the
   Sociology Science bibliography, an OWL/SKOS vocabulary, W3C PROV-O build
   provenance, REUSE licensing and a CARE data-governance statement.

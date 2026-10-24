@@ -50,6 +50,6 @@ The parts use different kinds of evidence: documentary-conceptual, quantitative,
 
 ## Sources, reproducibility and disclosure
 
-Each quantitative claim in this paper is recomputed from archived source records by `analysis/reproduce.py`. The `make check` command fails if any stated number disagrees with its derivation. Each cited source carries a reading grade recording how much of it was read: full primary text, publisher abstract, edited transcription, or secondary report. Appendix A maps each claim to its sources and grades. The study's vocabulary is published as an OWL ontology and SKOS concept scheme, and its build provenance as a W3C PROV-O graph.
+Each quantitative claim in this paper is stated once more as data in `claims/claims.json` and recomputed from the archived source records. The `make check` command fails if any stated number disagrees with its derivation. Each cited source carries a reading grade recording how much of it was read: full primary text, publisher abstract, edited transcription, or secondary report. Appendix A maps each claim to its sources and grades. The study's vocabulary is published as an OWL ontology and SKOS concept scheme, and its build provenance as a W3C PROV-O graph.
 
 AI systems performed most of the source retrieval, drafting and quantitative reconstruction under the direction of the accountable author. This work is disclosed on the title page and in `docs/ai-disclosure.md`. Readers should weigh each claim by its evidence status and reading grade, and the paper is built to make that weighing possible.

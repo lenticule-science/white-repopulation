@@ -1,0 +1,44 @@
+{
+  "parts": [
+    "manuscript/01-introduction.md",
+    "manuscript/02-the-future-white.md",
+    "manuscript/03-birth-into-captivity.md",
+    "manuscript/04-whose-future-increase.md",
+    "manuscript/05-transatlantic-population-circuits.md",
+    "manuscript/06-conclusion.md",
+    "manuscript/90-appendix-a-tables.md",
+    "manuscript/91-appendix-b-bibliography.md"
+  ],
+  "metadataFile": "paper.yaml",
+  "metadataFiles": [
+    "manuscript/build.yaml"
+  ],
+  "filters": [
+    "paper-declarations"
+  ],
+  "bibliography": "references/references.yaml",
+  "cslStyle": "references/chicago-author-date.csl",
+  "formats": [
+    "html",
+    "docx",
+    "jats",
+    "pdf"
+  ],
+  "pdfEngine": "xelatex",
+  "from": "markdown+tex_math_single_backslash",
+  "toc": true,
+  "tocDepth": 2,
+  "embedResources": true,
+  "resourcePaths": [
+    ".",
+    "figures"
+  ],
+  "outputDir": "build",
+  "basename": "white-repopulation",
+  "jatsFlavor": "archiving",
+  "requirePandocVersion": "3.1.3",
+  "sourceDateEpoch": 0,
+  "headerIncludes": [
+    "\\definecolor{wrlink}{HTML}{2A78D6}"
+  ]
+}
