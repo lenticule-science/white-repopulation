@@ -20,7 +20,7 @@ PANDOC_ARGS := --from=markdown+tex_math_single_backslash --metadata-file=paper.y
                --citeproc --resource-path=.:figures --standalone
 OUT := build/white-repopulation
 
-.PHONY: all data figures paper check test drift clean
+.PHONY: all data figures paper metadata metadata-check check test drift clean
 
 all: check paper
 
@@ -44,6 +44,23 @@ test: data
 # Generated files are committed; fail if regenerating them changes anything.
 drift: figures
 	git diff --exit-code -- data/derived figures manuscript/90-appendix-a-tables.md
+
+# Release metadata and references come from our research-publication services.
+RELEASE_METADATA ?= npx --yes --package=github:red-cup-engineering/research-release-metadata-service\#872717faddfa4734bbf2ec0952af4a35882f428f
+PAPER_REQUEST = python3 -c "import json;print(json.dumps({'paperYaml':open('paper.yaml').read()}))"
+define project
+	$(PAPER_REQUEST) | $(RELEASE_METADATA) $(1) | python3 -c "import json,sys;d=json.loads(sys.stdin.readline());assert 'refusal' not in d,d;open('$(2)','w').write(d.get('text') or json.dumps(d['value'],indent=2,ensure_ascii=False)+'\\n')"
+endef
+
+metadata:
+	@mkdir -p metadata
+	$(call project,project-citation-cff,CITATION.cff)
+	$(call project,project-zenodo-metadata,.zenodo.json)
+	$(call project,project-codemeta,codemeta.json)
+	$(call project,project-scholarly-article-json-ld,metadata/scholarly-article.jsonld)
+
+metadata-check: metadata
+	git diff --exit-code -- CITATION.cff .zenodo.json codemeta.json metadata/
 
 check: test drift
 

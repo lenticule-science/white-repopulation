@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "Please cite the versioned release of this preprint. It is not peer reviewed, and no DOI is assigned until an archived release mints one. AI disclosure: AI systems performed most source retrieval, drafting, quantitative reconstruction and release engineering under direction of the accountable author. Every quantitative claim is recomputed from the archived records by `analysis/reproduce.py`; every source carries a reading grade recording how much of it was actually read. Readers should weigh claims by those grades. Codex 6.1: Codex 6.1 is an AI system. It is credited for the research and drafting work it performed at the request of the accountable author. It cannot hold scholarly, legal or ethical accountability for the work; the human author does. Claude (Anthropic): Claude is an AI system. It assembled the integrated edition, wrote the introduction and conclusion from the parts' findings, and built the reproduction, metadata, ontology, provenance and release pipeline. Accountable author: Morgan Sennhauser."
+title: "White Repopulation: Reproduction without Preservation"
+version: 0.2.0
+abstract: "Settler institutions in the United States have described their future as the increase of a white population. That description joins four histories that move independently: the births and survival of people counted as white; the changing rules for who counts; eligibility to found a preferred future population; and the reproduction of property, jurisdiction and labor relations. This study separates them and asks which one institutions preserved when they conflicted. Four documentary and quantitative strands answer in turn. Franklin's population arithmetic, race-suicide pronatalism and Virginia's racial-integrity law show a purity ideal that bent when its rigid application threatened elite genealogies. A reconstruction of births, 1790–1859, finds that roughly one U.S. birth in six (17.20% in 1800–1849) was a birth into hereditary slavery, a reproduction of property that conferred no membership. Antebellum property law divided a child's status, title and anticipated issue across time. Transatlantic sending, receiving and policy-borrowing cases show settler growth drawing on selected, indebted and assisted migrants through case-specific institutions rather than one coordinated design. Across the strands, institutions preserved the authority to classify and to appropriate reproduction more reliably than the reproductive opportunities of every person classified white. The stronger proposition, that a deferred ideal can exhaust the population it claims to protect, remains a conditional hypothesis; the paper states the cohort and institutional evidence that would test it."
+authors:
+  - family-names: Sennhauser
+    given-names: Morgan
+    affiliation: Lenticule Science
+  - name: Codex 6.1 (disclosed AI research collaborator)
+keywords:
+  - settler colonialism
+  - social reproduction
+  - historical sociology
+  - historical demography
+  - racial formation
+  - slavery
+  - eugenics
+  - reproductive futurity
+  - migration
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: https://github.com/lenticule-science/white-repopulation
+preferred-citation:
+  type: report
+  authors:
+    - family-names: Sennhauser
+      given-names: Morgan
+      affiliation: Lenticule Science
+    - name: Codex 6.1 (disclosed AI research collaborator)
+  title: "White Repopulation: Reproduction without Preservation"
+  year: 2026
+  institution:
+    name: Lenticule Science
+    website: https://github.com/lenticule-science
+  version: 0.2.0
+  notes: "Subtitle: The future white, captive births, and the transatlantic reproduction of settler rule. Not peer reviewed. An anonymous contributor acknowledged for research direction. No DOI assigned. CARE authority-to-control: No Indigenous data are collected. Where the paper discusses Indigenous political continuity (for example Pamunkey opposition to Virginia's 1930 law), it relies on published scholarship and public records, and treats colonial administrative recognition as distinct from Indigenous self-determination. Requests from a named nation concerning those passages are handled under docs/data-governance.md. CARE responsibility: Source records state what each document can and cannot show, including the bias of court and enslaver records that seldom preserve the voices of enslaved mothers and children. CARE ethics: Persons named in historical records are not reduced to counts; the paper does not reproduce identifying detail beyond what its published sources already make public. CARE collective-benefit: The study concerns people whose reproduction was appropriated by settler institutions, and Indigenous nations whose recognition those institutions conditioned. Findings are released openly so descendant communities and their scholars can use, contest and correct them without cost."

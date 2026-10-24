@@ -1,0 +1,69 @@
+{
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "title": "White Repopulation: Reproduction without Preservation",
+  "description": "<p>The future white, captive births, and the transatlantic reproduction of settler rule</p>\n<p>Settler institutions in the United States have described their future as the increase of a white population. That description joins four histories that move independently: the births and survival of people counted as white; the changing rules for who counts; eligibility to found a preferred future population; and the reproduction of property, jurisdiction and labor relations. This study separates them and asks which one institutions preserved when they conflicted. Four documentary and quantitative strands answer in turn. Franklin's population arithmetic, race-suicide pronatalism and Virginia's racial-integrity law show a purity ideal that bent when its rigid application threatened elite genealogies. A reconstruction of births, 1790–1859, finds that roughly one U.S. birth in six (17.20% in 1800–1849) was a birth into hereditary slavery, a reproduction of property that conferred no membership. Antebellum property law divided a child's status, title and anticipated issue across time. Transatlantic sending, receiving and policy-borrowing cases show settler growth drawing on selected, indebted and assisted migrants through case-specific institutions rather than one coordinated design. Across the strands, institutions preserved the authority to classify and to appropriate reproduction more reliably than the reproductive opportunities of every person classified white. The stronger proposition, that a deferred ideal can exhaust the population it claims to protect, remains a conditional hypothesis; the paper states the cohort and institutional evidence that would test it.</p>\n<p>Evidence limits: historical births: retrospective modeled estimates; 1790s denominator assumed; no measured prevalence of coerced conception; historical migration: all-population national rates; not white-specific or local lineage survival; legal cases: purposive judicial comparison; title and status variation, not population frequency; self-consuming futurity: a historical hypothesis, not a demonstrated causal demographic law</p>",
+  "creators": [
+    {
+      "name": "Sennhauser, Morgan",
+      "affiliation": "Lenticule Science"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Codex 6.1",
+      "type": "Other",
+      "affiliation": "disclosed AI research collaborator (credited contributor; carries no accountability)"
+    },
+    {
+      "name": "Claude (Anthropic)",
+      "type": "Other",
+      "affiliation": "disclosed AI research collaborator (credited contributor; carries no accountability)"
+    },
+    {
+      "name": "Anonymous contributor",
+      "type": "Other"
+    }
+  ],
+  "keywords": [
+    "settler colonialism",
+    "social reproduction",
+    "historical sociology",
+    "historical demography",
+    "racial formation",
+    "slavery",
+    "eugenics",
+    "reproductive futurity",
+    "migration"
+  ],
+  "subjects": [
+    {
+      "term": "Sociology",
+      "identifier": "5.4",
+      "scheme": "OECD FORD"
+    },
+    {
+      "term": "History and archaeology",
+      "identifier": "6.1",
+      "scheme": "OECD FORD"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "version": "0.2.0",
+  "language": "eng",
+  "imprint_publisher": "Lenticule Science",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/lenticule-science/sociology-science-services-section",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/lenticule-science/white-repopulation",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ],
+  "notes": "<p>Not peer reviewed.</p>\n<p>AI disclosure: AI systems performed most source retrieval, drafting, quantitative reconstruction and release engineering under direction of the accountable author. Every quantitative claim is recomputed from the archived records by `analysis/reproduce.py`; every source carries a reading grade recording how much of it was actually read. Readers should weigh claims by those grades. Codex 6.1: Codex 6.1 is an AI system. It is credited for the research and drafting work it performed at the request of the accountable author. It cannot hold scholarly, legal or ethical accountability for the work; the human author does. Claude (Anthropic): Claude is an AI system. It assembled the integrated edition, wrote the introduction and conclusion from the parts' findings, and built the reproduction, metadata, ontology, provenance and release pipeline. Accountable author: Morgan Sennhauser.</p>\n<p>Licence scope: Quoted historical documents, archival transcriptions and third-party works keep their own rights; the licenses above cover only original authored synthesis, code and derived tables.</p>\n<p>CARE authority-to-control: No Indigenous data are collected. Where the paper discusses Indigenous political continuity (for example Pamunkey opposition to Virginia's 1930 law), it relies on published scholarship and public records, and treats colonial administrative recognition as distinct from Indigenous self-determination. Requests from a named nation concerning those passages are handled under docs/data-governance.md.</p>\n<p>CARE responsibility: Source records state what each document can and cannot show, including the bias of court and enslaver records that seldom preserve the voices of enslaved mothers and children.</p>\n<p>CARE ethics: Persons named in historical records are not reduced to counts; the paper does not reproduce identifying detail beyond what its published sources already make public.</p>\n<p>CARE collective-benefit: The study concerns people whose reproduction was appropriated by settler institutions, and Indigenous nations whose recognition those institutions conditioned. Findings are released openly so descendant communities and their scholars can use, contest and correct them without cost.</p>"
+}

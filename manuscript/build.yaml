@@ -21,3 +21,8 @@ citecolor: wrlink
 header-includes:
   - '\definecolor{wrlink}{HTML}{2A78D6}'
   - '\special{pdf:trailerid [<57686974655265706f70756c6174696f> <57686974655265706f70756c6174696f>]}'
+# Declarations rendered by filters/paper-metadata.lua (not citation metadata).
+ethics: >-
+  Documentary historical analysis of published and archival sources. No human
+  participants were recruited and no private personal data were collected.
+conflicts-of-interest: None declared.

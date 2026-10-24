@@ -1,14 +1,17 @@
 # The one source of publication metadata for White Repopulation.
-# CITATION.cff, .zenodo.json, codemeta.json, metadata/scholarly-article.jsonld,
-# publication.json and manuscript/metadata.yaml are generated from this file
-# (`make metadata`); CI fails if any of them drifts from it.
+# CITATION.cff, .zenodo.json, codemeta.json and metadata/scholarly-article.jsonld
+# are generated from this file by @red-cup-engineering/research-release-metadata-service
+# (`make metadata`); `make metadata-check` fails if any of them drifts from it.
+# The schema is that service's schemas/paper.schema.json.
 id: white-repopulation
 title: "White Repopulation: Reproduction without Preservation"
 subtitle: "The future white, captive births, and the transatlantic reproduction of settler rule"
-version: 0.2.0
-date-released: null
-status: preprint
+version: "0.2.0"
+year: 2026
+status: release-candidate
+publication-type: preprint
 peer-reviewed: false
+access-right: open
 language: en-US
 abstract: >-
   Settler institutions in the United States have described their future as the
@@ -44,23 +47,21 @@ keywords:
   - reproductive futurity
   - migration
 subjects:
-  - scheme: OECD FORD
-    code: "5.4"
-    label: Sociology
-  - scheme: OECD FORD
-    code: "6.1"
-    label: History and archaeology
-publisher: Lenticule Science
-publishing-organization:
+  - term: Sociology
+    scheme: OECD FORD
+    identifier: "5.4"
+  - term: History and archaeology
+    scheme: OECD FORD
+    identifier: "6.1"
+publisher:
   name: Lenticule Science
-  parent: The 561 Group
   url: https://github.com/lenticule-science
 repository-code: https://github.com/lenticule-science/white-repopulation
 license:
   text: CC-BY-4.0
   code: MIT
   data: CC-BY-4.0
-  third-party: >-
+  scope: >-
     Quoted historical documents, archival transcriptions and third-party works
     keep their own rights; the licenses above cover only original authored
     synthesis, code and derived tables.
@@ -70,12 +71,10 @@ authors:
     affiliation: Lenticule Science
     role: accountable-author
     ai: false
-    contributions: [conceptualization, investigation, writing, supervision]
   - name: Codex 6.1
     affiliation: Disclosed AI research collaborator
     role: ai-research-collaborator
     ai: true
-    contributions: [investigation, formal-analysis, writing-original-draft, data-curation]
     disclosure: >-
       Codex 6.1 is an AI system. It is credited for the research and drafting
       work it performed at the request of the accountable author. It cannot
@@ -83,23 +82,23 @@ authors:
       author does.
 contributors:
   - name: Claude (Anthropic)
-    type: Other
     ai: true
     role: integration, reproducible-build and release engineering
+    zenodo-type: Other
+    disclosure: >-
+      Claude is an AI system. It assembled the integrated edition, wrote the
+      introduction and conclusion from the parts' findings, and built the
+      reproduction, metadata, ontology, provenance and release pipeline.
 acknowledgements:
   - name: Anonymous contributor
     role: research direction
-ai-disclosure: >-
-  AI systems performed most source retrieval, drafting, quantitative
-  reconstruction and release engineering under direction of the accountable
-  author. Every quantitative claim is recomputed from the archived records by
-  `analysis/reproduce.py`; every source carries a reading grade recording how
-  much of it was actually read. Readers should weigh claims by those grades.
-funding: null
-conflicts-of-interest: null
-ethics: >-
-  Documentary historical analysis of published and archival sources. No human
-  participants were recruited and no private personal data were collected.
+ai-disclosure:
+  statement: >-
+    AI systems performed most source retrieval, drafting, quantitative
+    reconstruction and release engineering under direction of the accountable
+    author. Every quantitative claim is recomputed from the archived records by
+    `analysis/reproduce.py`; every source carries a reading grade recording how
+    much of it was actually read. Readers should weigh claims by those grades.
 care:
   collective-benefit: >-
     The study concerns people whose reproduction was appropriated by settler
@@ -125,20 +124,11 @@ related-identifiers:
   - relation: isSupplementedBy
     identifier: https://github.com/lenticule-science/sociology-science-services-section
     scheme: url
-    description: Sociology Science corpus holding the bibliography and glossary this paper projects
-parts:
-  - id: the-future-white
-    title: "The Future White: Selective Reproductive Ideals and the Continuity of Settler Rule"
-    file: manuscript/02-the-future-white.md
-  - id: birth-into-captivity
-    title: "Birth into Captivity and the Reproductive Generation: Accounting for U.S. Births, 1790–1859"
-    file: manuscript/03-birth-into-captivity.md
-  - id: whose-future-increase
-    title: "Whose Future Increase? Reproductive Property, Jurisdiction, and Freedom in Antebellum Slave Law"
-    file: manuscript/04-whose-future-increase.md
-  - id: transatlantic-population-circuits
-    title: "Exporting Subjects, Importing Settlers, Returning Models: Transatlantic Population Circuits, 1718–1935"
-    file: manuscript/05-transatlantic-population-circuits.md
-news:
-  desk: opinion-analysis
-  format: reported-analysis
+message: >-
+  Please cite the versioned release of this preprint. It is not peer
+  reviewed, and no DOI is assigned until an archived release mints one.
+limitations:
+  - "historical births: retrospective modeled estimates; 1790s denominator assumed; no measured prevalence of coerced conception"
+  - "historical migration: all-population national rates; not white-specific or local lineage survival"
+  - "legal cases: purposive judicial comparison; title and status variation, not population frequency"
+  - "self-consuming futurity: a historical hypothesis, not a demonstrated causal demographic law"
