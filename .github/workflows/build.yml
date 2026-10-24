@@ -35,7 +35,7 @@ jobs:
       - name: Authenticate to Red Cup Engineering service repositories
         if: env.SERVICES_TOKEN != ''
         run: git config --global url."https://x-access-token:${SERVICES_TOKEN}@github.com/red-cup-engineering/".insteadOf "https://github.com/red-cup-engineering/"
-      - run: npm install --no-audit --no-fund
+      - run: npm ci --no-audit --no-fund
       - run: python -m pip install "${CONFORMANCE_SERVICE}"
       - name: Claims, figures, metadata, ontology and records
         run: make check
@@ -62,7 +62,7 @@ jobs:
       - name: Authenticate to Red Cup Engineering service repositories
         if: env.SERVICES_TOKEN != ''
         run: git config --global url."https://x-access-token:${SERVICES_TOKEN}@github.com/red-cup-engineering/".insteadOf "https://github.com/red-cup-engineering/"
-      - run: npm install --no-audit --no-fund
+      - run: npm ci --no-audit --no-fund
       - name: Build paper and PROV-O provenance
         run: make paper provenance
       - uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
