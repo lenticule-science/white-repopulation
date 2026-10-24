@@ -4,7 +4,7 @@ This project follows [Semantic Versioning](https://semver.org/) for research
 releases: a patch is an erratum, a minor version is new evidence or analysis,
 and a major version changes a conclusion.
 
-## [0.2.0] - unreleased
+## [0.2.0] - 2026-10-24
 
 The first standalone, reproducible edition.
 
