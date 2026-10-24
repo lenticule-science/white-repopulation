@@ -70,7 +70,7 @@ All divisions are calculated from raw source values in the companion archived da
 
 ### 3.1 Decade reconstruction
 
-![Births into slavery as a share of estimated U.S. births, by decade, 1790-1859. The hatched 1790s bar uses an assumed denominator; the whisker spans crude birth rates of 45-65 per 1,000. Values are in Table A1.](figures/captive-birth-share-by-decade.svg){#fig:captive-births width=100%}
+![Births into slavery as a share of estimated U.S. births, by decade, 1790–1859. The hatched 1790s bar uses an assumed denominator; the whisker spans crude birth rates of 45–65 per 1,000. Values are in Table A1.](figures/captive-birth-share-by-decade.svg){#fig:captive-births width=100%}
 
 | Birth years | Estimated births into slavery | Estimated total U.S. births | Captive share (%) |
 |---|---:|---:|---:|

@@ -39,7 +39,7 @@ The paper complements—not displaces—the existing studies on [selective futur
 
 ## 3. First result: national numerical replacement and institutional reproduction diverge
 
-![Net international migration as a share of total U.S. population growth, 1790-1860 (Haines 2006, Table Aa15-21). The series covers the whole counted population and is not white-specific.](figures/net-migration-share-of-growth.svg){#fig:migration width=100%}
+![Net international migration as a share of total U.S. population growth, 1790–1860 (Haines 2006, Table Aa15–21). The series covers the whole counted population and is not white-specific.](figures/net-migration-share-of-growth.svg){#fig:migration width=100%}
 
 Michael R. Haines's 1994 historical reconstruction estimates that the US population grew predominantly through natural increase between 1790 and 1920. The historical growth-accounting series reproduced by the National Academies attributes **11.9% of US population increase in 1790–1800**, **32.3% in 1850–1860**, and **35.3% in 1900–1910** to net international migration. The respective remainder came overwhelmingly from natural increase under this accounting. These are **all-population national period estimates**, not directly observed white-specific or local settler lineage survival figures.
 

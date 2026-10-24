@@ -12,5 +12,12 @@ fontsize: 11pt
 mainfont: TeX Gyre Pagella
 sansfont: TeX Gyre Heros
 monofont: DejaVu Sans Mono
-linkcolor: "[HTML]{2A78D6}"
-urlcolor: "[HTML]{2A78D6}"
+colorlinks: true
+linkcolor: wrlink
+urlcolor: wrlink
+citecolor: wrlink
+# A fixed PDF trailer /ID: with SOURCE_DATE_EPOCH this makes the XeLaTeX PDF
+# byte-reproducible on the pinned toolchain.
+header-includes:
+  - '\definecolor{wrlink}{HTML}{2A78D6}'
+  - '\special{pdf:trailerid [<57686974655265706f70756c6174696f> <57686974655265706f70756c6174696f>]}'

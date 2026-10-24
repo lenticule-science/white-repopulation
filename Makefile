@@ -4,6 +4,8 @@ PYTHON ?= python3
 PANDOC ?= pandoc
 export SOURCE_DATE_EPOCH ?= $(shell git log -1 --format=%ct 2>/dev/null || date +%s)
 export TZ := UTC
+# xdvipdfmx takes its PDF dates from SOURCE_DATE_EPOCH only when forced.
+export FORCE_SOURCE_DATE := 1
 
 PARTS := manuscript/01-introduction.md \
          manuscript/02-the-future-white.md \
@@ -13,7 +15,7 @@ PARTS := manuscript/01-introduction.md \
          manuscript/06-conclusion.md \
          manuscript/90-appendix-a-tables.md \
          manuscript/91-appendix-b-bibliography.md
-PANDOC_ARGS := --metadata-file=paper.yaml --metadata-file=manuscript/build.yaml \
+PANDOC_ARGS := --from=markdown+tex_math_single_backslash --metadata-file=paper.yaml --metadata-file=manuscript/build.yaml \
                --lua-filter=manuscript/filters/paper-metadata.lua \
                --citeproc --resource-path=.:figures --standalone
 OUT := build/white-repopulation
@@ -33,7 +35,7 @@ paper: data
 	$(PANDOC) $(PANDOC_ARGS) --to=html5 --embed-resources --mathml -o $(OUT).html $(PARTS)
 	$(PANDOC) $(PANDOC_ARGS) --to=docx -o $(OUT).docx $(PARTS)
 	$(PANDOC) $(PANDOC_ARGS) --to=jats_archiving -o $(OUT).xml $(PARTS)
-	$(PANDOC) $(PANDOC_ARGS) --pdf-engine=lualatex -o $(OUT).pdf $(PARTS)
+	$(PANDOC) $(PANDOC_ARGS) --pdf-engine=xelatex -o $(OUT).pdf $(PARTS)
 	$(PYTHON) -m analysis.build_receipt $(OUT).html $(OUT).docx $(OUT).xml $(OUT).pdf > build/build-receipt.json
 
 test: data

@@ -1,0 +1,58 @@
+# Every push and pull request: reproduce every number, validate the data and
+# ontology, check licensing and metadata, and build the paper in all formats.
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Reproduce claims, figures and tables; fail on drift
+        run: make check
+      - name: REUSE licensing
+        uses: fsfe/reuse-action@bb774aa972c2a89ff34781233d275075cbddf542 # v5.0.0
+
+  paper:
+    needs: check
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      # Ubuntu 24.04 ships pandoc 3.1.3 and TeX Live 2023, the toolchain the
+      # build receipt records; a different toolchain changes PDF bytes.
+      - name: Toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends pandoc texlive-xetex texlive-latex-recommended \
+            texlive-latex-extra texlive-fonts-recommended fonts-texgyre fonts-dejavu librsvg2-bin lmodern
+          pandoc --version | head -1
+          xelatex --version | head -1
+      - run: python -m pip install -r requirements.txt
+      - name: Build paper
+        run: make paper
+      - uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        with:
+          name: white-repopulation
+          path: build/
+          if-no-files-found: error
