@@ -1,26 +1,13 @@
----
-title: "Exporting Subjects, Importing Settlers, Returning Models: Transatlantic Population Circuits and American Settler Reproduction, 1718–1935"
-date-created: 2026-10-17
-type: working-paper
-stage: original-comparative-research-draft-needs-independent-archival-review
-program: sociology-of-settler-social-reproduction
-commission: private-client-origin
-paper-number: 4
-keywords: [settler-colonialism, migration, population-growth, labor, assisted-emigration, indenture, convicts, homesteading, racial-formation, eugenics, transatlantic-policy-transfer]
-description: "Comparative archival and demographic study of European sending institutions, American immigrant reception, selective citizenship and land/labor reproduction, and the circulation of American social/governmental models to Europe."
----
-
-# Exporting Subjects, Importing Settlers, Returning Models
+# Part IV. Exporting Subjects, Importing Settlers, Returning Models {#part-iv}
 
 ## Transatlantic population circuits and American settler reproduction, 1718–1935
 
-**Status and custody (17 October 2026).** Original comparative *research draft* in Lenticule Science / Sociology Science; not accepted, peer-reviewed, or submitted. A private client's earlier research question and later extension generated this inquiry, followed by an additional interpretive suggestion from the 561 Group. Their private wording and identifying information are deliberately omitted. Client authorship, approvals, interpretation, and quotation rights remain open. The intent is to investigate the complete research question, not to presume its answer. Historical eugenic classifications are treated as constructions of power, not biological truths.
 
 ### Abstract
 
 Did US settler institutions reproduce themselves less through a self-sustaining white-born population than through a transatlantic circuit that moved precarious European people into American labor, land, kinship, and citizenship regimes, then circulated American practices back to Europe? This study disaggregates three processes too often collapsed as "white increase": population accounting (births, deaths, migration, and classification), institutional reproduction (land title, labor contracts, coerced childbirth, jurisdiction, inheritance, and privileged citizenship), and outward circulation of political/social models. Historical demographic estimates contradict the strongest national version of migrant replacement: the United States' nineteenth-century growth was mainly natural increase. Yet primary records demonstrate purposive state and municipal engineering of movement. The British transportation system (1718–1775), the 1834 Poor Law's assisted-emigration provision, municipal records from Gersau, Switzerland (1880–1881), the US Homestead Act (1862), and the federal Immigration Act (1864) reveal different, nonidentical arrangements for relocating people and converting them into colonial labor or settler property holders. Racialized eligibility selected which newcomers were incorporated into a favored reproductive future. Two demonstrable forms of outward circulation are French commissioned study of American penal institutions in 1831 and German attention to US racial legal precedents in the 1930s. The proposed contribution is a **dual-screened population-and-model circuit**: sending jurisdictions and receiving jurisdictions classified people differently, and institutional reproduction may persist even while racial demographic categories change. The paper states specific rival explanations and archival tests, without equating immigrant indenture with hereditary racial slavery, nationality with statelessness, or a cultural analogy with proven bilateral causation.
 
-## 1. The commissioned proposition and what could falsify it
+## 1. The originating proposition and what could falsify it
 
 The opening problem concerns **material social reproduction**. A settler population is not reproduced solely by biological fertility: households require access to food, land, wages, housing, care, safety, kin networks, and political membership. A settler jurisdiction may maintain its territorial and political arrangements via new arrivals even if particular neighborhoods, labor forces, or settler lineages fail to replace themselves locally. Its membership category can expand or contract by legislation or social recognition.
 
@@ -48,9 +35,11 @@ The following claims must not be presumed:
 
 **Return flows:** Remittances, return migration, commercial models, reports, letters, law, institutions, administrative techniques and cultural works transmitted toward Europe; not all return flows are "culture" and not every comparison is direct borrowing.
 
-The paper complements—not displaces—the existing studies on [selective futurity](2026-10-17-manuscript-selective-futurity-and-settler-continuity.md), [births into captivity](2026-10-17-manuscript-captive-births-and-settler-reproduction.md), and [reproductive futures as property](2026-10-17-manuscript-reproductive-futures-as-property.md). These address independent dimensions and should not be forced into one causation estimate.
+The paper complements—not displaces—the existing studies on [selective futurity](02-the-future-white.md), [births into captivity](03-birth-into-captivity.md), and [reproductive futures as property](04-whose-future-increase.md). These address independent dimensions and should not be forced into one causation estimate.
 
 ## 3. First result: national numerical replacement and institutional reproduction diverge
+
+![Net international migration as a share of total U.S. population growth, 1790-1860 (Haines 2006, Table Aa15-21). The series covers the whole counted population and is not white-specific.](figures/net-migration-share-of-growth.svg){#fig:migration width=100%}
 
 Michael R. Haines's 1994 historical reconstruction estimates that the US population grew predominantly through natural increase between 1790 and 1920. The historical growth-accounting series reproduced by the National Academies attributes **11.9% of US population increase in 1790–1800**, **32.3% in 1850–1860**, and **35.3% in 1900–1910** to net international migration. The respective remainder came overwhelmingly from natural increase under this accounting. These are **all-population national period estimates**, not directly observed white-specific or local settler lineage survival figures.
 
@@ -213,4 +202,4 @@ The contribution of this draft is a case-backed design rather than a rhetorical 
 - Whitman, James Q. (2017), *Hitler's American Model*, Princeton University Press.
 - Wolfe, Patrick (2006), "Settler Colonialism and the Elimination of the Native," *Journal of Genocide Research* 8(4), 387–409, DOI:10.1080/14623520601056240.
 
-*Citation grade:* Primary law and published diplomatic documents were read in public hosted transcripts; their original physical editions, archival completeness and translation accuracy still require checking. Peer-reviewed books and articles were consulted through the publicly accessible publisher abstracts, reviews, or full open text when available; this draft does not claim close reading of paywalled books. Figures are secondary reconstructions or provider-produced national estimates as labeled. No personal information or direct private client wording has been incorporated.
+*Citation grade:* Primary law and published diplomatic documents were read in public hosted transcripts; their original physical editions, archival completeness and translation accuracy still require checking. Peer-reviewed books and articles were consulted through the publicly accessible publisher abstracts, reviews, or full open text when available; this draft does not claim close reading of paywalled books. Figures are secondary reconstructions or provider-produced national estimates as labeled. No personal information or private wording from the originating research question has been incorporated.

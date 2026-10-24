@@ -1,19 +1,6 @@
----
-title: "The Future White: Selective Reproductive Ideals and the Continuity of Settler Rule"
-date-created: 2026-10-17
-type: working-paper
-stage: full-argument-draft-under-source-review
-journal-candidate: Settler Colonial Studies
-anonymous-review: true
-keywords: [settler-colonialism, racial-formation, social-reproduction, race-suicide, eugenics, reproductive-futurity, racial-integrity]
-description: "A historical-conceptual article distinguishing numerical settler increase, an indefinitely deferred racial ideal, and the material reproduction of settler sovereignty."
----
+# Part I. The Future White: Selective Reproductive Ideals and the Continuity of Settler Rule {#part-i}
 
-# The Future White: Selective Reproductive Ideals and the Continuity of Settler Rule
 
-**Manuscript status:** Research draft for hypothetical external submission, NOT submitted or peer reviewed. Author credit and permission to quote the originating client's private research statement are unresolved; neither the client's name nor the private statement appears in this manuscript. Historical documents and already published works are identified in references. Further archival checks and independent review are specified below.
-
-**Candidate journal:** *Settler Colonial Studies* (research article). The journal accepts original interdisciplinary articles on settler colonialism and uses double-anonymized review. Target is a defensible conceptual and documentary historical intervention, not a quantitative causal estimate.
 
 ## Abstract
 
@@ -91,7 +78,7 @@ That distinction changes the question of *whose* reproduction and continuity the
 
 The view of Pamunkey chief **George Major Cook**, who publicly opposed this legislation, supplies a necessary counterposition to a history told only through white legislators. Cook had contested state registrar Walter Plecker's reclassification program throughout the 1920s. At a February 1930 legislative hearing he condemned a proposal that would recognize only reservation-domiciled tribal members, leaving Pamunkey and Mattaponi citizens living elsewhere vulnerable to legal erasure. Watkinson's historical biography reproduces his argument that Virginia had seized land, forests and fisheries and was attempting to take the people's very name (Watkinson 2020/2026). The original committee hearing minutes and Cook's correspondence have not yet been independently checked; the present evidence is a scholarly biography quoting a political intervention, not an independently transcribed original speech.
 
-The asymmetry is revealing for the theory of selective reproductive futurity. It is not accurate to say the state simply pursued an increasingly strict purity rule applied equally to all residents. It negotiated elite white identity, sought to erase Black and Indigenous boundaries of belonging in different ways, and reallocated recognition by legal and territorial criteria. **The social reproduction of settler power could be secured by controlling who counted, without any demonstration that white-classified people were numerically reproducing less.** The state's success condition was neither a coherent genetic criterion nor the biological viability of some final reproductive pair; it involved preserving its own authority to classify, exclude, recognize, and inherit. The enactments support that institutional reading, but the client's larger hypothesis that real white population continuity was consumed before a deferred ideal could be realized still requires demographic and causal evidence.
+The asymmetry is revealing for the theory of selective reproductive futurity. It is not accurate to say the state simply pursued an increasingly strict purity rule applied equally to all residents. It negotiated elite white identity, sought to erase Black and Indigenous boundaries of belonging in different ways, and reallocated recognition by legal and territorial criteria. **The social reproduction of settler power could be secured by controlling who counted, without any demonstration that white-classified people were numerically reproducing less.** The state's success condition was neither a coherent genetic criterion nor the biological viability of some final reproductive pair; it involved preserving its own authority to classify, exclude, recognize, and inherit. The enactments support that institutional reading, but the originating hypothesis that real white population continuity was consumed before a deferred ideal could be realized still requires demographic and causal evidence.
 
 ## 7. Settler sociology: purity and assimilation are competing solutions
 
@@ -99,7 +86,7 @@ Nicholls's examination of early U.S. sociologists provides a further negative co
 
 The significance is institutional, not a claim that Cox and Park had identical intentions. If the desired end were simply the preservation of a biologically isolated white population, the assimilationist approach would be unintelligible. If the shared end were stabilization of the settler state, distinct policies could become rival means toward that end. The position of actual inhabitants relative to state categories could change without equivalent changes in births, deaths or genetic ancestry.
 
-This is the point at which the client's limiting image acquires its strongest historical use. The pursuit of a future supposedly worthy of reproduction can be indefinitely deferred or redefined because the political institution need not realize that future in order to continue. Its day-to-day reproduction may instead depend on property law, bureaucracy, territorial rule, extracted labor, and the replacement of one population classification by another. A claim that the ideal will eventually be embodied need not ever become a measurable production target for the institution to benefit politically from it.
+This is the point at which the originating hypothesis's limiting image acquires its strongest historical use. The pursuit of a future supposedly worthy of reproduction can be indefinitely deferred or redefined because the political institution need not realize that future in order to continue. Its day-to-day reproduction may instead depend on property law, bureaucracy, territorial rule, extracted labor, and the replacement of one population classification by another. A claim that the ideal will eventually be embodied need not ever become a measurable production target for the institution to benefit politically from it.
 
 ## 8. Captive increase: reproduction of property without reproduction of inclusion
 
@@ -127,7 +114,7 @@ Three propositions have different evidence statuses:
 
 **Not established:** a self-reinforcing purity search that drove any entire white-classified population to demographic extinction before achieving a concrete hereditary ideal.
 
-A theory that cannot distinguish these claims will either flatten the client's hypothesis into trivial eugenic exclusion or present a dramatic outcome it has not demonstrated.
+A theory that cannot distinguish these claims will either flatten the originating hypothesis into trivial eugenic exclusion or present a dramatic outcome it has not demonstrated.
 
 ## 10. Conclusion
 
@@ -137,7 +124,7 @@ The evidence presently supports an institutional rather than biological conclusi
 
 This shifts the research question away from who will count as the last white descendants and toward who has the authority to defer the promised future, who is made to bear the costs of that deferral, and which institutions successfully reproduce themselves without delivering what their reproductive ideology promises.
 
-## References
+## References for Part I
 
 Alphonso, Gwendoline. 2023. “Expropriating Reproduction, Generating Property—Enslaved Childbearing, Property Law & Racial Capitalism in the American South.” APSA Preprints, version 1. https://doi.org/10.33774/apsa-2023-2nnzm. **Preprint, not assumed peer reviewed.**
 
@@ -173,38 +160,3 @@ Wolfe, Patrick. 2006. “Settler Colonialism and the Elimination of the Native.�
 
 Younis, Musab. 2026. “Lineages of a Conspiracy: The ‘Great Replacement’ and Demography.” *Race & Class*. https://doi.org/10.1177/03063968261422608.
 
-## Commission-specific source critical receiving
-
-The **[annotated bibliography and claim-to-evidence crosswalk](../../../../bibliographies/bibliography-and-evidence-crosswalk-2026-10-17.md)** connects the manuscript's claims to currently held source annotations (WI-01–WI-23). Readers should consult those rather than treating the number of works cited as a proof of the argument. The [original commission dossier](2026-10-17-client-publication-commission.md), [historical demographic-estimand note](2026-10-17-white-fertility-estimand-conflicts.md), and [captive reproduction source-criticism note](2026-10-17-reproductive-expropriation-source-criticism.md) retain methodological disagreements and the client-derived inquiry without reauthoring its original statement.
-
-**Crucial prior scholarship not to misclaim as original:** [Cheryl I. Harris (1993), *Whiteness as Property*](../../../../bibliographies/harris1993.md), established the juridical-property account of whiteness; [Heidi Nicholls (2026)](../../../../bibliographies/nicholls2026.md) demonstrates both segregating and amalgamating eugenic settler sociology, while [Musab Younis (2026)](../../../../bibliographies/younis2026.md) traces demography's colonial political genealogy. The manuscript's proposed contribution is the different question of revealed preference when *actual subjects' generational continuity*, *imagined future reproductive legitimacy*, and *elite/property continuity* conflict. The evidence so far demonstrates the contradiction's intelligibility, not that a whole white-classified population was historically sacrificed unto extinction.
-
-**Virginia legislative boundary:** The [1924 enacted law](../../../../bibliographies/virginia-assembly1924.md) contained the one-sixteenth Indigenous ancestry exception; a [1926 House proposal](../../../../bibliographies/virginia-humanities1926.md) sought and obtained an amendment expanding it to one-eighth. The **Senate indefinitely postponed that proposal**. It was a meaningful contested *legislative preference*, not an enacted replacement for the 1924 law. The history must also attend to the [dispossession of Indigenous identity and community recognition](../../../../bibliographies/nps-racial-integrity.md) and [Arica L. Coleman's Black-Indigenous histories](../../../../bibliographies/coleman2013.md); white elite family status was not the sole harmed or protected interest.
-
-**Materiality and demographic counterevidence:** [Haines and Hacker (2006)](../../../../bibliographies/haines-hacker2006.md) report a declining white child–woman ratio in 1800–1860, but [Hacker (2003)](../../../../bibliographies/hacker2003.md) dates the onset of **reconstructed fertility** decline differently. [Hacker, Haines and Jaremski (2021)](../../../../bibliographies/hacker-haines-jaremski2021.md) compare explanations using complete-count censuses; these are competing estimator designs, not proof that purifying ideology caused demographic shortfall. The [direct coerced reproduction study by Djeliid (2024)](../../../../bibliographies/djeliid2024.md) and [Virginia's 1662 statute](../../../../bibliographies/virginia-assembly1662.md) concern different but materially connected mechanisms by which actual existing lives reproduced slaveholding property, kinship harm and labor.
-
-### Additional substantive sources requiring review before submission
-
-Harris, Cheryl I. 1993. “Whiteness as Property.” *Harvard Law Review* 106 (8): 1707–1791. https://harvardlawreview.org/wp-content/uploads/1993/06/1707-1791_Online.pdf.
-
-Djeliid, Aisha. 2024. “‘The master wished to reproduce’: slavery, forced intimacy, and enslavers’ interference in sexual relationships in the antebellum South, 1808–1861.” *American Nineteenth Century History* 25 (1): 21–43. https://doi.org/10.1080/14664658.2024.2317499.
-
-Hacker, J. David. 2003. “Rethinking the ‘Early’ Decline of Marital Fertility in the United States.” *Demography* 40 (4): 605–620. https://doi.org/10.1353/dem.2003.0035.
-
-Haines, Michael R., and J. David Hacker. 2006. “The Puzzle of the Antebellum Fertility Decline in the United States: New Evidence and Reconsideration.” NBER Working Paper 12571. https://www.nber.org/papers/w12571.
-
-Hacker, J. David, Michael R. Haines, and Matthew Jaremski. 2021. “Early Fertility Decline in the United States: Tests of Alternative Hypotheses Using New IPUMS Complete-Count Census Microdata and Enhanced County-Level Data.” *Research in Economic History* 37: 89–128. https://pmc.ncbi.nlm.nih.gov/articles/PMC9409409/.
-
-Coleman, Arica L. 2013. *That the Blood Stay Pure: African Americans, Native Americans, and the Predicament of Race and Identity in Virginia.* Indiana University Press. https://www.jstor.org/stable/j.ctt16gzn5n.
-
-## Declarations and review boundary
-
-**Data availability:** All cited original-text and research materials are referenced by stable URLs. The companion demographic dataset and independently executable Engineering reader reside in the 561 Group's private source corpus. No confidential client quotation or identifying information is reproduced in this manuscript.
-
-**Ethics:** Documentary historical analysis only; no human-subject recruitment or identifiable private participant data. Formal ethical assessment has not been obtained and must be decided by the actual author/institution if submitted.
-
-**Funding and conflicts:** Not ascertained. No assertion of absence is made on behalf of the eventual authors.
-
-**Authorship:** To be settled with the research client; this drafting assistant is not assigned human authorship. No journal submission has occurred.
-
-**Before hypothetical submission:** Independently verify the exact 1926 bill and amendment chronology in primary legislative records; reread cited scholarly works in full where only publisher materials have been inspected; cross-check original full-text quotations and source licenses; obtain the client's account of their original proposition; solicit a domain-expert assessment of originality against Nicholls (2026) and Younis (2026); and perform double-anonymous manuscript preparation. These are real outstanding scholarly requirements, not merely formatting tasks.

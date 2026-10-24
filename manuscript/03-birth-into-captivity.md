@@ -1,19 +1,6 @@
----
-title: "Birth into Captivity and the Reproductive Generation: Accounting for U.S. Births, 1790–1859"
-date-created: 2026-10-17
-type: working-paper
-stage: quantitative-research-note-preprint-draft
-journal-candidate: The History of the Family
-anonymous-review: true
-keywords: [historical-demography, slavery, captive-births, social-reproduction, settler-colonialism, natural-increase, migration, census-coverage]
-description: "Reconstructs and qualifies the share of births into slavery in the historical U.S. statistical population, with explicit numerator and denominator sources and sensitivity to the unobserved 1790s birth rate."
----
+# Part II. Birth into Captivity and the Reproductive Generation: Accounting for U.S. Births, 1790–1859 {#part-ii}
 
-# Birth into Captivity and the Reproductive Generation: Accounting for U.S. Births, 1790–1859
 
-**Manuscript status:** Independent research-note draft for hypothetical scholarly submission. Not peer reviewed, submitted, or endorsed by the originating research client. All estimates are historical reconstructions, not an independent contemporary census of births. Source-critical checking of Haines–Sutch's table documentation and Hacker's fertility assumptions remains part of a full receiving review.
-
-**Candidate journal:** *The History of the Family: An International Quarterly*, research/data note or short methodological article. This journal studies household formation, family demography and historical population processes. A companion conceptual paper concerns the future-oriented ideology of racial reproduction; it must not be needed to reproduce any of the numbers below.
 
 ## Abstract
 
@@ -83,6 +70,8 @@ All divisions are calculated from raw source values in the companion archived da
 
 ### 3.1 Decade reconstruction
 
+![Births into slavery as a share of estimated U.S. births, by decade, 1790-1859. The hatched 1790s bar uses an assumed denominator; the whisker spans crude birth rates of 45-65 per 1,000. Values are in Table A1.](figures/captive-birth-share-by-decade.svg){#fig:captive-births width=100%}
+
 | Birth years | Estimated births into slavery | Estimated total U.S. births | Captive share (%) |
 |---|---:|---:|---:|
 | 1790–1799 | 403,648 | 2,486,000* | 16.24* |
@@ -121,7 +110,7 @@ Because the assumed 1790s decade contributes less to the total denominator than 
 
 ### 3.4 The immigration hypothesis is a separate stock–flow problem
 
-A client question about settler social reproduction also asks whether colonial or postcolonial populations reproduce themselves locally or predominantly persist through immigration. The national series does not support a generalized inference of immigrant-dependent nineteenth-century U.S. growth. Haines's Table Aa15–Aa21 records migration's contributions to overall national population growth as **11.9% for 1790–1800, 13.5% for 1800–1810, 13.7% for 1810–1820, 7.1% for 1820–1830, 16.9% for 1830–1840, 27.0% for 1840–1850, and 32.3% for 1850–1860**. Every decade of this period shows growth predominantly from births exceeding deaths. Population-scale stability through natural increase is therefore evidenced at the national level.
+The originating question about settler social reproduction also asks whether colonial or postcolonial populations reproduce themselves locally or predominantly persist through immigration. The national series does not support a generalized inference of immigrant-dependent nineteenth-century U.S. growth. Haines's Table Aa15–Aa21 records migration's contributions to overall national population growth as **11.9% for 1790–1800, 13.5% for 1800–1810, 13.7% for 1810–1820, 7.1% for 1820–1830, 16.9% for 1830–1840, 27.0% for 1840–1850, and 32.3% for 1850–1860**. Every decade of this period shows growth predominantly from births exceeding deaths. Population-scale stability through natural increase is therefore evidenced at the national level.
 
 But these percentages are ratios of **components of net growth**, not ratios of births and not race-specific estimates. The descendants of immigrants may subsequently be born locally and count toward natural increase. In contrast, a particular mining town, plantation frontier, urban labor market, marriage cohort, denominational community, or racially restricted group might depend heavily on replenishment from outside. The national growth components cannot answer whether those subpopulations sustained themselves without migration. For each proposed local case one must collect linked vital events, age-sex structure and movement rather than substituting the national rate.
 
@@ -153,7 +142,7 @@ The result does **not** independently establish the stronger causal proposition 
 
 Similarly, the result does not resolve whether an ideological quest for allegedly ideal white progenitors was willing to spend the lives of existing white persons in its pursuit. That is the companion paper's conceptual and archival problem. The two papers can be placed in dialogue because one shows an immense material substrate of expropriated reproduction and the other studies the variable objectives of white-racial social reproduction. But neither paper may claim to have causally proved the other from a shared word such as *increase*.
 
-A more demanding historical-demographic research program would estimate, at the county or household level, three separate trajectories: local births and deaths among those classified settlers; imported adults and later locally born children of immigrants; and reproductive activities denied inclusion yet used to reproduce property and government. The linkage to particular institutions should be judged against source provenance and competing explanations, not against an expectation that the client's theory must come out true.
+A more demanding historical-demographic research program would estimate, at the county or household level, three separate trajectories: local births and deaths among those classified settlers; imported adults and later locally born children of immigrants; and reproductive activities denied inclusion yet used to reproduce property and government. The linkage to particular institutions should be judged against source provenance and competing explanations, not against an expectation that the originating hypothesis must come out true.
 
 ## 7. Limitations, research ethics, and contribution
 
@@ -163,7 +152,7 @@ Nonetheless the estimate is fully transparent within the scope of its assumption
 
 The contribution is therefore twofold: a specific, reproducible percentage identifying the scale of captive births within the statistical generation, and an explicit refusal to mistake that percentage for proof of a particular breeding policy, a racial group's future, or the whole social reproduction of a settler state.
 
-## References
+## References for Part II
 
 Alphonso, Gwendoline. 2023. “Expropriating Reproduction, Generating Property—Enslaved Childbearing, Property Law & Racial Capitalism in the American South.” APSA Preprints. https://doi.org/10.33774/apsa-2023-2nnzm. *Preprint—not independently peer reviewed.*
 
@@ -185,38 +174,3 @@ Wanamaker, Marianne H. 2014. “Fertility and the Price of Children: Evidence fr
 
 U.S. Census Bureau. “Censuses of American Indians.” Historical census coverage guidance. https://www.census.gov/about/history/census-records-family-history/census-records/censuses-of-american-indians.html.
 
-## Commission-specific original sources and critical evidence receiving
-
-The [source-annotated bibliography and 23-claim evidence crosswalk](../../../../bibliographies/bibliography-and-evidence-crosswalk-2026-10-17.md) makes the numerator, denominator, legal effects, economic interpretation, and counterfindings independently identifiable. The [white fertility-estimand note](2026-10-17-white-fertility-estimand-conflicts.md) documents incompatible fertility measures; the [captive reproductive expropriation note](2026-10-17-reproductive-expropriation-source-criticism.md) separates directly coerced reproduction, inherited legal status, claims on possible future issue, and forced interstate transfer. **The modeled 17% fraction does not measure the prevalence of any one of those specific property or coercion mechanisms.**
-
-**The source most improperly neglected previously** is [Djeliid (2024)](../../../../bibliographies/djeliid2024.md), which expressly examines enslavers compelling reproduction, coerced pairings and enslaved men assigned reproductive exploitation as “stock men.” It rules out a blanket suggestion that no deliberate coercive reproduction was documented. Yet neither its cases nor Hacker's aggregate estimated births give the *population fraction attributable to purposefully directed conceptions*. That prevalence remains an original archival sampling problem, not a statistic to manufacture.
-
-The original legal conversion of some such newborns into hereditary bondage is explicit in [Virginia General Assembly Act XII (1662)](../../../../bibliographies/virginia-assembly1662.md). [Alphonso (2023)](../../../../bibliographies/alphonso2023.md) argues for capitalization of *future issue* as an additional legal-economic relation, but the article remains a preprint with underlying cases yet to be verified. A distinct channel is the domestic forced movement of **already existing people** from Upper to Lower South, which cannot be added to a birth numerator. [Domestic trade historical synthesis](../../../../bibliographies/virginia-domestic-slave-trade.md). For political effects, [Article I §2](../../../../bibliographies/constitution1787.md) codified apportionment counting people under slavery but excluding “Indians not taxed”; the 1850 [slave and free schedules](../../../../bibliographies/national-archives1850.md) demonstrate status-differentiated enumeration. Neither is an all-birth registration.
-
-**White-fertility competing models:** [Haines–Hacker (2006)](../../../../bibliographies/haines-hacker2006.md), [Hacker (2003)](../../../../bibliographies/hacker2003.md), and [Hacker–Haines–Jaremski (2021)](../../../../bibliographies/hacker-haines-jaremski2021.md) differ in age-, marriage- and mortality-sensitive estimands. Their tension must be resolved before testing the client's proposed local settler self-replacement mechanism. The nationally high 1790–1860 natural-increase contribution is not a claim that every local white settler lineage replaced itself without migration.
-
-**Reproducible scope:** The [Science-source data carrier](../../../../../../../../data/records/2026-10-17-captive-birth-shares-source-series.json) preserves historical inputs, the assumed 1790s crude birth rate, and sensitivity calculations. It is software-readable through Engineering's CAIRN record-reader when the real authorized Science source is mounted; writing the JSON file does not prove the current L-Space service has ingested it.
-
-### Additional substantive sources requiring review before submission
-
-Djeliid, Aisha. 2024. “‘The master wished to reproduce’: slavery, forced intimacy, and enslavers’ interference in sexual relationships in the antebellum South, 1808–1861.” *American Nineteenth Century History* 25 (1): 21–43. https://doi.org/10.1080/14664658.2024.2317499.
-
-Virginia General Assembly. 1662. Act XII, concerning children born to enslaved mothers. In W. W. Hening, *The Statutes at Large*, vol. 2, p. 170. https://encyclopediavirginia.org/primary-documents/negro-womens-children-to-serve-according-to-the-condition-of-the-mother-1662/.
-
-Haines, Michael R., and J. David Hacker. 2006. “The Puzzle of the Antebellum Fertility Decline in the United States: New Evidence and Reconsideration.” NBER Working Paper 12571. https://www.nber.org/papers/w12571.
-
-Hacker, J. David. 2003. “Rethinking the ‘Early’ Decline of Marital Fertility in the United States.” *Demography* 40 (4): 605–620. https://doi.org/10.1353/dem.2003.0035.
-
-Hacker, J. David, Michael R. Haines, and Matthew Jaremski. 2021. “Early Fertility Decline in the United States: Tests of Alternative Hypotheses Using New IPUMS Complete-Count Census Microdata and Enhanced County-Level Data.” *Research in Economic History* 37: 89–128. https://pmc.ncbi.nlm.nih.gov/articles/PMC9409409/.
-
-## Declarations and hypothetical submission conditions
-
-**Authorship:** The original question came from a client commission. The author's identity, consent to quoted attribution, contributions and final byline are not yet established. This manuscript contains no private client quotation and has not been submitted.
-
-**Competing interests/funding:** Not ascertained; no false declaration of their absence.
-
-**Ethics:** Historical aggregate public estimates only; no individual health or family case records used. Individual births and descendants are not depersonalized into a claim about hereditary fitness.
-
-**Data/code availability:** Exact source values, annual estimates, calculation definitions and sensitivity data are held in the Science repository at \`services/social-science-services-section/services/sociology-science-services-section/data/records/2026-10-17-captive-birth-shares-source-series.json\`. The source-directed CAIRN record-reader implementation is in \`red-cup-engineering/knowledge-system-server\` commit \`910dedb6e00b52954c86501f45034f69b743bcde\`. A local matching NI-content reader exercise exists, but no claim is made of installed L-Space/MetroPlat receiving or public deposition. If submitted, sources and code must be archived at a permanent accessible citation under appropriate licenses and participant authorizations.
-
-**Minimum gates before hypothetical submission:** (1) independently re-extract Haines–Sutch's official series and documentation and Hacker's Table 1, including publication-specific rounding; (2) propagate realistic captive-numerator uncertainty and geographic coverage instead of reporting scenario ranges as confidence bands; (3) confirm the precise 1790s boundary assumption and explore 1776–1789 only if sources permit; (4) obtain scholarly historical-demography review on stock–flow consistency; (5) research the applicability and availability of free/enslaved births by maternal legal condition across jurisdictions; (6) settle client authorship and original-research rights; (7) transform the draft into the selected journal's required anonymous format; and (8) ensure receiving of the source archive and analysis code by a genuine scientific consumer. These steps remain open—not implied completed by the present result.
