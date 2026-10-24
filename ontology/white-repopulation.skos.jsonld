@@ -1,0 +1,386 @@
+{
+ "schema": "white-repopulation-skos-fallback.v1",
+ "audience": "authenticated",
+ "provenance": {
+  "note": "NOT the output of term-engineering project-glossary-skos. That tool (term-engineering-services-section 0.3.2, commit a6aa3d350af72aa1ebcf3983448071debb231f9c) could not run: its received source imports @red-cup-engineering packages that are not installed or published (metrologic, semiotic-content-address, toml-codec-service, among others). This file projects the same glossary carriers with the tool's documented mapping (README, schema computer-glossary-skos.v3): name -> skos:prefLabel, body -> skos:definition, identity -> skos:notation, concept IRI = https://561.group/knowledge/<scheme path with services/ dropped>/<identity>. Regenerate it with the tool when the tool installs.",
+  "glossaryCommit": "b2ed3deb14568861b3fcee921c40f2cf11b70cbe"
+ },
+ "@context": {
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dct": "http://purl.org/dc/terms/"
+ },
+ "@graph": [
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "Sociology glossary"
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/white-increase",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "white increase",
+   "skos:notation": "white-increase",
+   "skos:definition": "White increase has three nonidentical possible meanings. (1) Classified population increase: births, deaths, net migration and changes in whom a given jurisdiction calls white. (2) Admissible reproducer increase: expansion or contraction of those deemed suitable to produce an allegedly ideal white future. (3) Institutional increase: reproduction of settler property, hierarchy and state power that may incorporate the reproductive labor of people excluded from the white category. Crucial distinction: the actual population can be expended or deprived of the conditions of family continuity without a formal narrowing of eligibility. The proposed ideal progenitors are the deferred possibility of breeding an imagined type, not current white people whose biology is presently being improved. An institution may sustain racialized property while disregarding their survival; this needs causal policy evidence, not demographic correlation. The opening research conjecture is that eugenic purification can shrink (2) despite professed allegiance to (1), while (3) can persist by different mechanisms. None of the three entails either other. The central test is whether time to loss of supported reproductive continuity precedes time to produce the allegedly legitimate group of at least two reproducers under a changing purity rule. Pedigree problems of exactly two founders are secondary, not the Leader's principal claim. See whiteness, racial formation and reproductive purity ratchet.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:7cd8e2c4-d053-4cbb-a426-176751064f9e",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/institutional-reproductive-expendability"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/racial-formation"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-purity-ratchet"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/whiteness"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/racial-formation",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "racial formation",
+   "skos:notation": "racial-formation",
+   "skos:definition": "Racial formation is the historical production, contestation, revision and enforcement of racial categories, meanings and their material consequences. It does not identify genetically isolated human species. Racial classification is an institutional outcome: a population comparison must declare the dated classification rule, jurisdiction, census coverage, and changes in membership. For the white-increase inquiry, distinguish persons classified white from persons whose reproduction is recognized as fit to produce a designated white future. The latter can be a strict subset. Category changes may alter recorded white populations with no birth or death. Consult white increase, whiteness and the source-owned research note.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:0283ee35-d602-4dc4-b719-c7761709923f",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/white-increase"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/whiteness"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/institutional-reproductive-expendability",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "institutional reproductive expendability",
+   "skos:notation": "institutional-reproductive-expendability",
+   "skos:definition": "Observable institutional willingness to bear or impose predictable losses of a group's reproductive opportunities, family security or survival while maintaining some other institutional objective such as capital accumulation, racial status, national belonging or a purported ideal future lineage. ## Boundaries and admissible measurement Not a literal preference of an anthropomorphized 'whiteness'. This construct requires an actual policy choice, available alternative, decision-maker and observed cost. Poverty and declining births by themselves do not establish a coordinated ideological preference; many harms have nonracial and competing causes. ## Sources and neighboring terms selective reproductive futurity; white increase; Harris 1993. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations. ## Contradictory material reproductive conditions The original client's hypothesis includes attrition of the conditions to produce and sustain actual families, even where no eugenic classification formally prevents childbirth. Fraser's (2016) original essay presents accumulation's tendency to deplete indispensable care as a structural mechanism; Cooper (2017) supplies a distinct family-values/privatized responsibility mechanism. Neither source proves those processes were intended to produce a pure white reproductive type, nor that they uniquely affect people currently classified white. The Kearney–Levine–Pardue (2022) study is a direct countercontrol: not all broad fertility decline has an identified policy or economic cause. The construct therefore requires a demonstrable decision under alternatives and causal harm, not simply a population's falling birth rate. Owning causality and data note.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:3340a1f1-aabd-5cf5-aefd-52ac7648fb1c",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/selective-reproductive-futurity"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/white-increase"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-increase",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "captive increase",
+   "skos:notation": "captive-increase",
+   "skos:definition": "An enslaver's or property's 'increase' may refer to children born to people held enslaved and, in some legal contexts, a distinct claim over the potential future descendants of an enslaved woman. It thus names the juridical transfer of reproductive possibility into the owner's anticipated capital. ## Boundaries and admissible measurement Do not confuse growth of the enslaved population through natural increase, a legal title to future issue, a domestic sale of existing persons, and deliberately compelled reproduction. They require distinct sources and cannot be summed as one event count. ## Sources and neighboring terms Alphonso 2023; Djeliid 2024; Virginia 1662; domestic trade. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations. ## Originally adjudicated variations in ownership of reproductive futures (2026-10-17) Four judicial opinions demonstrate different legal uses of captive increase: Covington (North Carolina 1842) awards Binah's four then-living children with the remainderman's interest; Nelson (NC 1849) awards Leah's three post-testator children with the bequest of Leah and reports $329.75 in whole-family maintenance, not a cost per pregnancy; Smith (Delaware 1839) distinguishes child-status from a particular owner's title and orders Stephen free; Johnson (Kentucky 1848) frees Lytha after her widow-owner died but leaves seven earlier-born children enslaved. These are not a uniform national partus or property rule. Claims over possible unborn issue are a separate legal category, especially as described by Alphonso 2023; the original 1823 Banks opinion behind a leading example remains unrecovered. Source-level analysis: jurisprudence report and case observations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:b6891cc3-8fcd-59ef-ae6a-c932155e061a",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-reproductive-title-under-life-tenancy"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/future-issue-property-claim"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-reproductive-title-under-life-tenancy",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "captive reproductive title under life tenancy",
+   "skos:notation": "captive-reproductive-title-under-life-tenancy",
+   "skos:definition": "A legal division in slaveholding property where one person claimed temporary possession or services from an enslaved mother (life tenant) and another claimed the subsequent interest (remainderman), while courts separately adjudicated who could claim children she bore during the tenancy. Do not confuse the child's inherited legal condition with the person's owner of record, or the mother's eventual manumission with the child's already acquired status. In North Carolina Covington v McEntire (1842), four children of Binah followed a remainderman's entitlement; Delaware Smith v Milman (1839) rejected using the maternal-status maxim to decide ownership and ordered petitioner Stephen free; Kentucky Johnson (1848) granted mother Lytha freedom while her seven children remained enslaved and were allocated to the widow's estate. These are different dated jurisdictions and legal constructions, not a harmonized single rule. The full case extraction provides source locators, exceptions and read grades. Related: future issue property claim and captive increase.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:4e6e059b-4f04-524e-a821-8abca2e014db",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-increase"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/future-issue-property-claim"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/directed-captive-reproductive-coercion",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "directed captive reproductive coercion",
+   "skos:notation": "directed-captive-reproductive-coercion",
+   "skos:definition": "A specified action by an enslaver or delegated controller compelling enslaved people to form, sustain or undertake a reproductive/sexual relationship, with the aim of producing descendants, or coercing reproductive circumstances without a person's free agreement. This is a historical practice, not the same thing as the legal transfer of a child's status or the statistical observation of enslaved births. ## Conditions of evidence An actual case requires source-attributed testimony, documentation of specific conduct or an explicit contemporaneous instruction, with a stated date, place, speaker, record genre, and mediation. Distinguish an eyewitness's account from a recorder's summary; a direct command from a court's property rule; a birth after compulsion from a numerical count of all coerced births; and an allegation of a specific case from a population prevalence estimate. ## Source-located case and limits A Federal Writers' Project 1936 interview with Louisa and Sam Everett documents one reported forced relationship directed by enslaver Jim McClain. The source records later children and Louisa's subsequent affection, but that affection does not undo the initial coercion (Reader 2023, p. 484). Djeliid (2024) investigates other examples and the coerced use of men as “stock men”; its abstract does not establish how frequent either practice was. The source-controlled individual-case extraction is not a census or a demographic denominator. See reproductive expropriation for the larger legal-economic process and captive birth for the distinct statistical flow.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:b41abda3-a5d0-5179-9900-b1e641c14a08",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-birth"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-expropriation"
+    }
+   ],
+   "skos:broader": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-expropriation"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/hereditary-enslavement",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "hereditary enslavement",
+   "skos:notation": "hereditary-enslavement",
+   "skos:definition": "A legal system under which a child inherits an enslaved status by operation of law. In Virginia’s December 1662 statute the child's condition was tied explicitly to the mother's condition, in contrast to a contrary English-law expectation regarding paternal status. ## Boundaries and admissible measurement This is a legal relationship, not evidence of a genetically hereditary human defect; jurisdictions and legal eras vary. Do not conflate enslaved parental status, an individual's genealogy, racial classification, and the claims asserted by an enslaver. ## Sources and neighboring terms captive birth; Virginia 1662 original act; Clymer 2012. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:7ba5f73c-4060-5770-af4c-5919a52226c1",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-birth"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/future-issue-property-claim",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "future issue property claim",
+   "skos:notation": "future-issue-property-claim",
+   "skos:definition": "A legally asserted present interest in the possible future children of a woman held enslaved, which an enslaver attempted to make available for transfer, testamentary distribution or later adjudication. This is not identical to a child who has already been born, a current ownership right over that child, a forced conception, or a verified monetary realization. A source for such a claim must specify the jurisdiction, event date, document or deed/will, possible future persons, actual owners/claimants, and whether a court held the claim enforceable or merely quoted a party's desire. Alphonso 2023 discusses Banks' Administrator v. Marksberry (1823) as transferable future issue; its original judicial report remains a required original-source check. Nelson (1849) shows a will's attempted assignment of future issue whose temporal reach the court limited. A legal claim upon an unconceived child is an anticipated asset entitlement, not evidence that the child was conceived, survived or was produced under directed sexual coercion. For original opinion and linked observations, see case analysis. Related: captive increase, reproductive expropriation.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:392bcc0b-6b44-540f-9e7b-7be89b63802c",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-increase"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-reproductive-title-under-life-tenancy"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-expropriation"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-purity-ratchet",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "reproductive purity ratchet",
+   "skos:notation": "reproductive-purity-ratchet",
+   "skos:definition": "Reproductive purity ratchet names an unassayed historical selection feedback: institutions unable to produce an imagined acceptable reproductive lineage keep tightening the eligibility rule, consuming the cohort's reproductive continuity before an end condition of at least two acceptable reproducers is ever met. Its distinctive prediction concerns relative times to a moving goal and demographic failure, not a historical claim that all whiteness converges biologically or that exactly two people remain. This ratchet is only one possible mechanism, not a synonym for the whole original conjecture. A non-ratchet mechanism could exhaust actual white-classified households through economic and political institutions without repeatedly tightening explicit reproductive criteria; both require evidence that reproductive sacrifice was accepted in pursuit of the purported ideal rather than merely co-occurring with it. Evidence that some white people were sterilized or excluded through eugenic criteria (Stubblefield 2007; Caron 2008) establishes an internal exclusion mechanism but does not establish self-reinforcing escalation, demographic collapse or deliberate pursuit of extinction. Test by tracing policy changes, justifications, eligible groups, actual births and survival, migration and pro-natalist countereffects. If the criteria broaden, stop escalating, or do not reduce reproductive continuity, the ratchet hypothesis is weakened or falsified. Full research specification; white increase. ## Quantitative evidence and alternative process (2026-10-17) The 2026 archival slice supports an internal exclusion mechanism, not proof of a ratchet: North Carolina's 1966 report documents 4,218 sterilizations of people it categorized white out of 6,851 total (July 1929–June 1966). In two-year operations, the share recorded white declined from 81.79% in 1946–1948 to 34.83% in 1964–1966, a −46.96 percentage-point shift (Brophy–Troutman 2016; late endpoint corroborated by NC's original report). Meanwhile the state white-category headcount grew 13.95% in 1950–1960 (Gibson and Jung, Census Table 48). These counts do not identify births prevented or prove that purity selection caused white demographic contraction. Utah's 1961 modification of the legal rationale for sterilization despite discredited genetic justifications (Tabery et al. 2023) indicates institutional selection adapting to preserve its authority, which need not mean ever-narrower racial classification or more restrictive marriage rules. Empirically distinguish that adaptive control pathway from a true positive-feedback purity ratchet, and from the possibility that the regime incorporates previously excluded groups. The case evidence, period algebra and bibliography are in the owning Sociology research note.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:52da7c09-30e3-4ac7-a3e6-952e73e8bf10",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/white-increase"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/whiteness"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/captive-birth",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "captive birth",
+   "skos:notation": "captive-birth",
+   "skos:definition": "A live birth whose newborn enters an inherited legal condition of enslavement under the specific jurisdiction’s status law. The unit is the newborn birth event, not a price transaction, slave schedule count, forced conception, immigration event, or proof of consent. ## Boundaries and admissible measurement Specify law, period, territory, mother's legal status and whether the source observes actual births or models them retrospectively. Hacker 2020 estimates births into U.S. slavery; the associated ratio to all counted U.S. births must share a coherent territorial denominator and acknowledge excluded Indigenous populations. ## Sources and neighboring terms hereditary enslavement; Hacker 2020; Virginia 1662. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:33de38c4-a178-5d76-a0f2-6bb3b7731e09",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/directed-captive-reproductive-coercion"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/hereditary-enslavement"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-expropriation",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "reproductive expropriation",
+   "skos:notation": "reproductive-expropriation",
+   "skos:definition": "The seizure of rights, control, labor, children, kinship recognition or economic value associated with another person's reproductive activity or possible descendants. Under hereditary slavery, the captive child's status and transferability could constitute wealth or labor claims for someone other than the parent or child. ## Boundaries and admissible measurement Distinguish (a) expropriation of a future child by status law, (b) coerced conception or pairing of named persons, and (c) a specifically organized breeding establishment. One is neither proof nor a complete measure of another. This term does not erase kinship and resistance among enslaved people. ## Sources and neighboring terms Djeliid 2024; Morgan 2021; Alphonso 2023; Spillers 1987. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations. ## Observed case boundary (2026-10-17) Sam and Louisa Everett's 1936 Federal Writers' Project retrospective interview (archival annotation) attests to a specific coercively imposed sexual relationship on McClain's Virginia plantation and subsequent children. It demonstrates reported directed pairing in one named account; it neither measures the prevalence of such coercion among enslaved mothers nor proves every captive birth was deliberately orchestrated. Later mutual support and love are part of the record, but cannot retroactively make the initiating coercion consensual (Reader 2023, p. 484). The reported date 1936 conflicts with 1937 in Djeliid's opening, and all 1930s oral recollection is mediated by the interviewer/editor.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:d0eeaa4f-736e-585b-a727-debe1ff4b886",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/directed-captive-reproductive-coercion"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/future-issue-property-claim"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-eligibility",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "reproductive eligibility",
+   "skos:notation": "reproductive-eligibility",
+   "skos:definition": "The subset of people whom a specified institution, policy or ideological actor designates entitled, fit, legally able or materially supported to have recognized descendants. Eligibility is historically contingent and may be narrower or broader than the demographic category called white. ## Boundaries and admissible measurement Do not reify a social or eugenic criterion as real biological fitness. Separate coercive prohibition, social stigmatization, pronatalist benefits and practical material capacity. Report the period and legal institution before counting eligibility. ## Sources and neighboring terms Stubblefield 2007; Caron 2008; Roosevelt 1913. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:eed3eef2-2fe0-5bca-a847-70876c2e4ef3",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/selective-reproductive-futurity"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/selective-reproductive-futurity",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "selective reproductive futurity",
+   "skos:notation": "selective-reproductive-futurity",
+   "skos:definition": "An institutional situation in which the legitimate population promised for the future is not identical to living people presently included in the privileged category. Present members can be disqualified, exploited, or deprived because selection is organized around an imagined future kind of reproducer, rather than the continued flourishing of the existing people. ## Boundaries and admissible measurement Do not infer a singular institution or purpose from co-occurring harms. Establish the stated ideal, observable authority over real people, decisions showing willingness to bear reproduction costs, and actual counterfactual alternatives. The client’s 'at least two' image is a hypothetical success threshold, not a genetic research target. ## Sources and neighboring terms race suicide; reproductive eligibility; institutional reproductive expendability; Stubblefield 2007; Nicholls 2026. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:60ba7868-615a-511a-af6f-689708724b25",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/institutional-reproductive-expendability"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/race-suicide"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-eligibility"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/settler-social-reproduction",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "settler social reproduction",
+   "skos:notation": "settler-social-reproduction",
+   "skos:definition": "The continued realization of a settler political-economic order through land control, legal jurisdiction, household continuity, inheritance, labor relations, state power, migration and demographic events. Reproducing settler rule is not identical to increasing births among people classified white or to the reproduction of Indigenous communities subject to dispossession. ## Boundaries and admissible measurement Recover the actual polity and its legal boundaries. Distinguish continuing settler institutions from self-replacing population cohorts, coercively replenished labor populations and Indigenous nationhood. A national immigrant-growth share alone does not measure settler reproduction. ## Sources and neighboring terms Wolfe 2006; Harris 1993; Nicholls 2026; Younis 2026. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:aff664fc-f6f4-59e6-a32f-4043c08bfb49"
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/natural-increase",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "natural increase",
+   "skos:notation": "natural-increase",
+   "skos:definition": "Population births minus deaths during a defined period, within a consistently specified jurisdiction and counting convention. Natural increase is a population-flow component and can be positive or negative; it is not the crude birth rate or the number of children born to a particular class of settlers. ## Boundaries and admissible measurement Do not equate natural increase with all growth or immigrant independence: adults who previously migrated can produce births counted as local natural increase. Historical data and census administrative categories may change; the U.S. 1790s natural increase estimate does not supply that decade's crude birth rate. ## Sources and neighboring terms Haines 2006; Haines–Sutch 2006. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:d71e8290-7c94-5e98-a7bc-c1c1f6e11515"
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/net-migration-growth-contribution",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "net migration contribution to population growth",
+   "skos:notation": "net-migration-growth-contribution",
+   "skos:definition": "The contribution of arrivals minus departures to change in a defined population, often expressed as a fraction of net total growth, not of births and not of existing residents. It may exceed 100% when natural increase is negative. ## Boundaries and admissible measurement For Canada and Australia recent national shares aggregate residents of varied ancestry, citizenship and status. They are not rates of white settlers replacing themselves through migrants. A source must specify domestic versus international migration, temporary residents, age, period and category. ## Sources and neighboring terms Statistics Canada 2024; Australian Bureau 2025; Haines 2006. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:3aee61af-0c6a-5cc1-a25f-94b8a3f49056"
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/race-suicide",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "race suicide",
+   "skos:notation": "race-suicide",
+   "skos:definition": "Race suicide was a racist and eugenic claim that too few children were being born among selected white, native-born Protestant groups relative to other groups. Advocates of this ideology both encouraged births among those declared fit and restricted reproduction among those deemed unfit, especially across class and other racialized criteria. This is a description of historical doctrine, not scientific support for a biological white race, a measured contemporary population crisis or a universal cause of low fertility. Simone M. Caron, Who Chooses?, chapter 3 (2008), reconstructs its historical forms. The 2026 Science inquiry inverts the advocates' diagnosis by asking whether purity responses may themselves erode the reproduction they claim to protect. These propositions are not the same. ## Primary texts and the timing conjecture Franklin's 1751 population essay makes increase among a narrow classed notion of whites distinct from migration and social reproduction; Roosevelt's 1913 Davenport letter calls for both higher fertility among favored people and exclusion of others; Nearing's 1911 essay replies to race-suicide fears by explicitly distinguishing quantity from claimed quality. The Leader's two-clock hypothesis is a new conjecture, not a belief established in those works. Their original texts and Younis's 2026 critical reconstruction are annotated in this Sociology bibliography.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:1e032619-8665-445b-b9a8-69aa1454db7d",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/selective-reproductive-futurity"
+    }
+   ]
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/white-fertility-transition",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "white fertility transition",
+   "skos:notation": "white-fertility-transition",
+   "skos:definition": "The change over time in fertility measures among people classified white under specific U.S. census rules, including total fertility, marital fertility, nuptiality, child–woman ratios and own-children reconstruction. These indicators are not automatically estimates of the same underlying parameter. ## Boundaries and admissible measurement Haines–Hacker (2006) report child–woman ratio decline across 1800–1860, while Hacker (2003) reconstructs a later onset for total/marital fertility using revised mortality and own-children methods. Keep disagreement explicit. Neither estimator attributes fertility decline to a purity ideology without causal evidence. ## Sources and neighboring terms Haines–Hacker 2006; Hacker 2003; Hacker–Haines–Jaremski 2021. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:bae2860e-561b-5e46-a593-fec3188ca1bf"
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/racial-reclassification",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "racial reclassification",
+   "skos:notation": "racial-reclassification",
+   "skos:definition": "Change in the social, legal or administrative category assigned to people, with or without any birth, death or migration. Historical incorporation or exclusion of migrants, ancestry exceptions, interracial-family classification and changing census instructions can alter the number recorded as white. ## Boundaries and admissible measurement Reclassification is not a residual biological evolution or a birth. Census categories can be internally inconsistent and historically harmful, especially where Indigenous legal identities are erased. Reconstruct records for named years rather than treating all historical 'white' rows as interchangeable. ## Sources and neighboring terms Gibson–Jung 2002; Virginia 1924; Coleman 2013. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:48f614b0-0fad-55b6-a159-0133fae2009d"
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/demographic-replacement-fear",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "demographic replacement fear",
+   "skos:notation": "demographic-replacement-fear",
+   "skos:definition": "A political narrative presenting changing relative population shares or migrant presence as an existential loss of dominant-group continuity. It can mobilize racial classification and exclusion without establishing that actual demographic extinction is occurring. ## Boundaries and admissible measurement This is an object of historical inquiry, not a scientifically accepted account of immigration. Measure actual births/deaths/migration and the categories used, then separately research public rhetoric and the policies it legitimizes. ## Sources and neighboring terms Younis 2026; Nicholls 2026; Franklin 1751. See the source-checked commission crosswalk for claim identifiers, support grades and manuscript locations.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:f52bc4af-f9aa-566f-a2ed-4f929879064e"
+  },
+  {
+   "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/whiteness",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "whiteness",
+   "skos:notation": "whiteness",
+   "skos:definition": "Whiteness describes historically constructed racial classification, status, legitimate family membership and distributions of privilege and authority. Its meanings, boundaries and economic effects change across places and periods. It is not a genetically distinct species or a unitary actor endowed with a literal will. In research on settler social reproduction, separate (1) people classified white, (2) people judged fit to reproduce the favored ideal, and (3) institutions of property and rule. These populations and outputs may diverge. White increase requires a choice of measure, and the reproductive purity ratchet names a proposed conflict between escalating purity and maintaining a population, not a historical law. Sources: Stubblefield (2007), Caron (2008), Guglielmo (2003), research note. ## Theodore W. Allen's historical account Allen (1975; 1994, 1997) proposed a specific account of how legal racial status and privilege formed through colonial institutions and labor conflict. See the source-qualified research intake and annotated bibliography. His causal explanation is an attributed argument, not a substitute for this general definition. Source-critical continuation (20 October 2026): The Allen historical sequence and causal assay links Allen's specified social-control hypothesis to the 1662/1691/1705/1723 statutes, differentiated family/status law, 1676–1677 Indigenous history, and the 1724–1736 correspondence. This is an attributed mechanism with independently tested legal facts and unresolved causal claims, not an extra competing definition of whiteness. Analytic distinction: Allen's \"white race\" as an operative political social-control formation is an institutional account of how legal classifications and privileges are produced and maintained. The existing whiteness term describes historical statuses, classificatory boundaries and effects more broadly. A category, the institutions governing it, actual entitlements, and the choices of its members are distinct units. Selected direct readings from both volumes, including Allen's own treatment of Indigenous land dispossession in Volume I chapter 6, are indexed in the historical source assay. Neither full volume is yet read. Status relations from original law: Legal attributes can be actor- and relationship-specific. In Virginia's 1705 law (VII and XI), the standing of a Christian white servant varies with the treatment alleged and with the status of the person attempting to own that servant; in Jamaica's approximately 1748 law (I–IV), the admissibility of a freed person's testimony depends on the respondent's legal privileges and on time since manumission. See the Allen comparative law section. Neither whiteness nor white race is a universal binary predicate capable by itself of explaining a particular legal entitlement in every jurisdiction. The statutes show classification rules, not actual lived status or the theories' whole causal explanation.",
+   "skos:inScheme": {
+    "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section"
+   },
+   "dct:identifier": "urn:uuid:07b2c9d8-468c-42e0-9ee6-d989531401b1",
+   "skos:related": [
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/racial-formation"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/reproductive-purity-ratchet"
+    },
+    {
+     "@id": "https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/white-increase"
+    }
+   ]
+  }
+ ],
+ "accounting": {
+  "concepts": 21,
+  "schemes": 1,
+  "withheld": 0
+ }
+}

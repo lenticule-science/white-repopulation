@@ -1,0 +1,993 @@
+# White Repopulation: Reproduction without Preservation, vocabulary 0.2.0
+#
+# OWL classes and properties for the paper's record kinds and analytic
+# distinctions, and a SKOS concept scheme of its terms. Rooted in the 561 Group
+# root ontology (https://561.group/ns/): every record kind is a subclass of
+# ns:Record, and the limits records state about themselves use the root's
+# properties.
+#
+# Concepts that the Sociology glossary already defines are NOT re-minted: they
+# keep their house glossary IRIs (https://561.group/knowledge/<scheme>/<stem>,
+# the IRI the glossary SKOS projection mints) and are added to this paper's
+# scheme (wr:terms) by skos:inScheme. Only terms the paper itself coins are
+# minted here, under https://561.group/knowledge/white-repopulation#.
+#
+# Definitions are taken from the glossary carriers at the pinned Science
+# commit named below; the glossary stays the authority and this file is a
+# projection of it. SKOS JSON-LD for the same glossary carriers is in
+# white-repopulation.skos.jsonld; it is a labelled fallback projection because
+# term-engineering project-glossary-skos could not run (see its provenance block).
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix ns:      <https://561.group/ns/> .
+@prefix wr:      <https://561.group/knowledge/white-repopulation#> .
+@prefix soc:     <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section/> .
+
+# =============================================================================
+# The ontology
+# =============================================================================
+
+<https://561.group/knowledge/white-repopulation>
+    a owl:Ontology ;
+    owl:versionIRI <https://561.group/knowledge/white-repopulation/0.2.0> ;
+    owl:versionInfo "0.2.0" ;
+    owl:imports <https://561.group/ns/> ;
+    dcterms:title "White Repopulation vocabulary"@en ;
+    dcterms:description "Vocabulary of the paper \"White Repopulation: Reproduction without Preservation\": a SKOS concept scheme of its terms, OWL classes and properties for the six kinds of source record it computes from, and the closed sets it reasons with (the four histories, the four juridical operations, three claim evidence statuses, four source reading grades)."@en ;
+    dcterms:created "2026-10-24"^^xsd:date ;
+    dcterms:modified "2026-10-24"^^xsd:date ;
+    dcterms:creator "Morgan Sennhauser" ;
+    dcterms:contributor "Claude (Anthropic), disclosed AI collaborator" ;
+    dcterms:publisher "Lenticule Science" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright The 561 Group. Licensed CC-BY-4.0."@en ;
+    dcterms:isPartOf <https://github.com/lenticule-science/white-repopulation> ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/tree/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms> ;
+    prov:wasGeneratedBy wr:projection ;
+    ns:knownGap
+        "Source records state how much of a source was read in free text (read_status, grade, observation_grade). They are carried as strings (ns:readStatus, wr:sourceGrade, wr:observationGrade) and are NOT yet normalised to wr:ReadingGrade; a record revision adding a reading_grade key would let the shapes check it."@en ,
+        "The glossary carries no relation keys for these terms, so skos:related edges are projected from links in the glossary bodies and skos:broader is asserted only where a body states a genus. The glossary relation vocabulary (relation-predicates.json) has no SKOS or PROV mappings yet."@en ,
+        "The topic carrier glossary/topics/black-feminism has a description but no definition body, so it is not a concept here."@en ,
+        "The six record kinds are not yet governed by Science JSON Schemas, so these classes and the sibling shapes.ttl are hand-declared. json-schema-to-owl-shacl-service (commit 27940f1) could not express them in any case: it mints classes only under https://561.group/ns/schema/<$id>, refuses blank nodes, and has no owl:oneOf enumerations, SPARQL constraints or RDF lists. Regenerate the structural part once the schemas exist and keep the closed sets and invariants by hand."@en ,
+        "term-engineering project-glossary-skos could not run from the received source: it imports @red-cup-engineering packages that are not installed or published (metrologic, semiotic-content-address, toml-codec-service). white-repopulation.skos.jsonld is therefore a labelled fallback projection."@en .
+
+wr:projection
+    a prov:Activity ;
+    rdfs:label "projection of the Sociology glossary into this vocabulary"@en ;
+    prov:used <https://github.com/lenticule-science/science-services-section/tree/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms> ;
+    prov:wasAssociatedWith <https://github.com/red-cup-engineering/computer-systems-engineering-services-section/tree/a6aa3d350af72aa1ebcf3983448071debb231f9c/services/computer-knowledge-systems-services-section/services/computer-glossary-systems-engineering-services-section/services/term-engineering-services-section> ;
+    prov:generated <https://561.group/knowledge/white-repopulation> ;
+    rdfs:comment "Concept labels and definitions are projected from the glossary carriers at the pinned commit. The sibling white-repopulation.skos.jsonld projects the same carriers under the mapping documented for term-engineering project-glossary-skos (version 0.3.2), but the tool itself could not run (unresolved package imports), so that file is a labelled fallback and not tool output."@en .
+
+<https://github.com/red-cup-engineering/computer-systems-engineering-services-section/tree/a6aa3d350af72aa1ebcf3983448071debb231f9c/services/computer-knowledge-systems-services-section/services/computer-glossary-systems-engineering-services-section/services/term-engineering-services-section>
+    a prov:SoftwareAgent ;
+    rdfs:label "term-engineering-services-section project-glossary-skos"@en .
+
+# =============================================================================
+# The concept scheme
+# =============================================================================
+
+wr:terms
+    a skos:ConceptScheme ;
+    skos:prefLabel "White Repopulation terms"@en ;
+    dcterms:title "White Repopulation terms"@en ;
+    dcterms:description "Every term the paper defines or relies on: the Sociology glossary terms coined or used by this research, plus the analytic vocabulary of the paper's introduction."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/tree/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms> ;
+    skos:definition "Scheme of the terms of \"White Repopulation: Reproduction without Preservation\"."@en ;
+    skos:scopeNote "wr:four-histories, wr:juridical-operations, wr:evidence-statuses and wr:reading-grades are skos:Collections of the closed sets; their members are concepts of this scheme."@en .
+
+# =============================================================================
+# Analytic distinctions: closed sets as OWL classes and SKOS collections
+# =============================================================================
+
+# --- The four histories ------------------------------------------------------
+
+wr:History
+    a owl:Class ;
+    rdfs:label "History"@en ;
+    rdfs:comment "One of the four histories the paper separates under the phrase \"white increase\". Each has its own evidence and its own way of failing. Exactly the four individuals below."@en ;
+    owl:equivalentClass [ a owl:Class ; owl:oneOf ( wr:NumericalReproduction wr:Classification wr:EligibilityToFoundPreferredFuture wr:InstitutionalReproduction ) ] .
+
+wr:four-histories
+    a skos:Collection ;
+    skos:prefLabel "four histories"@en ;
+    skos:definition "The phrase white increase can refer to any of four objects: numerical reproduction, classification, eligibility to found the preferred future, and institutional reproduction. The four histories move independently, and the paper asks which of them institutions preserved when they conflicted."@en ;
+    skos:member wr:NumericalReproduction , wr:Classification , wr:EligibilityToFoundPreferredFuture , wr:InstitutionalReproduction .
+
+wr:NumericalReproduction
+    a wr:History , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "numerical reproduction"@en ;
+    skos:definition "Births, deaths and survival among people a given source counts as white. Its evidence is demographic: registration, census and reconstructed series."@en ;
+    skos:related soc:natural-increase , soc:white-fertility-transition , soc:net-migration-growth-contribution , soc:captive-birth .
+
+wr:Classification
+    a wr:History , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "classification"@en ;
+    skos:definition "The rules that decide who counts as white. Its evidence is legal and administrative: statutes, court decisions, census instructions and the records of the officials who applied them. A classified population can grow or shrink because the rules change, without any change in births."@en ;
+    skos:related soc:racial-reclassification , soc:racial-formation , soc:whiteness .
+
+wr:EligibilityToFoundPreferredFuture
+    a wr:History , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "eligibility to found the preferred future"@en ;
+    skos:definition "The narrower standard that names some people as proper progenitors and others as unfit. Its evidence is ideological and administrative: pronatalist and eugenic writing, sterilization boards and marriage law."@en ;
+    skos:related soc:reproductive-eligibility , soc:selective-reproductive-futurity , soc:race-suicide .
+
+wr:InstitutionalReproduction
+    a wr:History , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "institutional reproduction"@en ;
+    skos:definition "The continuation of property, jurisdiction, labor relations and authority. Its evidence is material: land title, inheritance, labor contracts and the reproduction of slaveholding capital."@en ;
+    skos:related soc:settler-social-reproduction , soc:reproductive-expropriation , soc:captive-increase .
+
+# --- The four juridical operations --------------------------------------------
+
+wr:JuridicalOperation
+    a owl:Class ;
+    rdfs:label "Juridical operation"@en ;
+    rdfs:comment "One of the four operations by which antebellum property law divided a child's status, title and anticipated issue across time. Exactly the four individuals below."@en ;
+    owl:equivalentClass [ a owl:Class ; owl:oneOf ( wr:StatusAtBirth wr:TitleToBornChild wr:ClaimOnUnconceivedIssue wr:Manumission ) ] .
+
+wr:juridical-operations
+    a skos:Collection ;
+    skos:prefLabel "four juridical operations"@en ;
+    skos:definition "The child's status at birth, title to an already born child, claims on issue not yet conceived, and later manumission. The cases show reproduction organized as property, and also disputed and variable outcomes, including a successful freedom claim."@en ;
+    skos:member wr:StatusAtBirth , wr:TitleToBornChild , wr:ClaimOnUnconceivedIssue , wr:Manumission .
+
+wr:StatusAtBirth
+    a wr:JuridicalOperation , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "status at birth"@en ;
+    skos:definition "The legal condition a child enters at birth under the specific jurisdiction's status law; in a hereditary-enslavement system, tied to the mother's condition."@en ;
+    skos:related soc:hereditary-enslavement , soc:captive-birth .
+
+wr:TitleToBornChild
+    a wr:JuridicalOperation , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "title to a born child"@en ;
+    skos:definition "Who the owner of record of an already born child is, which may differ from the child's inherited status and may be divided between a life tenant and a remainderman."@en ;
+    skos:related soc:captive-reproductive-title-under-life-tenancy , soc:captive-increase .
+
+wr:ClaimOnUnconceivedIssue
+    a wr:JuridicalOperation , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "claim on unconceived issue"@en ;
+    skos:definition "A legally asserted present interest in the possible future children of a woman held enslaved; an anticipated asset entitlement, not evidence that any child was conceived."@en ;
+    skos:related soc:future-issue-property-claim .
+
+wr:Manumission
+    a wr:JuridicalOperation , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "manumission"@en ;
+    skos:definition "The later freeing of an enslaved person. A mother's manumission does not change the status of a child already born."@en ;
+    skos:related soc:captive-reproductive-title-under-life-tenancy .
+
+# --- Claim evidence statuses ----------------------------------------------------
+
+wr:EvidenceStatus
+    a owl:Class ;
+    rdfs:label "Evidence status"@en ;
+    rdfs:comment "The status the paper gives every claim it states. Exactly the three individuals below."@en ;
+    owl:equivalentClass [ a owl:Class ; owl:oneOf ( wr:Observed wr:MechanisticallyPlausible wr:NotEstablished ) ] .
+
+wr:evidence-statuses
+    a skos:Collection ;
+    skos:prefLabel "claim evidence statuses"@en ;
+    skos:definition "The three statuses the paper attaches to every claim: observed, mechanistically plausible, not established."@en ;
+    skos:member wr:Observed , wr:MechanisticallyPlausible , wr:NotEstablished .
+
+wr:Observed
+    a wr:EvidenceStatus , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "observed"@en ;
+    skos:definition "The cited sources directly show it."@en .
+
+wr:MechanisticallyPlausible
+    a wr:EvidenceStatus , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "mechanistically plausible"@en ;
+    skos:definition "It is consistent with the sources and with a stated mechanism, but rival explanations have not been excluded."@en .
+
+wr:NotEstablished
+    a wr:EvidenceStatus , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "not established"@en ;
+    skos:definition "The available evidence does not decide it, and the paper says what evidence would."@en .
+
+# --- Source reading grades --------------------------------------------------------
+
+wr:ReadingGrade
+    a owl:Class ;
+    rdfs:label "Reading grade"@en ;
+    rdfs:comment "How much of a cited source was actually read: full primary text, publisher abstract, edited transcription, or secondary report. Exactly the four individuals below. Records state this in free text today (see the known gap on the ontology)."@en ;
+    owl:equivalentClass [ a owl:Class ; owl:oneOf ( wr:FullPrimaryText wr:PublisherAbstract wr:EditedTranscription wr:SecondaryReport ) ] .
+
+wr:reading-grades
+    a skos:Collection ;
+    skos:prefLabel "source reading grades"@en ;
+    skos:definition "The record of how much of each cited source was read, which readers are asked to weigh alongside a claim's evidence status."@en ;
+    skos:member wr:FullPrimaryText , wr:PublisherAbstract , wr:EditedTranscription , wr:SecondaryReport .
+
+wr:FullPrimaryText
+    a wr:ReadingGrade , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "full primary text"@en ;
+    skos:definition "The whole primary source was read."@en .
+
+wr:PublisherAbstract
+    a wr:ReadingGrade , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "publisher abstract"@en ;
+    skos:definition "Only the publisher's abstract or summary of the source was read."@en .
+
+wr:EditedTranscription
+    a wr:ReadingGrade , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "edited transcription"@en ;
+    skos:definition "An edited or mediated transcription of the primary source was read, not the original image or manuscript."@en .
+
+wr:SecondaryReport
+    a wr:ReadingGrade , skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "secondary report"@en ;
+    skos:definition "Only a secondary report of the source was read."@en .
+
+# --- Hypothesis and design ---------------------------------------------------------
+
+wr:conditional-selective-futurity
+    a skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "conditional selective futurity"@en ;
+    skos:definition "The paper's originating hypothesis, treated as a conditional claim and not a finding: a regime that calls itself white may spend the lives and reproductive chances of the people it currently classifies as white in pursuit of an ideal future population those people never embody, and in the limiting case the search exhausts the actual population before it reaches its own success condition. The paper does not demonstrate the limiting case; it states the evidence that would test it."@en ;
+    skos:related soc:selective-reproductive-futurity , soc:reproductive-purity-ratchet , soc:institutional-reproductive-expendability , wr:NotEstablished .
+
+wr:revealed-priority-comparison
+    a skos:Concept ;
+    skos:inScheme wr:terms ;
+    skos:prefLabel "revealed-priority comparison"@en ;
+    skos:definition "The paper's design: it compares specific decisions by named institutions in situations where the four histories pulled apart, and asks what each decision preserved. It does not treat whiteness as an actor with intentions and does not ask what a racial category wanted."@en ;
+    skos:related wr:NumericalReproduction , wr:Classification , wr:EligibilityToFoundPreferredFuture , wr:InstitutionalReproduction , soc:institutional-reproductive-expendability , soc:whiteness .
+
+# =============================================================================
+# Properties shared across record kinds
+# =============================================================================
+
+wr:status a owl:DatatypeProperty ;
+    rdfs:label "status"@en ;
+    rdfs:comment "The record's own status string (its `status` or `source_status` key), for example estimated or descriptive-not-causal."@en ;
+    rdfs:domain ns:Record ; rdfs:range xsd:string .
+
+wr:compiledOn a owl:DatatypeProperty ;
+    rdfs:label "compiled on"@en ;
+    rdfs:comment "The date the record was compiled."@en ;
+    rdfs:domain ns:Record ; rdfs:range xsd:date .
+
+wr:source a owl:ObjectProperty ;
+    rdfs:label "source"@en ;
+    rdfs:comment "The source a record, case or event rests on: an IRI, or a SourceReference node."@en .
+
+wr:citesSource a owl:ObjectProperty ;
+    rdfs:label "cites source"@en ;
+    rdfs:domain ns:Record ; rdfs:range wr:SourceReference .
+
+wr:SourceReference a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Source reference"@en ;
+    rdfs:comment "A cited source: a title, a locator and how it was read or graded."@en .
+
+wr:url a owl:ObjectProperty ;
+    rdfs:label "url"@en ;
+    rdfs:domain wr:SourceReference ; rdfs:range owl:Thing .
+
+wr:location a owl:DatatypeProperty ;
+    rdfs:label "location"@en ;
+    rdfs:comment "Where in the source: a page, line range, table or section locator."@en ;
+    rdfs:range xsd:string .
+
+wr:sourceGrade a owl:DatatypeProperty ;
+    rdfs:label "source grade"@en ;
+    rdfs:comment "The compiler's free-text grade of a source (the `grade` key). Not yet a wr:ReadingGrade."@en ;
+    rdfs:range xsd:string .
+
+wr:readingGrade a owl:ObjectProperty ;
+    rdfs:label "reading grade"@en ;
+    rdfs:comment "The reading grade of a source, as one of the four wr:ReadingGrade individuals. Optional until records are revised to state it."@en ;
+    rdfs:range wr:ReadingGrade .
+
+wr:evidenceStatus a owl:ObjectProperty ;
+    rdfs:label "evidence status"@en ;
+    rdfs:comment "The evidence status of a claim, as one of the three wr:EvidenceStatus individuals."@en ;
+    rdfs:range wr:EvidenceStatus .
+
+wr:history a owl:ObjectProperty ;
+    rdfs:label "history"@en ;
+    rdfs:comment "Which of the four histories a piece of evidence bears on."@en ;
+    rdfs:range wr:History .
+
+wr:juridicalOperation a owl:ObjectProperty ;
+    rdfs:label "juridical operation"@en ;
+    rdfs:comment "Which juridical operation a case observation or rule bears on."@en ;
+    rdfs:range wr:JuridicalOperation .
+
+wr:glossaryStatus a owl:DatatypeProperty ;
+    rdfs:label "glossary status"@en ;
+    rdfs:comment "The status string the Sociology glossary carrier states for the term (for example proposed-analytical-distinction or conjectured-mechanism)."@en ;
+    rdfs:domain skos:Concept ; rdfs:range xsd:string .
+
+wr:calculated a owl:ObjectProperty ;
+    rdfs:label "calculated"@en ;
+    rdfs:comment "A node of derived totals a birth reconstruction states, each a measure."@en ;
+    rdfs:domain wr:BirthReconstruction .
+
+wr:summary a owl:ObjectProperty ;
+    rdfs:label "summary"@en ;
+    rdfs:comment "A node summarising a case register as descriptive, not prevalence, with the inferences it forbids."@en ;
+    rdfs:domain wr:CaseRegister .
+
+wr:evidenceEvaluation a owl:ObjectProperty ;
+    rdfs:label "evidence evaluation"@en ;
+    rdfs:comment "A node in which a case register evaluates its own sources, counterevidence and next actions."@en ;
+    rdfs:domain wr:CaseRegister .
+
+wr:consumer a owl:ObjectProperty ;
+    rdfs:label "consumer"@en ;
+    rdfs:comment "The software or paper claim that reads the record, with the read authority it was given."@en ;
+    rdfs:domain ns:Record .
+
+wr:claimId a owl:DatatypeProperty ;
+    rdfs:label "claim id"@en ;
+    rdfs:comment "The identifier of the paper claim that consumes the record (for example WI-08)."@en ;
+    rdfs:range xsd:string .
+
+# Measures: numeric values whose names are the record's own (raw_counts,
+# computed_statistics, calculated, facts, summary fields). They live in an open
+# namespace and are not declared as properties one by one.
+wr:measureNamespace a owl:AnnotationProperty ;
+    rdfs:label "measure namespace"@en ;
+    rdfs:comment "Open namespace https://561.group/knowledge/white-repopulation/measure# holds the named measures and facts that records state under raw_counts, computed_statistics, calculated, facts and similar keys. Their names are the records' own and their number is unbounded, so they are not declared as OWL properties; the shapes constrain the ones that carry a checkable invariant (percentages lie in 0..100)."@en .
+
+# =============================================================================
+# Record kinds
+# =============================================================================
+
+# --- Birth reconstruction (demography) -----------------------------------------
+
+wr:BirthReconstruction a owl:Class ;
+    rdfs:subClassOf ns:Record ;
+    rdfs:label "Birth reconstruction"@en ;
+    rdfs:comment "Record kind lenticule.science.demography.birth-reconstruction.v1: modeled births into slavery and estimated all U.S. births, by year and decade, with the assumed 1790s birth rate and its sensitivity. Estimated, not observed; it does not measure forced reproduction or individual births."@en ;
+    rdfs:seeAlso soc:captive-birth , soc:hereditary-enslavement , soc:natural-increase .
+
+wr:AnnualBirths a owl:Class ;
+    rdfs:label "Annual births"@en ;
+    rdfs:comment "One year's estimated U.S. births, in thousands."@en .
+
+wr:annualBirths a owl:ObjectProperty ;
+    rdfs:label "annual births"@en ;
+    rdfs:domain wr:BirthReconstruction ; rdfs:range wr:AnnualBirths .
+
+wr:year a owl:DatatypeProperty ;
+    rdfs:label "year"@en ;
+    rdfs:range xsd:integer .
+
+wr:birthsThousands a owl:DatatypeProperty ;
+    rdfs:label "births (thousands)"@en ;
+    rdfs:domain wr:AnnualBirths ; rdfs:range xsd:integer .
+
+wr:captiveBirthsByDecade a owl:ObjectProperty ;
+    rdfs:label "captive births by decade"@en ;
+    rdfs:comment "RDF list of modeled births into slavery per decade, 1790s onward."@en ;
+    rdfs:domain wr:BirthReconstruction .
+
+wr:meanPopulation1790s a owl:DatatypeProperty ;
+    rdfs:label "mean population, 1790s"@en ;
+    rdfs:domain wr:BirthReconstruction ; rdfs:range xsd:integer .
+
+wr:assumedCrudeBirthRate1790sPerThousand a owl:DatatypeProperty ;
+    rdfs:label "assumed 1790s crude birth rate per thousand"@en ;
+    rdfs:comment "An assumption, not a measurement; the record's sensitivities vary it."@en ;
+    rdfs:domain wr:BirthReconstruction ; rdfs:range xsd:decimal .
+
+wr:Sensitivity a owl:Class ;
+    rdfs:label "Sensitivity"@en ;
+    rdfs:comment "The captive-birth share recomputed under one assumed 1790s crude birth rate."@en .
+
+wr:sensitivity a owl:ObjectProperty ;
+    rdfs:domain wr:BirthReconstruction ; rdfs:range wr:Sensitivity .
+
+wr:assumedRate a owl:DatatypeProperty ;
+    rdfs:domain wr:Sensitivity ; rdfs:range xsd:decimal .
+
+# --- Case register (jurisprudence) -----------------------------------------------
+
+wr:CaseRegister a owl:Class ;
+    rdfs:subClassOf ns:Record ;
+    rdfs:label "Case register"@en ;
+    rdfs:comment "Record kind lenticule.sociology.antebellum-reproductive-property-case-observations.v1: purposively selected antebellum cases and letters with source locators, read status, observations and limits. Descriptive, not prevalence: the universe of cases is not ascertained."@en ;
+    rdfs:seeAlso soc:captive-reproductive-title-under-life-tenancy , soc:future-issue-property-claim , soc:captive-increase .
+
+wr:PrimaryHistoricalCaseExtraction a owl:Class ;
+    rdfs:subClassOf ns:Record ;
+    rdfs:label "Primary historical case extraction"@en ;
+    rdfs:comment "The `type` string primary-historical-case-extraction, carried by case registers alongside their kind."@en .
+
+wr:CaseRecord a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Case record"@en ;
+    rdfs:comment "One case or letter in a case register: jurisdiction, year, citation, source, how it was read, persons, facts, legal rules, disposition and limits."@en .
+
+wr:JudicialOpinion a owl:Class ; rdfs:subClassOf wr:CaseRecord ; rdfs:label "Judicial opinion"@en ;
+    rdfs:comment "kind judicial-opinion."@en .
+wr:FreedomPetitionOpinion a owl:Class ; rdfs:subClassOf wr:CaseRecord ; rdfs:label "Freedom-petition court opinion"@en ;
+    rdfs:comment "kind freedom-petition-court-opinion."@en .
+wr:SecondaryExtractedOpinion a owl:Class ; rdfs:subClassOf wr:CaseRecord ; rdfs:label "Reported judicial opinion, secondary extraction"@en ;
+    rdfs:comment "kind reported-judicial-opinion-secondary-extraction: the original opinion was not retrieved."@en .
+wr:EnslaverCorrespondence a owl:Class ; rdfs:subClassOf wr:CaseRecord ; rdfs:label "Enslaver correspondence"@en ;
+    rdfs:comment "kind enslaver-correspondence."@en .
+
+wr:hasCase a owl:ObjectProperty ;
+    rdfs:label "has case"@en ;
+    rdfs:domain wr:CaseRegister ; rdfs:range wr:CaseRecord .
+
+wr:selectionRule a owl:DatatypeProperty ;
+    rdfs:label "selection rule"@en ;
+    rdfs:comment "How the cases were chosen; purposive, so no prevalence follows."@en ;
+    rdfs:domain wr:CaseRegister ; rdfs:range xsd:string .
+
+wr:universeNotAscertained a owl:DatatypeProperty ;
+    rdfs:label "universe not ascertained"@en ;
+    rdfs:comment "True when the population of cases the register was drawn from is unknown."@en ;
+    rdfs:domain wr:CaseRegister ; rdfs:range xsd:boolean .
+
+wr:caseName a owl:DatatypeProperty ; rdfs:label "case name"@en ; rdfs:domain wr:CaseRecord ; rdfs:range xsd:string .
+wr:jurisdiction a owl:DatatypeProperty ; rdfs:label "jurisdiction"@en ; rdfs:range xsd:string .
+wr:decisionYear a owl:DatatypeProperty ; rdfs:label "decision year"@en ; rdfs:domain wr:CaseRecord ; rdfs:range xsd:integer .
+wr:citation a owl:DatatypeProperty ; rdfs:label "citation"@en ; rdfs:domain wr:CaseRecord ; rdfs:range xsd:string .
+wr:sourceLocator a owl:DatatypeProperty ; rdfs:label "source locator"@en ; rdfs:domain wr:CaseRecord ; rdfs:range xsd:string .
+wr:legalRule a owl:DatatypeProperty ; rdfs:label "legal rule"@en ; rdfs:comment "A rule of law the case is read to state."@en ; rdfs:domain wr:CaseRecord ; rdfs:range xsd:string .
+wr:courtDisposition a owl:DatatypeProperty ; rdfs:label "court disposition"@en ; rdfs:domain wr:CaseRecord ; rdfs:range xsd:string .
+wr:facts a owl:ObjectProperty ; rdfs:label "facts"@en ; rdfs:comment "A node of case facts, each a measure in the open measure namespace."@en ; rdfs:domain wr:CaseRecord .
+wr:secondarySource a owl:ObjectProperty ; rdfs:label "secondary source"@en ; rdfs:domain wr:CaseRecord .
+wr:relatedSource a owl:ObjectProperty ; rdfs:label "related source"@en ; rdfs:domain wr:CaseRecord .
+wr:personName a owl:DatatypeProperty ; rdfs:label "person name"@en ; rdfs:range xsd:string .
+wr:personRole a owl:DatatypeProperty ; rdfs:label "person role"@en ; rdfs:range xsd:string .
+wr:person a owl:ObjectProperty ; rdfs:label "person"@en ; rdfs:comment "A person named in a case or source, with the role the source gives them."@en ; rdfs:domain wr:CaseRecord .
+
+wr:CaseObservation a owl:Class ;
+    rdfs:label "Case observation"@en ;
+    rdfs:comment "One observation read from a case: a predicate, a value, where it was read and its unit."@en .
+wr:caseObservation a owl:ObjectProperty ; rdfs:domain wr:CaseRecord ; rdfs:range wr:CaseObservation .
+wr:predicate a owl:DatatypeProperty ; rdfs:label "predicate"@en ; rdfs:range xsd:string .
+wr:value a owl:DatatypeProperty ; rdfs:label "value"@en ; rdfs:comment "The observed value; its datatype follows the observation."@en .
+wr:unit a owl:DatatypeProperty ; rdfs:label "unit"@en ; rdfs:range xsd:string .
+
+# --- Primary testimony extraction -------------------------------------------------
+
+wr:TestimonyExtraction a owl:Class ;
+    rdfs:subClassOf ns:Record ;
+    rdfs:label "Testimony extraction"@en ;
+    rdfs:comment "Record kind lenticule.science.sociology.primary-testimony-extraction.v1: source-attributed observations from one mediated retrospective testimony, each with what it is valid and not valid for. Testimony, not prevalence."@en ;
+    rdfs:seeAlso soc:directed-captive-reproductive-coercion , soc:reproductive-expropriation .
+
+wr:sourceIdentity a owl:ObjectProperty ; rdfs:label "source identity"@en ; rdfs:domain wr:TestimonyExtraction .
+wr:testimonyObservation a owl:ObjectProperty ; rdfs:domain wr:TestimonyExtraction ; rdfs:range wr:TestimonyObservation .
+
+wr:TestimonyObservation a owl:Class ;
+    rdfs:label "Testimony observation"@en ;
+    rdfs:comment "One observation from a testimony, with the voice that speaks it, the grade of the observation and its explicit validity bounds."@en .
+wr:sourceVoice a owl:DatatypeProperty ; rdfs:domain wr:TestimonyObservation ; rdfs:range xsd:string .
+wr:claim a owl:DatatypeProperty ; rdfs:label "claim"@en ; rdfs:range xsd:string .
+wr:observationGrade a owl:DatatypeProperty ; rdfs:comment "The compiler's free-text grade of an observation (the `observation_grade` key)."@en ; rdfs:range xsd:string .
+wr:validFor a owl:DatatypeProperty ; rdfs:comment "What the observation may be used to support."@en ; rdfs:domain wr:TestimonyObservation ; rdfs:range xsd:string .
+wr:notValidFor a owl:DatatypeProperty ; rdfs:comment "What the observation must not be used to support."@en ; rdfs:domain wr:TestimonyObservation ; rdfs:range xsd:string .
+
+wr:SecondaryInterpretation a owl:Class ;
+    rdfs:label "Secondary interpretation"@en ;
+    rdfs:comment "A later scholarly reading of the testimony, kept apart from the observations."@en .
+wr:secondaryInterpretation a owl:ObjectProperty ; rdfs:domain wr:TestimonyExtraction ; rdfs:range wr:SecondaryInterpretation .
+wr:chronologyNote a owl:DatatypeProperty ; rdfs:range xsd:string .
+
+# --- Racial-eligibility legislative events ------------------------------------------
+
+wr:LegislativeEventSequence a owl:Class ;
+    rdfs:subClassOf ns:Record ;
+    rdfs:label "Legislative event sequence"@en ;
+    rdfs:comment "Record kind lenticule.science.sociology.racial-eligibility-legislative-events.v1: dated enacted and unenacted events in one jurisdiction's racial-classification law, each with its criterion, source, inference and limits. Enacted law and proposals are distinguished by state."@en ;
+    rdfs:seeAlso soc:racial-reclassification , soc:reproductive-eligibility , soc:racial-formation .
+
+wr:legislativeEvent a owl:ObjectProperty ; rdfs:domain wr:LegislativeEventSequence ; rdfs:range wr:LegislativeEvent .
+
+wr:LegislativeEvent a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Legislative event"@en ;
+    rdfs:comment "One dated event: an enacted law, an introduced bill, or a bill passed by one house and postponed by the other."@en .
+
+wr:LegislativeState a owl:Class ;
+    rdfs:label "Legislative state"@en ;
+    rdfs:comment "The state of a legislative event. Exactly the three individuals below."@en ;
+    owl:equivalentClass [ a owl:Class ; owl:oneOf ( wr:Enacted wr:BillIntroducedNotEnacted wr:HouseApprovedSenatePostponed ) ] .
+wr:Enacted a wr:LegislativeState ; rdfs:label "enacted"@en ; rdfs:comment "Became law."@en .
+wr:BillIntroducedNotEnacted a wr:LegislativeState ; rdfs:label "bill introduced, not enacted"@en ; rdfs:comment "A proposal; not law and not observable enforcement."@en .
+wr:HouseApprovedSenatePostponed a wr:LegislativeState ; rdfs:label "house approved, senate postponed"@en ; rdfs:comment "Passed one house and postponed indefinitely by the other; not law. Requires a later disposition."@en .
+
+wr:legislativeState a owl:ObjectProperty ; rdfs:domain wr:LegislativeEvent ; rdfs:range wr:LegislativeState .
+wr:eventDate a owl:DatatypeProperty ; rdfs:domain wr:LegislativeEvent ; rdfs:range xsd:date .
+wr:legalObject a owl:DatatypeProperty ; rdfs:domain wr:LegislativeEvent ; rdfs:range xsd:string .
+wr:criterion a owl:DatatypeProperty ; rdfs:domain wr:LegislativeEvent ; rdfs:range xsd:string .
+wr:inference a owl:DatatypeProperty ; rdfs:comment "The inference the compiler draws from the event, stated as the compiler's and not as the law's."@en ; rdfs:range xsd:string .
+wr:policyImplication a owl:DatatypeProperty ; rdfs:domain wr:LegislativeEvent ; rdfs:range xsd:string .
+wr:laterDisposition a owl:ObjectProperty ; rdfs:domain wr:LegislativeEvent .
+wr:indigenousResponse a owl:ObjectProperty ; rdfs:domain wr:LegislativeEvent .
+wr:conclusion a owl:DatatypeProperty ; rdfs:domain wr:LegislativeEventSequence ; rdfs:range xsd:string .
+wr:researchQuestion a owl:DatatypeProperty ; rdfs:domain wr:LegislativeEventSequence ; rdfs:range xsd:string .
+wr:reference a owl:ObjectProperty ; rdfs:domain ns:Record .
+
+# --- Growth components -----------------------------------------------------------
+
+wr:GrowthComponents a owl:Class ;
+    rdfs:subClassOf ns:Record ;
+    rdfs:label "Growth components"@en ;
+    rdfs:comment "Record kind lenticule.science.demography.growth-components.v1: a reported secondary series of net international migration as a share of total national population growth, by interval. All residents counted by the historical series; not white-specific, not a share of births."@en ;
+    rdfs:seeAlso soc:net-migration-growth-contribution , soc:natural-increase .
+
+wr:GrowthInterval a owl:Class ;
+    rdfs:label "Growth interval"@en ;
+    rdfs:comment "One interval of the series, with net migration's percentage of total growth."@en .
+wr:interval a owl:ObjectProperty ; rdfs:domain wr:GrowthComponents ; rdfs:range wr:GrowthInterval .
+wr:startYear a owl:DatatypeProperty ; rdfs:domain wr:GrowthInterval ; rdfs:range xsd:integer .
+wr:endYear a owl:DatatypeProperty ; rdfs:domain wr:GrowthInterval ; rdfs:range xsd:integer .
+wr:netMigrationShareOfTotalGrowthPct a owl:DatatypeProperty ; rdfs:domain wr:GrowthInterval ; rdfs:range xsd:decimal .
+wr:population a owl:DatatypeProperty ; rdfs:comment "The statistical population the series counts."@en ; rdfs:domain wr:GrowthComponents ; rdfs:range xsd:string .
+wr:measure a owl:DatatypeProperty ; rdfs:comment "What the series measures."@en ; rdfs:domain wr:GrowthComponents ; rdfs:range xsd:string .
+wr:sourceLabel a owl:DatatypeProperty ; rdfs:domain wr:GrowthComponents ; rdfs:range xsd:string .
+
+# --- Quantitative documentary evidence (eugenic sterilization measurements) -------------
+
+wr:QuantitativeDocumentaryEvidence a owl:Class ;
+    rdfs:subClassOf ns:Record ;
+    rdfs:label "Quantitative documentary evidence"@en ;
+    rdfs:comment "Record type quantitative-documentary-evidence: raw counts and computed statistics from documentary sources, with their calculation definitions, the things unmeasured and the series that must not be pooled. The first instance is the 2026-10-17 eugenic-sterilization and population-classification measurements (North Carolina, Utah, census). Descriptive, not causal."@en ;
+    rdfs:seeAlso soc:reproductive-purity-ratchet , soc:reproductive-eligibility , soc:racial-reclassification .
+
+wr:scope a owl:DatatypeProperty ; rdfs:domain wr:QuantitativeDocumentaryEvidence ; rdfs:range xsd:string .
+wr:sourceRecord a owl:ObjectProperty ; rdfs:subPropertyOf wr:citesSource ; rdfs:domain wr:QuantitativeDocumentaryEvidence ; rdfs:range wr:SourceReference .
+wr:rawCounts a owl:ObjectProperty ; rdfs:comment "Groups of raw counts, each group a node of measures."@en ; rdfs:domain wr:QuantitativeDocumentaryEvidence .
+wr:computedStatistics a owl:ObjectProperty ; rdfs:comment "A node of computed statistics, each a measure."@en ; rdfs:domain wr:QuantitativeDocumentaryEvidence .
+wr:calculationDefinitions a owl:ObjectProperty ; rdfs:comment "A node of the formulas the computed statistics follow."@en ; rdfs:domain wr:QuantitativeDocumentaryEvidence .
+wr:notPooled a owl:DatatypeProperty ; rdfs:comment "A series the record states must not be pooled with the others."@en ; rdfs:domain wr:QuantitativeDocumentaryEvidence ; rdfs:range xsd:string .
+
+# =============================================================================
+# Glossary concepts, projected from the Sociology glossary carriers at the pinned commit
+# b2ed3deb14568861b3fcee921c40f2cf11b70cbe
+# Each keeps its house glossary IRI (soc:) and is added to wr:terms.
+# =============================================================================
+soc:white-increase
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "white increase"@en ;
+    skos:notation "white-increase" ;
+    skos:definition "White increase has three nonidentical possible meanings. (1) Classified population increase: births, deaths, net migration and changes in whom a given jurisdiction calls white. (2) Admissible reproducer increase: expansion or contraction of those deemed suitable to produce an allegedly ideal white future. (3) Institutional increase: reproduction of settler property, hierarchy and state power that may incorporate the reproductive labor of people excluded from the white category. Crucial distinction: the actual population can be expended or deprived of the conditions of family continuity without a formal narrowing of eligibility. The proposed ideal progenitors are the deferred possibility of breeding an imagined type, not current white people whose biology is presently being improved. An institution may sustain racialized property while disregarding their survival; this needs causal policy evidence, not demographic correlation. The opening research conjecture is that eugenic purification can shrink (2) despite professed allegiance to (1), while (3) can persist by different mechanisms. None of the three entails either other. The central test is whether time to loss of supported reproductive continuity precedes time to produce the allegedly legitimate group of at least two reproducers under a changing purity rule. Pedigree problems of exactly two founders are secondary, not the Leader's principal claim. See whiteness, racial formation and reproductive purity ratchet."@en ;
+    wr:glossaryStatus "proposed-analytical-distinction"@en ;
+    skos:related soc:institutional-reproductive-expendability , soc:racial-formation , soc:reproductive-purity-ratchet , soc:whiteness ;
+    dcterms:identifier "urn:uuid:7cd8e2c4-d053-4cbb-a426-176751064f9e" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/white-increase.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:730f790006685a8d6474c48a8769bcfdeebf1183> .
+
+soc:racial-formation
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "racial formation"@en ;
+    skos:notation "racial-formation" ;
+    skos:definition "Racial formation is the historical production, contestation, revision and enforcement of racial categories, meanings and their material consequences. It does not identify genetically isolated human species. Racial classification is an institutional outcome: a population comparison must declare the dated classification rule, jurisdiction, census coverage, and changes in membership. For the white-increase inquiry, distinguish persons classified white from persons whose reproduction is recognized as fit to produce a designated white future. The latter can be a strict subset. Category changes may alter recorded white populations with no birth or death. Consult white increase, whiteness and the source-owned research note."@en ;
+    skos:related soc:white-increase , soc:whiteness ;
+    dcterms:identifier "urn:uuid:0283ee35-d602-4dc4-b719-c7761709923f" ;
+    dcterms:created "2025-09-20"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/racial-formation.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:53985c5bb5814e0c98ba0bd6ecd13c3e21ac725f> .
+
+soc:institutional-reproductive-expendability
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "institutional reproductive expendability"@en ;
+    skos:notation "institutional-reproductive-expendability" ;
+    skos:definition "Observable institutional willingness to bear or impose predictable losses of a group's reproductive opportunities, family security or survival while maintaining some other institutional objective such as capital accumulation, racial status, national belonging or a purported ideal future lineage."@en ;
+    skos:scopeNote "Not a literal preference of an anthropomorphized 'whiteness'. This construct requires an actual policy choice, available alternative, decision-maker and observed cost. Poverty and declining births by themselves do not establish a coordinated ideological preference; many harms have nonracial and competing causes."@en ;
+    wr:glossaryStatus "proposed analytic distinction"@en ;
+    skos:related soc:selective-reproductive-futurity , soc:white-increase ;
+    dcterms:identifier "urn:uuid:3340a1f1-aabd-5cf5-aefd-52ac7648fb1c" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/institutional-reproductive-expendability.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:949028b367e6f6cc6f4a972f99ac17a098abf862> .
+
+soc:captive-increase
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "captive increase"@en ;
+    skos:notation "captive-increase" ;
+    skos:definition "An enslaver's or property's 'increase' may refer to children born to people held enslaved and, in some legal contexts, a distinct claim over the potential future descendants of an enslaved woman. It thus names the juridical transfer of reproductive possibility into the owner's anticipated capital."@en ;
+    skos:scopeNote "Do not confuse growth of the enslaved population through natural increase, a legal title to future issue, a domestic sale of existing persons, and deliberately compelled reproduction. They require distinct sources and cannot be summed as one event count."@en ;
+    wr:glossaryStatus "historical legal-economic terminology"@en ;
+    skos:related soc:captive-reproductive-title-under-life-tenancy , soc:future-issue-property-claim ;
+    dcterms:identifier "urn:uuid:b6891cc3-8fcd-59ef-ae6a-c932155e061a" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/captive-increase.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:cd651d4352176438ee2395134a4d009e606d0f08> .
+
+soc:captive-reproductive-title-under-life-tenancy
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "captive reproductive title under life tenancy"@en ;
+    skos:notation "captive-reproductive-title-under-life-tenancy" ;
+    skos:definition "A legal division in slaveholding property where one person claimed temporary possession or services from an enslaved mother (life tenant) and another claimed the subsequent interest (remainderman), while courts separately adjudicated who could claim children she bore during the tenancy. Do not confuse the child's inherited legal condition with the person's owner of record, or the mother's eventual manumission with the child's already acquired status. In North Carolina Covington v McEntire (1842), four children of Binah followed a remainderman's entitlement; Delaware Smith v Milman (1839) rejected using the maternal-status maxim to decide ownership and ordered petitioner Stephen free; Kentucky Johnson (1848) granted mother Lytha freedom while her seven children remained enslaved and were allocated to the widow's estate. These are different dated jurisdictions and legal constructions, not a harmonized single rule. The full case extraction provides source locators, exceptions and read grades. Related: future issue property claim and captive increase."@en ;
+    wr:glossaryStatus "historical-jurisprudence-distinction"@en ;
+    skos:related soc:captive-increase , soc:future-issue-property-claim ;
+    dcterms:identifier "urn:uuid:4e6e059b-4f04-524e-a821-8abca2e014db" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/captive-reproductive-title-under-life-tenancy.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:859f5d5e39b7b78521560c3d2ff68f25f19ae9d1> .
+
+soc:directed-captive-reproductive-coercion
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "directed captive reproductive coercion"@en ;
+    skos:notation "directed-captive-reproductive-coercion" ;
+    skos:definition "A specified action by an enslaver or delegated controller compelling enslaved people to form, sustain or undertake a reproductive/sexual relationship, with the aim of producing descendants, or coercing reproductive circumstances without a person's free agreement. This is a historical practice, not the same thing as the legal transfer of a child's status or the statistical observation of enslaved births."@en ;
+    wr:glossaryStatus "historically-observed-mechanism"@en ;
+    skos:broader soc:reproductive-expropriation ;
+    skos:related soc:captive-birth , soc:reproductive-expropriation ;
+    dcterms:identifier "urn:uuid:b41abda3-a5d0-5179-9900-b1e641c14a08" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/directed-captive-reproductive-coercion.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:edd91739a5a17e53bfb9c71fb97aabb2b6ffb5b4> .
+
+soc:hereditary-enslavement
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "hereditary enslavement"@en ;
+    skos:notation "hereditary-enslavement" ;
+    skos:definition "A legal system under which a child inherits an enslaved status by operation of law. In Virginia’s December 1662 statute the child's condition was tied explicitly to the mother's condition, in contrast to a contrary English-law expectation regarding paternal status."@en ;
+    skos:scopeNote "This is a legal relationship, not evidence of a genetically hereditary human defect; jurisdictions and legal eras vary. Do not conflate enslaved parental status, an individual's genealogy, racial classification, and the claims asserted by an enslaver."@en ;
+    wr:glossaryStatus "historical legal institution"@en ;
+    skos:related soc:captive-birth ;
+    dcterms:identifier "urn:uuid:7ba5f73c-4060-5770-af4c-5919a52226c1" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/hereditary-enslavement.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:91d78d728fff31cc8b44b3a9b85d5bf6e74fb2a3> .
+
+soc:future-issue-property-claim
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "future issue property claim"@en ;
+    skos:notation "future-issue-property-claim" ;
+    skos:definition "A legally asserted present interest in the possible future children of a woman held enslaved, which an enslaver attempted to make available for transfer, testamentary distribution or later adjudication. This is not identical to a child who has already been born, a current ownership right over that child, a forced conception, or a verified monetary realization. A source for such a claim must specify the jurisdiction, event date, document or deed/will, possible future persons, actual owners/claimants, and whether a court held the claim enforceable or merely quoted a party's desire. Alphonso 2023 discusses Banks' Administrator v. Marksberry (1823) as transferable future issue; its original judicial report remains a required original-source check. Nelson (1849) shows a will's attempted assignment of future issue whose temporal reach the court limited. A legal claim upon an unconceived child is an anticipated asset entitlement, not evidence that the child was conceived, survived or was produced under directed sexual coercion. For original opinion and linked observations, see case analysis. Related: captive increase, reproductive expropriation."@en ;
+    wr:glossaryStatus "historical-legal-analytic-definition"@en ;
+    skos:related soc:captive-increase , soc:captive-reproductive-title-under-life-tenancy , soc:reproductive-expropriation ;
+    dcterms:identifier "urn:uuid:392bcc0b-6b44-540f-9e7b-7be89b63802c" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/future-issue-property-claim.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:bbd84bbe483fcd59fbc65361b83354fb24a738f9> .
+
+soc:reproductive-purity-ratchet
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "reproductive purity ratchet"@en ;
+    skos:notation "reproductive-purity-ratchet" ;
+    skos:definition "Reproductive purity ratchet names an unassayed historical selection feedback: institutions unable to produce an imagined acceptable reproductive lineage keep tightening the eligibility rule, consuming the cohort's reproductive continuity before an end condition of at least two acceptable reproducers is ever met. Its distinctive prediction concerns relative times to a moving goal and demographic failure, not a historical claim that all whiteness converges biologically or that exactly two people remain. This ratchet is only one possible mechanism, not a synonym for the whole original conjecture. A non-ratchet mechanism could exhaust actual white-classified households through economic and political institutions without repeatedly tightening explicit reproductive criteria; both require evidence that reproductive sacrifice was accepted in pursuit of the purported ideal rather than merely co-occurring with it. Evidence that some white people were sterilized or excluded through eugenic criteria (Stubblefield 2007; Caron 2008) establishes an internal exclusion mechanism but does not establish self-reinforcing escalation, demographic collapse or deliberate pursuit of extinction. Test by tracing policy changes, justifications, eligible groups, actual births and survival, migration and pro-natalist countereffects. If the criteria broaden, stop escalating, or do not reduce reproductive continuity, the ratchet hypothesis is weakened or falsified. Full research specification; white increase."@en ;
+    wr:glossaryStatus "conjectured-mechanism"@en ;
+    skos:related soc:white-increase , soc:whiteness ;
+    dcterms:identifier "urn:uuid:52da7c09-30e3-4ac7-a3e6-952e73e8bf10" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/reproductive-purity-ratchet.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:b1af224f6850c5ceff2295348cb71059115c58fc> .
+
+soc:captive-birth
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "captive birth"@en ;
+    skos:notation "captive-birth" ;
+    skos:definition "A live birth whose newborn enters an inherited legal condition of enslavement under the specific jurisdiction’s status law. The unit is the newborn birth event, not a price transaction, slave schedule count, forced conception, immigration event, or proof of consent."@en ;
+    skos:scopeNote "Specify law, period, territory, mother's legal status and whether the source observes actual births or models them retrospectively. Hacker 2020 estimates births into U.S. slavery; the associated ratio to all counted U.S. births must share a coherent territorial denominator and acknowledge excluded Indigenous populations."@en ;
+    wr:glossaryStatus "historical measurement term"@en ;
+    skos:related soc:directed-captive-reproductive-coercion , soc:hereditary-enslavement ;
+    dcterms:identifier "urn:uuid:33de38c4-a178-5d76-a0f2-6bb3b7731e09" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/captive-birth.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:d2c2deac13c4f3342535f8c02e3df9e5343dfd88> .
+
+soc:reproductive-expropriation
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "reproductive expropriation"@en ;
+    skos:notation "reproductive-expropriation" ;
+    skos:definition "The seizure of rights, control, labor, children, kinship recognition or economic value associated with another person's reproductive activity or possible descendants. Under hereditary slavery, the captive child's status and transferability could constitute wealth or labor claims for someone other than the parent or child."@en ;
+    skos:scopeNote "Distinguish (a) expropriation of a future child by status law, (b) coerced conception or pairing of named persons, and (c) a specifically organized breeding establishment. One is neither proof nor a complete measure of another. This term does not erase kinship and resistance among enslaved people."@en ;
+    wr:glossaryStatus "historical analytic mechanism"@en ;
+    skos:related soc:directed-captive-reproductive-coercion , soc:future-issue-property-claim ;
+    dcterms:identifier "urn:uuid:d0eeaa4f-736e-585b-a727-debe1ff4b886" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/reproductive-expropriation.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:896cb8a083d7380e9f1df3c5a165492db594b8e7> .
+
+soc:reproductive-eligibility
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "reproductive eligibility"@en ;
+    skos:notation "reproductive-eligibility" ;
+    skos:definition "The subset of people whom a specified institution, policy or ideological actor designates entitled, fit, legally able or materially supported to have recognized descendants. Eligibility is historically contingent and may be narrower or broader than the demographic category called white."@en ;
+    skos:scopeNote "Do not reify a social or eugenic criterion as real biological fitness. Separate coercive prohibition, social stigmatization, pronatalist benefits and practical material capacity. Report the period and legal institution before counting eligibility."@en ;
+    wr:glossaryStatus "operational historical variable"@en ;
+    skos:related soc:selective-reproductive-futurity ;
+    dcterms:identifier "urn:uuid:eed3eef2-2fe0-5bca-a847-70876c2e4ef3" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/reproductive-eligibility.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:99002b8e9e60f4bc01287273a938e8790de25661> .
+
+soc:selective-reproductive-futurity
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "selective reproductive futurity"@en ;
+    skos:notation "selective-reproductive-futurity" ;
+    skos:definition "An institutional situation in which the legitimate population promised for the future is not identical to living people presently included in the privileged category. Present members can be disqualified, exploited, or deprived because selection is organized around an imagined future kind of reproducer, rather than the continued flourishing of the existing people."@en ;
+    skos:scopeNote "Do not infer a singular institution or purpose from co-occurring harms. Establish the stated ideal, observable authority over real people, decisions showing willingness to bear reproduction costs, and actual counterfactual alternatives. The client’s 'at least two' image is a hypothetical success threshold, not a genetic research target."@en ;
+    wr:glossaryStatus "conjectured mechanism"@en ;
+    skos:related soc:institutional-reproductive-expendability , soc:race-suicide , soc:reproductive-eligibility ;
+    dcterms:identifier "urn:uuid:60ba7868-615a-511a-af6f-689708724b25" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/selective-reproductive-futurity.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:91f63147ff8c8c913f3edcad68d94f1fc00dfcdb> .
+
+soc:settler-social-reproduction
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "settler social reproduction"@en ;
+    skos:notation "settler-social-reproduction" ;
+    skos:definition "The continued realization of a settler political-economic order through land control, legal jurisdiction, household continuity, inheritance, labor relations, state power, migration and demographic events. Reproducing settler rule is not identical to increasing births among people classified white or to the reproduction of Indigenous communities subject to dispossession."@en ;
+    skos:scopeNote "Recover the actual polity and its legal boundaries. Distinguish continuing settler institutions from self-replacing population cohorts, coercively replenished labor populations and Indigenous nationhood. A national immigrant-growth share alone does not measure settler reproduction."@en ;
+    wr:glossaryStatus "proposed analytic focus"@en ;
+    dcterms:identifier "urn:uuid:aff664fc-f6f4-59e6-a32f-4043c08bfb49" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/settler-social-reproduction.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:fc648a8452b9e1d0032183e2150f874fefb936c8> .
+
+soc:natural-increase
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "natural increase"@en ;
+    skos:notation "natural-increase" ;
+    skos:definition "Population births minus deaths during a defined period, within a consistently specified jurisdiction and counting convention. Natural increase is a population-flow component and can be positive or negative; it is not the crude birth rate or the number of children born to a particular class of settlers."@en ;
+    skos:scopeNote "Do not equate natural increase with all growth or immigrant independence: adults who previously migrated can produce births counted as local natural increase. Historical data and census administrative categories may change; the U.S. 1790s natural increase estimate does not supply that decade's crude birth rate."@en ;
+    wr:glossaryStatus "demographic accounting term"@en ;
+    dcterms:identifier "urn:uuid:d71e8290-7c94-5e98-a7bc-c1c1f6e11515" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/natural-increase.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:60e3c98ad595a9ab7e8f9b7c787e9e7a99a9a520> .
+
+soc:net-migration-growth-contribution
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "net migration contribution to population growth"@en ;
+    skos:altLabel "net migration growth contribution"@en ;
+    skos:notation "net-migration-growth-contribution" ;
+    skos:definition "The contribution of arrivals minus departures to change in a defined population, often expressed as a fraction of net total growth, not of births and not of existing residents. It may exceed 100% when natural increase is negative."@en ;
+    skos:scopeNote "For Canada and Australia recent national shares aggregate residents of varied ancestry, citizenship and status. They are not rates of white settlers replacing themselves through migrants. A source must specify domestic versus international migration, temporary residents, age, period and category."@en ;
+    wr:glossaryStatus "demographic accounting term"@en ;
+    dcterms:identifier "urn:uuid:3aee61af-0c6a-5cc1-a25f-94b8a3f49056" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/net-migration-growth-contribution.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:c686d07bdec02ebbb9ee330e649ad28dd8beaf3f> .
+
+soc:race-suicide
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "race suicide"@en ;
+    skos:notation "race-suicide" ;
+    skos:definition "Race suicide was a racist and eugenic claim that too few children were being born among selected white, native-born Protestant groups relative to other groups. Advocates of this ideology both encouraged births among those declared fit and restricted reproduction among those deemed unfit, especially across class and other racialized criteria. This is a description of historical doctrine, not scientific support for a biological white race, a measured contemporary population crisis or a universal cause of low fertility. Simone M. Caron, Who Chooses?, chapter 3 (2008), reconstructs its historical forms. The 2026 Science inquiry inverts the advocates' diagnosis by asking whether purity responses may themselves erode the reproduction they claim to protect. These propositions are not the same."@en ;
+    wr:glossaryStatus "historical-concept"@en ;
+    skos:related soc:selective-reproductive-futurity ;
+    dcterms:identifier "urn:uuid:1e032619-8665-445b-b9a8-69aa1454db7d" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/race-suicide.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:be05bec82853e167bf867cf140ecc3c585ac3acd> .
+
+soc:white-fertility-transition
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "white fertility transition"@en ;
+    skos:notation "white-fertility-transition" ;
+    skos:definition "The change over time in fertility measures among people classified white under specific U.S. census rules, including total fertility, marital fertility, nuptiality, child–woman ratios and own-children reconstruction. These indicators are not automatically estimates of the same underlying parameter."@en ;
+    skos:scopeNote "Haines–Hacker (2006) report child–woman ratio decline across 1800–1860, while Hacker (2003) reconstructs a later onset for total/marital fertility using revised mortality and own-children methods. Keep disagreement explicit. Neither estimator attributes fertility decline to a purity ideology without causal evidence."@en ;
+    wr:glossaryStatus "historical research construct"@en ;
+    dcterms:identifier "urn:uuid:bae2860e-561b-5e46-a593-fec3188ca1bf" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/white-fertility-transition.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:48a97d06cb85c9b7530796016562e5158ffb94b2> .
+
+soc:racial-reclassification
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "racial reclassification"@en ;
+    skos:notation "racial-reclassification" ;
+    skos:definition "Change in the social, legal or administrative category assigned to people, with or without any birth, death or migration. Historical incorporation or exclusion of migrants, ancestry exceptions, interracial-family classification and changing census instructions can alter the number recorded as white."@en ;
+    skos:scopeNote "Reclassification is not a residual biological evolution or a birth. Census categories can be internally inconsistent and historically harmful, especially where Indigenous legal identities are erased. Reconstruct records for named years rather than treating all historical 'white' rows as interchangeable."@en ;
+    wr:glossaryStatus "demographic and institutional mechanism"@en ;
+    dcterms:identifier "urn:uuid:48f614b0-0fad-55b6-a159-0133fae2009d" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/racial-reclassification.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:21a59bfabfab68e9525efccf32fae984ba8df229> .
+
+soc:demographic-replacement-fear
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "demographic replacement fear"@en ;
+    skos:notation "demographic-replacement-fear" ;
+    skos:definition "A political narrative presenting changing relative population shares or migrant presence as an existential loss of dominant-group continuity. It can mobilize racial classification and exclusion without establishing that actual demographic extinction is occurring."@en ;
+    skos:scopeNote "This is an object of historical inquiry, not a scientifically accepted account of immigration. Measure actual births/deaths/migration and the categories used, then separately research public rhetoric and the policies it legitimizes."@en ;
+    wr:glossaryStatus "historical political framing"@en ;
+    dcterms:identifier "urn:uuid:f52bc4af-f9aa-566f-a2ed-4f929879064e" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/demographic-replacement-fear.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:526dea2b7e539b3d86ec3c83f8d26de57d34d031> .
+
+soc:whiteness
+    a skos:Concept ;
+    skos:inScheme wr:terms , <https://561.group/knowledge/science-services-section/social-science-services-section/sociology-science-services-section> ;
+    skos:prefLabel "whiteness"@en ;
+    skos:notation "whiteness" ;
+    skos:definition "Whiteness describes historically constructed racial classification, status, legitimate family membership and distributions of privilege and authority. Its meanings, boundaries and economic effects change across places and periods. It is not a genetically distinct species or a unitary actor endowed with a literal will. In research on settler social reproduction, separate (1) people classified white, (2) people judged fit to reproduce the favored ideal, and (3) institutions of property and rule. These populations and outputs may diverge. White increase requires a choice of measure, and the reproductive purity ratchet names a proposed conflict between escalating purity and maintaining a population, not a historical law. Sources: Stubblefield (2007), Caron (2008), Guglielmo (2003), research note."@en ;
+    wr:glossaryStatus "working-definition"@en ;
+    skos:related soc:racial-formation , soc:reproductive-purity-ratchet , soc:white-increase ;
+    dcterms:identifier "urn:uuid:07b2c9d8-468c-42e0-9ee6-d989531401b1" ;
+    dcterms:created "2026-10-17"^^xsd:date ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/b2ed3deb14568861b3fcee921c40f2cf11b70cbe/services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/whiteness.md> ;
+    prov:wasDerivedFrom <swh:1:cnt:862687603b748c5985016fe24001c807a92d3fd7> .
+
+soc:reproductive-expropriation skos:narrower soc:directed-captive-reproductive-coercion .
+
+# =============================================================================
+# Top concepts (every concept with no skos:broader)
+# =============================================================================
+
+wr:terms skos:hasTopConcept
+    soc:captive-birth ,
+    soc:captive-increase ,
+    soc:captive-reproductive-title-under-life-tenancy ,
+    soc:demographic-replacement-fear ,
+    soc:future-issue-property-claim ,
+    soc:hereditary-enslavement ,
+    soc:institutional-reproductive-expendability ,
+    soc:natural-increase ,
+    soc:net-migration-growth-contribution ,
+    soc:race-suicide ,
+    soc:racial-formation ,
+    soc:racial-reclassification ,
+    soc:reproductive-eligibility ,
+    soc:reproductive-expropriation ,
+    soc:reproductive-purity-ratchet ,
+    soc:selective-reproductive-futurity ,
+    soc:settler-social-reproduction ,
+    soc:white-fertility-transition ,
+    soc:white-increase ,
+    soc:whiteness ,
+    wr:ClaimOnUnconceivedIssue ,
+    wr:Classification ,
+    wr:EditedTranscription ,
+    wr:EligibilityToFoundPreferredFuture ,
+    wr:FullPrimaryText ,
+    wr:InstitutionalReproduction ,
+    wr:Manumission ,
+    wr:MechanisticallyPlausible ,
+    wr:NotEstablished ,
+    wr:NumericalReproduction ,
+    wr:Observed ,
+    wr:PublisherAbstract ,
+    wr:SecondaryReport ,
+    wr:StatusAtBirth ,
+    wr:TitleToBornChild ,
+    wr:conditional-selective-futurity ,
+    wr:revealed-priority-comparison .
+
+soc:captive-birth skos:topConceptOf wr:terms .
+soc:captive-increase skos:topConceptOf wr:terms .
+soc:captive-reproductive-title-under-life-tenancy skos:topConceptOf wr:terms .
+soc:demographic-replacement-fear skos:topConceptOf wr:terms .
+soc:future-issue-property-claim skos:topConceptOf wr:terms .
+soc:hereditary-enslavement skos:topConceptOf wr:terms .
+soc:institutional-reproductive-expendability skos:topConceptOf wr:terms .
+soc:natural-increase skos:topConceptOf wr:terms .
+soc:net-migration-growth-contribution skos:topConceptOf wr:terms .
+soc:race-suicide skos:topConceptOf wr:terms .
+soc:racial-formation skos:topConceptOf wr:terms .
+soc:racial-reclassification skos:topConceptOf wr:terms .
+soc:reproductive-eligibility skos:topConceptOf wr:terms .
+soc:reproductive-expropriation skos:topConceptOf wr:terms .
+soc:reproductive-purity-ratchet skos:topConceptOf wr:terms .
+soc:selective-reproductive-futurity skos:topConceptOf wr:terms .
+soc:settler-social-reproduction skos:topConceptOf wr:terms .
+soc:white-fertility-transition skos:topConceptOf wr:terms .
+soc:white-increase skos:topConceptOf wr:terms .
+soc:whiteness skos:topConceptOf wr:terms .
+wr:ClaimOnUnconceivedIssue skos:topConceptOf wr:terms .
+wr:Classification skos:topConceptOf wr:terms .
+wr:EditedTranscription skos:topConceptOf wr:terms .
+wr:EligibilityToFoundPreferredFuture skos:topConceptOf wr:terms .
+wr:FullPrimaryText skos:topConceptOf wr:terms .
+wr:InstitutionalReproduction skos:topConceptOf wr:terms .
+wr:Manumission skos:topConceptOf wr:terms .
+wr:MechanisticallyPlausible skos:topConceptOf wr:terms .
+wr:NotEstablished skos:topConceptOf wr:terms .
+wr:NumericalReproduction skos:topConceptOf wr:terms .
+wr:Observed skos:topConceptOf wr:terms .
+wr:PublisherAbstract skos:topConceptOf wr:terms .
+wr:SecondaryReport skos:topConceptOf wr:terms .
+wr:StatusAtBirth skos:topConceptOf wr:terms .
+wr:TitleToBornChild skos:topConceptOf wr:terms .
+wr:conditional-selective-futurity skos:topConceptOf wr:terms .
+wr:revealed-priority-comparison skos:topConceptOf wr:terms .
+
+# Inverses of the skos:related edges asserted above.
+soc:captive-birth skos:related wr:NumericalReproduction .
+soc:captive-birth skos:related wr:StatusAtBirth .
+soc:captive-increase skos:related wr:InstitutionalReproduction .
+soc:captive-increase skos:related wr:TitleToBornChild .
+soc:captive-reproductive-title-under-life-tenancy skos:related wr:Manumission .
+soc:captive-reproductive-title-under-life-tenancy skos:related wr:TitleToBornChild .
+soc:future-issue-property-claim skos:related wr:ClaimOnUnconceivedIssue .
+soc:hereditary-enslavement skos:related wr:StatusAtBirth .
+soc:institutional-reproductive-expendability skos:related wr:conditional-selective-futurity .
+soc:institutional-reproductive-expendability skos:related wr:revealed-priority-comparison .
+soc:natural-increase skos:related wr:NumericalReproduction .
+soc:net-migration-growth-contribution skos:related wr:NumericalReproduction .
+soc:race-suicide skos:related wr:EligibilityToFoundPreferredFuture .
+soc:racial-formation skos:related wr:Classification .
+soc:racial-reclassification skos:related wr:Classification .
+soc:reproductive-eligibility skos:related wr:EligibilityToFoundPreferredFuture .
+soc:reproductive-expropriation skos:related wr:InstitutionalReproduction .
+soc:reproductive-purity-ratchet skos:related wr:conditional-selective-futurity .
+soc:selective-reproductive-futurity skos:related wr:EligibilityToFoundPreferredFuture .
+soc:selective-reproductive-futurity skos:related wr:conditional-selective-futurity .
+soc:settler-social-reproduction skos:related wr:InstitutionalReproduction .
+soc:white-fertility-transition skos:related wr:NumericalReproduction .
+soc:whiteness skos:related wr:Classification .
+soc:whiteness skos:related wr:revealed-priority-comparison .
+wr:Classification skos:related wr:revealed-priority-comparison .
+wr:EligibilityToFoundPreferredFuture skos:related wr:revealed-priority-comparison .
+wr:InstitutionalReproduction skos:related wr:revealed-priority-comparison .
+wr:NotEstablished skos:related wr:conditional-selective-futurity .
+wr:NumericalReproduction skos:related wr:revealed-priority-comparison .
+
+# Labels for terms the sections above declare without one (derived from the local name).
+wr:assumedRate rdfs:label "assumed rate"@en .
+wr:caseObservation rdfs:label "case observation"@en .
+wr:chronologyNote rdfs:label "chronology note"@en .
+wr:conclusion rdfs:label "conclusion"@en .
+wr:criterion rdfs:label "criterion"@en .
+wr:endYear rdfs:label "end year"@en .
+wr:eventDate rdfs:label "event date"@en .
+wr:indigenousResponse rdfs:label "indigenous response"@en .
+wr:interval rdfs:label "interval"@en .
+wr:laterDisposition rdfs:label "later disposition"@en .
+wr:legalObject rdfs:label "legal object"@en .
+wr:legislativeEvent rdfs:label "legislative event"@en .
+wr:legislativeState rdfs:label "legislative state"@en .
+wr:netMigrationShareOfTotalGrowthPct rdfs:label "net migration share of total growth pct"@en .
+wr:policyImplication rdfs:label "policy implication"@en .
+wr:reference rdfs:label "reference"@en .
+wr:researchQuestion rdfs:label "research question"@en .
+wr:scope rdfs:label "scope"@en .
+wr:secondaryInterpretation rdfs:label "secondary interpretation"@en .
+wr:sensitivity rdfs:label "sensitivity"@en .
+wr:sourceLabel rdfs:label "source label"@en .
+wr:sourceRecord rdfs:label "source record"@en .
+wr:sourceVoice rdfs:label "source voice"@en .
+wr:startYear rdfs:label "start year"@en .
+wr:testimonyObservation rdfs:label "testimony observation"@en .

@@ -1,0 +1,136 @@
+# The 561 Group root ontology, https://561.group/ns/
+#
+# HAND-DECLARED, and deliberately so. The generated layer
+# (json-schema-to-owl-shacl-service, e.g. ../carriers/) mints classes under
+# https://561.group/ns/schema/<$id> and cannot emit the ontology that names
+# the namespace those classes live in. This file is that one seat. Everything
+# that CAN be generated from a JSON Schema stays generated; nothing in this
+# file may duplicate a generated class.
+#
+# What this file is: the namespace charter (IRI spaces, ontology metadata,
+# license) and the few terms every Science vocabulary needs and none should
+# re-mint (a data Record and the statements records make about their own
+# limits). What it is not: a domain ontology, an upper ontology of the house
+# theory, or a claim that the imported house ontologies are mutually
+# consistent. Importing them records custody, not compatibility.
+#
+# The sibling shapes.ttl holds the ontology-metadata and Record shapes; a
+# vocabulary that imports this root is expected to conform to them.
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix ns:      <https://561.group/ns/> .
+
+<https://561.group/ns/>
+    a owl:Ontology ;
+    owl:versionIRI <https://561.group/ns/0.1.0> ;
+    owl:versionInfo "0.1.0" ;
+    dcterms:title "The 561 Group root ontology"@en ;
+    dcterms:description """The namespace charter of the 561 Group's linked data: which IRI spaces exist and who may mint in them, the metadata every house ontology states, and the small set of terms (Record and the statements a record makes about its own limits) that Science vocabularies share. A paper or section vocabulary names its own owl:Ontology under https://561.group/knowledge/<slug>, owl:imports this ontology, and mints only what is its own."""@en ;
+    dcterms:created "2026-10-24"^^xsd:date ;
+    dcterms:modified "2026-10-24"^^xsd:date ;
+    dcterms:creator "Morgan Sennhauser" ;
+    dcterms:contributor "Claude (Anthropic), disclosed AI collaborator" ;
+    dcterms:publisher "The 561 Group" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright The 561 Group. Licensed CC-BY-4.0."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section> ;
+    skos:scopeNote """IRI policy. (1) This ontology: https://561.group/ns/ with terms directly beneath it (classes PascalCase, properties camelCase); the segments schema/, predicate/ and ontology-owned names below are reserved. (2) Generated schema classes: https://561.group/ns/schema/<$id>, minted only by json-schema-to-owl-shacl-service from a Science JSON Schema. (3) Relation predicates: https://561.group/ns/predicate/<name>, minted only from the relation-predicate registry. (4) Concepts: https://561.group/knowledge/<scheme>/<stem>, where <scheme> is the owning section path with the services/ connectors dropped; minted only by the glossary projection, never by hand, and reused (not re-minted) by every vocabulary that mentions the term. (5) Paper and section vocabularies: https://561.group/knowledge/<slug> (one path segment) is the owl:Ontology and its skos:ConceptScheme is <slug>#terms; terms the vocabulary itself coins are <slug>#<LocalName>. A one-segment path under /knowledge/ is therefore a vocabulary and a two-or-more-segment path is a glossary concept. (6) Ontology IRIs have no trailing hash; versionIRIs append the semantic version. Nothing here is asserted to dereference yet."""@en ;
+    owl:imports <http://www.w3.org/ns/prov-o#> ,
+                <http://www.w3.org/2004/02/skos/core> ,
+                <http://purl.org/dc/terms/> ,
+                <https://561.group/ontology/service-section-custody#> ,
+                <https://emsenn.net/mathematics/objects/universes/agential-semioverse#> ;
+    ns:knownGap
+        "isv: (https://emsenn.net/mathematics/objects/universes/interactive-semioverse#) is imported by the agential semioverse ontology but has no file in the corpus; the transitive import closure of this ontology is therefore incomplete until it is written or the import is removed."@en ,
+        "asr: is the superclass prefix of the philosophy domain ontologies; it is undefined anywhere in the corpus, so those ontologies are not imported here."@en ,
+        "The generated carriers ontology and shapes (knowledge-organization-services-section/data/ontology/carriers/) declare classes under https://561.group/ns/schema/carriers/ but carry no owl:Ontology header, so there is no ontology IRI to import. The generator should emit one (proposed: https://561.group/ns/schema/carriers); until then the carriers are in scope by namespace, not by owl:imports."@en ,
+        "The relationality ontology (https://emsenn.net/relationality/ontology#) has several differing copies in the corpus and lives in the emsenn.net IRI space; it is not imported until one copy is declared canonical."@en ,
+        "The imported house ontologies (sec:, agsv:) live in the emsenn.net and https://561.group/ontology/ IRI spaces, not under https://561.group/ns/. Their IRIs are imported as declared; renaming them into the policy above is a separate migration."@en ,
+        "None of the IRI spaces above dereferences yet (corpus knowledge graph program, 2026-09-30: 0 concept IRIs dereference). owl:imports resolution is by local catalog until they do."@en .
+
+# --- Annotation properties ---------------------------------------------------
+
+ns:knownGap a owl:AnnotationProperty ;
+    rdfs:label "known gap"@en ;
+    rdfs:comment "A statement, on an ontology or term, of something the declaring ontology knows it lacks or has not reconciled. Gaps are recorded, not invented around."@en .
+
+# --- IRI spaces ----------------------------------------------------------------
+
+ns:IriSpace a owl:Class ;
+    rdfs:label "IRI space"@en ;
+    rdfs:comment "A reserved prefix of 561 Group IRIs, with the single minting process allowed to create IRIs in it."@en .
+
+ns:iriPrefix a owl:DatatypeProperty ;
+    rdfs:label "IRI prefix"@en ;
+    rdfs:domain ns:IriSpace ;
+    rdfs:range xsd:anyURI .
+
+ns:mintedBy a owl:DatatypeProperty ;
+    rdfs:label "minted by"@en ;
+    rdfs:comment "The one process permitted to mint IRIs in the space."@en ;
+    rdfs:domain ns:IriSpace ;
+    rdfs:range xsd:string .
+
+ns:RootTermSpace a ns:IriSpace ;
+    rdfs:label "root term space"@en ;
+    ns:iriPrefix "https://561.group/ns/"^^xsd:anyURI ;
+    ns:mintedBy "hand declaration in this ontology, by a Science edit reviewed as a pull request"@en .
+
+ns:SchemaClassSpace a ns:IriSpace ;
+    rdfs:label "generated schema class space"@en ;
+    ns:iriPrefix "https://561.group/ns/schema/"^^xsd:anyURI ;
+    ns:mintedBy "json-schema-to-owl-shacl-service, from a Science JSON Schema $id"@en .
+
+ns:PredicateSpace a ns:IriSpace ;
+    rdfs:label "relation predicate space"@en ;
+    ns:iriPrefix "https://561.group/ns/predicate/"^^xsd:anyURI ;
+    ns:mintedBy "the relation-predicate registry (term-engineering relation-predicates.json)"@en .
+
+ns:ConceptSpace a ns:IriSpace ;
+    rdfs:label "glossary concept space"@en ;
+    ns:iriPrefix "https://561.group/knowledge/"^^xsd:anyURI ;
+    ns:mintedBy "the glossary SKOS projection (term-engineering project-glossary-skos); one-segment paths are vocabularies, not concepts"@en .
+
+# --- Records -------------------------------------------------------------------
+
+ns:Record a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Record"@en ;
+    rdfs:comment "A Science data record: a machine-readable document, typically JSON under a section's data/records/, that carries observations, measurements or extractions together with the limits on reading them. Each kind of record is a subclass in the vocabulary that owns it. A record is evidence-bearing, not a claim: nothing it states is thereby asserted true."@en ;
+    rdfs:seeAlso <https://561.group/ontology/service-section-custody#Knowledge> .
+
+ns:recordKind a owl:DatatypeProperty ;
+    rdfs:label "record kind"@en ;
+    rdfs:comment "The record's own kind discriminator (its `kind` or `type` key), for example lenticule.science.demography.birth-reconstruction.v1."@en ;
+    rdfs:domain ns:Record ;
+    rdfs:range xsd:string .
+
+ns:readStatus a owl:DatatypeProperty ;
+    rdfs:label "read status"@en ;
+    rdfs:comment "How much of the underlying source the compiler of the record actually read, in the compiler's own words."@en ;
+    rdfs:domain ns:Record ;
+    rdfs:range xsd:string .
+
+ns:limitation a owl:DatatypeProperty ;
+    rdfs:label "limitation"@en ;
+    rdfs:comment "A stated limit on what the record supports."@en ;
+    rdfs:domain ns:Record ;
+    rdfs:range xsd:string .
+
+ns:forbiddenInference a owl:DatatypeProperty ;
+    rdfs:label "forbidden inference"@en ;
+    rdfs:comment "An inference the record's compiler states must not be drawn from it."@en ;
+    rdfs:domain ns:Record ;
+    rdfs:range xsd:string .
+
+ns:unmeasured a owl:DatatypeProperty ;
+    rdfs:label "unmeasured"@en ;
+    rdfs:comment "Something the record explicitly does not measure."@en ;
+    rdfs:domain ns:Record ;
+    rdfs:range xsd:string .

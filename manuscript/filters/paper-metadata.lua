@@ -9,7 +9,14 @@ local function person_name(person)
 end
 
 local function para(text)
-  return pandoc.Para(pandoc.read(text, "markdown").blocks[1].content)
+  local first = pandoc.read(text, "markdown").blocks[1]
+  return first and pandoc.Para(first.content) or pandoc.Para({})
+end
+
+-- YAML null arrives as an empty value; treat it as "not declared".
+local function declared(value, fallback)
+  local text = value and stringify(value) or ""
+  return text ~= "" and text or fallback
 end
 
 function Meta(meta)
@@ -45,13 +52,13 @@ function Pandoc(doc)
   if meta["ai-disclosure"] then blocks:insert(para(stringify(meta["ai-disclosure"]))) end
 
   local sections = {
-    {"Ethics", meta.ethics},
-    {"Funding", meta.funding or "None declared."},
-    {"Conflicts of interest", meta["conflicts-of-interest"] or "None declared."},
+    {"Ethics", declared(meta.ethics, "Not declared.")},
+    {"Funding", declared(meta.funding, "None declared.")},
+    {"Conflicts of interest", declared(meta["conflicts-of-interest"], "None declared.")},
   }
   for _, section in ipairs(sections) do
     blocks:insert(pandoc.Header(2, section[1], pandoc.Attr("", {"unnumbered"})))
-    blocks:insert(para(stringify(section[2])))
+    blocks:insert(para(section[2]))
   end
 
   if meta.care then

@@ -1,0 +1,193 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "wr": "https://561.group/knowledge/white-repopulation#",
+    "ns": "https://561.group/ns/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@vocab": "https://561.group/knowledge/white-repopulation/field#",
+
+    "id": "@id",
+    "case_id": "@id",
+    "kind": "@type",
+    "type": "@type",
+
+    "lenticule.science.demography.birth-reconstruction.v1": {
+      "@id": "wr:BirthReconstruction",
+      "@context": {
+        "source": {
+          "@id": "@nest",
+          "@context": {
+            "births_all_1800_1859_thousands": "wr:annualBirths",
+            "captive_births_1790_1859_by_decade": { "@id": "wr:captiveBirthsByDecade", "@container": "@list" },
+            "mean_population_1790s": "wr:meanPopulation1790s"
+          }
+        },
+        "calculated": { "@id": "wr:calculated", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] }
+      }
+    },
+    "lenticule.sociology.antebellum-reproductive-property-case-observations.v1": "wr:CaseRegister",
+    "lenticule.science.sociology.primary-testimony-extraction.v1": {
+      "@id": "wr:TestimonyExtraction",
+      "@context": {
+        "observations": "wr:testimonyObservation"
+      }
+    },
+    "lenticule.science.sociology.racial-eligibility-legislative-events.v1": "wr:LegislativeEventSequence",
+    "lenticule.science.demography.growth-components.v1": "wr:GrowthComponents",
+    "quantitative-documentary-evidence": "wr:QuantitativeDocumentaryEvidence",
+    "primary-historical-case-extraction": "wr:PrimaryHistoricalCaseExtraction",
+    "judicial-opinion": "wr:JudicialOpinion",
+    "freedom-petition-court-opinion": "wr:FreedomPetitionOpinion",
+    "reported-judicial-opinion-secondary-extraction": "wr:SecondaryExtractedOpinion",
+    "enslaver-correspondence": "wr:EnslaverCorrespondence",
+
+    "enacted": "wr:Enacted",
+    "bill-introduced-not-enacted": "wr:BillIntroducedNotEnacted",
+    "house-approved-senate-postponed": "wr:HouseApprovedSenatePostponed",
+
+    "full-primary-text": "wr:FullPrimaryText",
+    "publisher-abstract": "wr:PublisherAbstract",
+    "edited-transcription": "wr:EditedTranscription",
+    "secondary-report": "wr:SecondaryReport",
+    "observed": "wr:Observed",
+    "mechanistically-plausible": "wr:MechanisticallyPlausible",
+    "not-established": "wr:NotEstablished",
+    "reading_grade": { "@id": "wr:readingGrade", "@type": "@vocab" },
+    "evidence_status": { "@id": "wr:evidenceStatus", "@type": "@vocab" },
+
+    "status": "wr:status",
+    "source_status": "wr:status",
+    "date": { "@id": "wr:compiledOn", "@type": "xsd:date" },
+    "compiled_date": { "@id": "wr:compiledOn", "@type": "xsd:date" },
+    "compilation_date": { "@id": "wr:compiledOn", "@type": "xsd:date" },
+    "read_status": "ns:readStatus",
+    "limitations": "ns:limitation",
+    "limits": "ns:limitation",
+    "forbidden_inferences": "ns:forbiddenInference",
+    "unmeasured": "ns:unmeasured",
+    "not_pooled": "wr:notPooled",
+    "claim_id": "wr:claimId",
+
+    "title": "dcterms:title",
+    "publisher": "dcterms:publisher",
+    "url": { "@id": "wr:url", "@type": "@id" },
+    "source": { "@id": "wr:source", "@type": "@id" },
+    "references": { "@id": "wr:reference", "@type": "@id" },
+    "grade": "wr:sourceGrade",
+    "location": "wr:location",
+    "locations": "wr:location",
+    "year": "wr:year",
+    "births_thousands": "wr:birthsThousands",
+    "jurisdiction": "wr:jurisdiction",
+
+    "sources": { "@id": "wr:citesSource", "@container": "@id" },
+    "source_records": { "@id": "wr:sourceRecord", "@container": "@id" },
+    "assumed_cbr_1790s_per_thousand": { "@id": "wr:assumedCrudeBirthRate1790sPerThousand", "@type": "xsd:decimal" },
+    "sensitivities": {
+      "@id": "wr:sensitivity",
+      "@context": {
+        "rate": { "@id": "wr:assumedRate", "@type": "xsd:decimal" },
+        "share_1790_1849_pct": { "@id": "https://561.group/knowledge/white-repopulation/measure#share_1790_1849_pct", "@type": "xsd:decimal" },
+        "share_1790_1859_pct": { "@id": "https://561.group/knowledge/white-repopulation/measure#share_1790_1859_pct", "@type": "xsd:decimal" }
+      }
+    },
+
+    "selection_rule": "wr:selectionRule",
+    "universe_not_ascertained": "wr:universeNotAscertained",
+    "copyright": "dcterms:rights",
+    "records": {
+      "@id": "wr:hasCase",
+      "@context": {
+        "observations": "wr:caseObservation",
+        "case": "wr:caseName",
+        "decision_year": "wr:decisionYear",
+        "citation": "wr:citation",
+        "persons": "wr:person",
+        "name": "wr:personName",
+        "role": "wr:personRole",
+        "legal_rules": "wr:legalRule",
+        "court_disposition": "wr:courtDisposition",
+        "source_locator": "wr:sourceLocator",
+        "secondary_sources": { "@id": "wr:secondarySource", "@type": "@id" },
+        "related_sources": { "@id": "wr:relatedSource", "@type": "@id" },
+        "predicate": "wr:predicate",
+        "value": "wr:value",
+        "unit": "wr:unit",
+        "facts": { "@id": "wr:facts", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] }
+      }
+    },
+    "summary_descriptive_not_prevalence": {
+      "@id": "wr:summary",
+      "@context": [null, {
+        "@vocab": "https://561.group/knowledge/white-repopulation/measure#",
+        "forbidden_inferences": "https://561.group/ns/forbiddenInference"
+      }]
+    },
+    "evidence_evaluation": { "@id": "wr:evidenceEvaluation", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] },
+    "software_consumer": { "@id": "wr:consumer", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] },
+    "research_consumer": { "@id": "wr:consumer", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] },
+    "consumer": "wr:consumer",
+
+    "source_identity": {
+      "@id": "wr:sourceIdentity",
+      "@context": [null, {
+        "@vocab": "https://561.group/knowledge/white-repopulation/measure#",
+        "date": { "@id": "http://purl.org/dc/terms/date", "@type": "http://www.w3.org/2001/XMLSchema#date" }
+      }]
+    },
+    "observation_grade": "wr:observationGrade",
+    "source_voice": "wr:sourceVoice",
+    "claim": "wr:claim",
+    "valid_for": "wr:validFor",
+    "not_valid_for": "wr:notValidFor",
+    "secondary_interpretations": "wr:secondaryInterpretation",
+    "chronology_note": "wr:chronologyNote",
+
+    "events": {
+      "@id": "wr:legislativeEvent",
+      "@context": {
+        "date": { "@id": "wr:eventDate", "@type": "xsd:date" },
+        "state": { "@id": "wr:legislativeState", "@type": "@vocab" },
+        "legal_object": "wr:legalObject",
+        "criterion": "wr:criterion",
+        "inference": "wr:inference",
+        "policy_implication": "wr:policyImplication",
+        "later_disposition": {
+          "@id": "wr:laterDisposition",
+          "@context": [null, {
+            "@vocab": "https://561.group/knowledge/white-repopulation/measure#",
+            "date": { "@id": "http://purl.org/dc/terms/date", "@type": "http://www.w3.org/2001/XMLSchema#date" }
+          }]
+        },
+        "indigenous_response": {
+          "@id": "wr:indigenousResponse",
+          "@context": [null, {
+            "@vocab": "https://561.group/knowledge/white-repopulation/measure#",
+            "source": { "@id": "https://561.group/knowledge/white-repopulation#source", "@type": "@id" },
+            "date": { "@id": "http://purl.org/dc/terms/date", "@type": "http://www.w3.org/2001/XMLSchema#date" }
+          }]
+        }
+      }
+    },
+    "conclusions": "wr:conclusion",
+    "research_question": "wr:researchQuestion",
+
+    "population": "wr:population",
+    "measure": "wr:measure",
+    "source_label": "wr:sourceLabel",
+    "intervals": {
+      "@id": "wr:interval",
+      "@context": {
+        "start_year": "wr:startYear",
+        "end_year": "wr:endYear",
+        "net_migration_share_total_growth_pct": { "@id": "wr:netMigrationShareOfTotalGrowthPct", "@type": "xsd:decimal" }
+      }
+    },
+
+    "scope": "wr:scope",
+    "raw_counts": { "@id": "wr:rawCounts", "@container": "@id", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] },
+    "computed_statistics": { "@id": "wr:computedStatistics", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] },
+    "calculation_definitions": { "@id": "wr:calculationDefinitions", "@context": [null, { "@vocab": "https://561.group/knowledge/white-repopulation/measure#" }] }
+  }
+}
