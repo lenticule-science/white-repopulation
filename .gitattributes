@@ -1,0 +1,7 @@
+# Byte-exact data: never let a checkout rewrite line endings, so recorded
+# SHA-256 digests stay reproducible on every platform.
+* text=auto eol=lf
+*.csv -text
+*.json -text
+*.pdf binary
+*.png binary

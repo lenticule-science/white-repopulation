@@ -1,0 +1,212 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+  "name": "white-repopulation",
+  "id": "https://github.com/lenticule-science/white-repopulation",
+  "title": "White Repopulation: source records and derived tables",
+  "version": "0.2.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Morgan Sennhauser",
+      "roles": [
+        "creator"
+      ]
+    },
+    {
+      "title": "Codex 6.1 (disclosed AI research collaborator)",
+      "roles": [
+        "contributor"
+      ]
+    },
+    {
+      "title": "Lenticule Science",
+      "roles": [
+        "publisher"
+      ]
+    }
+  ],
+  "keywords": [
+    "historical demography",
+    "slavery",
+    "settler colonialism",
+    "social reproduction"
+  ],
+  "resources": [
+    {
+      "name": "births-1790-1859",
+      "path": "data/derived/births-1790-1859.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "Modeled births into slavery and estimated all U.S. births, by decade, 1790-1859",
+      "description": "Derived by analysis/reproduce.py from data/records/2026-10-17-captive-birth-shares-source-series.json. 1790s denominator assumed at 55 per 1,000 on a 4.52 million mean population.",
+      "sources": [
+        {
+          "title": "Hacker 2020, Slavery & Abolition 41(4), Table 1 col. 7",
+          "path": "https://doi.org/10.1080/0144039X.2020.1755502"
+        },
+        {
+          "title": "Haines and Sutch, Historical Statistics of the United States, Table Aa9-14",
+          "path": "https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdAa9-14.html"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "start_year",
+            "type": "integer"
+          },
+          {
+            "name": "end_year",
+            "type": "integer"
+          },
+          {
+            "name": "modeled_births_into_slavery",
+            "type": "integer",
+            "description": "Hacker 2020 modeled births into slavery in the decade",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "estimated_all_us_births",
+            "type": "integer",
+            "description": "Sum of annual Haines-Sutch births (thousands x 1000); 1790s assumed",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "denominator_type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "assumed",
+                "modeled"
+              ]
+            }
+          },
+          {
+            "name": "share_pct",
+            "type": "number",
+            "description": "100 x modeled_births_into_slavery / estimated_all_us_births, 4 decimals half-even"
+          }
+        ],
+        "primaryKey": [
+          "start_year"
+        ]
+      },
+      "hash": "sha256:1a4801bfbd4434c9e68121479c68d686bd2f1671e5758a29a3c4a6248b9f60e3",
+      "bytes": 390
+    },
+    {
+      "name": "us-migration-growth-1790-1860",
+      "path": "data/derived/us-migration-growth-1790-1860.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "Net international migration as a share of total U.S. population growth, 1790-1860",
+      "description": "Reported values from Haines 2006 Table Aa15-21; not white-specific, not local, not lineage-based.",
+      "schema": {
+        "fields": [
+          {
+            "name": "start_year",
+            "type": "integer"
+          },
+          {
+            "name": "end_year",
+            "type": "integer"
+          },
+          {
+            "name": "net_migration_share_total_growth_pct",
+            "type": "number"
+          },
+          {
+            "name": "source",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "start_year"
+        ]
+      },
+      "hash": "sha256:b73f24e538a138b2bc24da02545d0ec79c334498e912f786bbff85ddaee81afd",
+      "bytes": 364
+    },
+    {
+      "name": "claims",
+      "path": "data/derived/claims.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Every quantitative manuscript claim with its derivation",
+      "hash": "sha256:2ab8ff128de0ff898cb8740014a7519f24f0fa087e86b8670deb96a15f879caf",
+      "bytes": 5488
+    },
+    {
+      "name": "2026-10-17-antebellum-property-law-case-register",
+      "path": "data/records/2026-10-17-antebellum-property-law-case-register.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "lenticule.sociology.antebellum-reproductive-property-case-observations.v1",
+      "description": "Source record: source-qualified-mixed-original-and-secondary",
+      "hash": "sha256:c6a9e76b8006573542f8eec6ed9d924d2826666add0dd8a8e95f7c5631bce672",
+      "bytes": 18219
+    },
+    {
+      "name": "2026-10-17-captive-birth-shares-source-series",
+      "path": "data/records/2026-10-17-captive-birth-shares-source-series.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "lenticule.science.demography.birth-reconstruction.v1",
+      "description": "Source record: estimated",
+      "hash": "sha256:bd8787744a644b6ad14aa8455789af7ac323a8aee444b5dfbe0c6a4c2b9c879e",
+      "bytes": 6166
+    },
+    {
+      "name": "2026-10-17-everett-directed-reproduction-case-extract",
+      "path": "data/records/2026-10-17-everett-directed-reproduction-case-extract.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "lenticule.science.sociology.primary-testimony-extraction.v1",
+      "description": "Source record: source-attributed-testimony-not-prevalence",
+      "hash": "sha256:66358a56aa6598af27228e77c61d38a811c1b75a0511aa51503921a9a518e0d2",
+      "bytes": 5640
+    },
+    {
+      "name": "2026-10-17-virginia-racial-integrity-legislative-sequence",
+      "path": "data/records/2026-10-17-virginia-racial-integrity-legislative-sequence.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "lenticule.science.sociology.racial-eligibility-legislative-events.v1",
+      "description": "Source record: mixed-original-enacted-law-and-source-qualified-synthesis",
+      "hash": "sha256:670d2f7ef89e3636b1ace3710d8afbc53397398b0f2db9f4621669dd7fa73774",
+      "bytes": 4860
+    },
+    {
+      "name": "us-net-migration-share-of-growth-1790-1860",
+      "path": "data/records/us-net-migration-share-of-growth-1790-1860.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "lenticule.science.demography.growth-components.v1",
+      "description": "Source record: reported-secondary-series",
+      "hash": "sha256:a9d94f21bd491ce716237946cc49889989eefed8f0ebd02c301058ad80350257",
+      "bytes": 2204
+    },
+    {
+      "name": "white-increase-eugenic-selection-measurements-2026-10-17",
+      "path": "data/records/white-increase-eugenic-selection-measurements-2026-10-17.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "quantitative-documentary-evidence",
+      "description": "Source record: descriptive-not-causal",
+      "hash": "sha256:616758bb1854595b9f7b53b68370f0a5f1e503b31d10da911c29364ed38cf406",
+      "bytes": 5389
+    }
+  ]
+}

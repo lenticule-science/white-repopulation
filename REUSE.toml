@@ -1,0 +1,33 @@
+# REUSE 3.2 (https://reuse.software): every file's copyright and license,
+# declared once here instead of in per-file headers.
+version = 1
+
+[[annotations]]
+path = ["manuscript/**", "docs/**", "research/**", "*.md", "paper.yaml", "figures/**", "ontology/**", "metadata/**", "provenance/**", "references/**", "CITATION.cff", ".zenodo.json", "codemeta.json", "publication.json", "LICENSE"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Morgan Sennhauser and Lenticule Science"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["analysis/**", "tests/**", "Makefile", ".github/**", "requirements*.txt", ".gitattributes", ".gitignore", "REUSE.toml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Morgan Sennhauser and Lenticule Science"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["data/**", "datapackage.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Morgan Sennhauser and Lenticule Science; historical source values belong to their cited publishers"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["references/*.csl"]
+precedence = "override"
+SPDX-FileCopyrightText = "Citation Style Language project contributors"
+SPDX-License-Identifier = "CC-BY-SA-3.0"
+
+[[annotations]]
+path = ["archive/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Morgan Sennhauser and Lenticule Science"
+SPDX-License-Identifier = "CC-BY-4.0"

@@ -1,0 +1,144 @@
+# The one source of publication metadata for White Repopulation.
+# CITATION.cff, .zenodo.json, codemeta.json, metadata/scholarly-article.jsonld,
+# publication.json and manuscript/metadata.yaml are generated from this file
+# (`make metadata`); CI fails if any of them drifts from it.
+id: white-repopulation
+title: "White Repopulation: Reproduction without Preservation"
+subtitle: "The future white, captive births, and the transatlantic reproduction of settler rule"
+version: 0.2.0
+date-released: null
+status: preprint
+peer-reviewed: false
+language: en-US
+abstract: >-
+  Settler institutions in the United States have described their future as the
+  increase of a white population. That description joins four histories that
+  move independently: the births and survival of people counted as white; the
+  changing rules for who counts; eligibility to found a preferred future
+  population; and the reproduction of property, jurisdiction and labor
+  relations. This study separates them and asks which one institutions
+  preserved when they conflicted. Four documentary and quantitative strands
+  answer in turn. Franklin's population arithmetic, race-suicide pronatalism
+  and Virginia's racial-integrity law show a purity ideal that bent when its
+  rigid application threatened elite genealogies. A reconstruction of births,
+  1790–1859, finds that roughly one U.S. birth in six (17.20% in 1800–1849)
+  was a birth into hereditary slavery, a reproduction of property that
+  conferred no membership. Antebellum property law divided a child's status,
+  title and anticipated issue across time. Transatlantic sending, receiving
+  and policy-borrowing cases show settler growth drawing on selected,
+  indebted and assisted migrants through case-specific institutions rather
+  than one coordinated design. Across the strands, institutions
+  preserved the authority to classify and to appropriate reproduction more
+  reliably than the reproductive opportunities of every person classified
+  white. The stronger proposition, that a deferred ideal can exhaust the
+  population it claims to protect, remains a conditional hypothesis; the paper
+  states the cohort and institutional evidence that would test it.
+keywords:
+  - settler colonialism
+  - social reproduction
+  - historical sociology
+  - historical demography
+  - racial formation
+  - slavery
+  - eugenics
+  - reproductive futurity
+  - migration
+subjects:
+  - scheme: OECD FORD
+    code: "5.4"
+    label: Sociology
+  - scheme: OECD FORD
+    code: "6.1"
+    label: History and archaeology
+publisher: Lenticule Science
+publishing-organization:
+  name: Lenticule Science
+  parent: The 561 Group
+  url: https://github.com/lenticule-science
+repository-code: https://github.com/lenticule-science/white-repopulation
+license:
+  text: CC-BY-4.0
+  code: MIT
+  data: CC-BY-4.0
+  third-party: >-
+    Quoted historical documents, archival transcriptions and third-party works
+    keep their own rights; the licenses above cover only original authored
+    synthesis, code and derived tables.
+authors:
+  - given: Morgan
+    family: Sennhauser
+    affiliation: Lenticule Science
+    role: accountable-author
+    ai: false
+    contributions: [conceptualization, investigation, writing, supervision]
+  - name: Codex 6.1
+    affiliation: Disclosed AI research collaborator
+    role: ai-research-collaborator
+    ai: true
+    contributions: [investigation, formal-analysis, writing-original-draft, data-curation]
+    disclosure: >-
+      Codex 6.1 is an AI system. It is credited for the research and drafting
+      work it performed at the request of the accountable author. It cannot
+      hold scholarly, legal or ethical accountability for the work; the human
+      author does.
+contributors:
+  - name: Claude (Anthropic)
+    type: Other
+    ai: true
+    role: integration, reproducible-build and release engineering
+acknowledgements:
+  - name: Anonymous contributor
+    role: research direction
+ai-disclosure: >-
+  AI systems performed most source retrieval, drafting, quantitative
+  reconstruction and release engineering under direction of the accountable
+  author. Every quantitative claim is recomputed from the archived records by
+  `analysis/reproduce.py`; every source carries a reading grade recording how
+  much of it was actually read. Readers should weigh claims by those grades.
+funding: null
+conflicts-of-interest: null
+ethics: >-
+  Documentary historical analysis of published and archival sources. No human
+  participants were recruited and no private personal data were collected.
+care:
+  collective-benefit: >-
+    The study concerns people whose reproduction was appropriated by settler
+    institutions, and Indigenous nations whose recognition those institutions
+    conditioned. Findings are released openly so descendant communities and
+    their scholars can use, contest and correct them without cost.
+  authority-to-control: >-
+    No Indigenous data are collected. Where the paper discusses Indigenous
+    political continuity (for example Pamunkey opposition to Virginia's 1930
+    law), it relies on published scholarship and public records, and treats
+    colonial administrative recognition as distinct from Indigenous
+    self-determination. Requests from a named nation concerning those passages
+    are handled under docs/data-governance.md.
+  responsibility: >-
+    Source records state what each document can and cannot show, including
+    the bias of court and enslaver records that seldom preserve the voices of
+    enslaved mothers and children.
+  ethics: >-
+    Persons named in historical records are not reduced to counts; the paper
+    does not reproduce identifying detail beyond what its published sources
+    already make public.
+related-identifiers:
+  - relation: isSupplementedBy
+    identifier: https://github.com/lenticule-science/sociology-science-services-section
+    scheme: url
+    description: Sociology Science corpus holding the bibliography and glossary this paper projects
+parts:
+  - id: the-future-white
+    title: "The Future White: Selective Reproductive Ideals and the Continuity of Settler Rule"
+    file: manuscript/02-the-future-white.md
+  - id: birth-into-captivity
+    title: "Birth into Captivity and the Reproductive Generation: Accounting for U.S. Births, 1790–1859"
+    file: manuscript/03-birth-into-captivity.md
+  - id: whose-future-increase
+    title: "Whose Future Increase? Reproductive Property, Jurisdiction, and Freedom in Antebellum Slave Law"
+    file: manuscript/04-whose-future-increase.md
+  - id: transatlantic-population-circuits
+    title: "Exporting Subjects, Importing Settlers, Returning Models: Transatlantic Population Circuits, 1718–1935"
+    file: manuscript/05-transatlantic-population-circuits.md
+news:
+  desk: opinion-analysis
+  format: reported-analysis

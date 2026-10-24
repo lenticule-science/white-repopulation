@@ -1,0 +1,11 @@
+White Repopulation is released under three licenses, one per kind of work.
+See REUSE.toml for the file-by-file declaration.
+
+  Text, figures, ontology and metadata:  CC-BY-4.0   (LICENSES/CC-BY-4.0.txt)
+  Code (analysis/, tests/, build files): MIT         (LICENSES/MIT.txt)
+  Derived data and records (data/):      CC-BY-4.0   (LICENSES/CC-BY-4.0.txt)
+
+Quoted historical documents, archival transcriptions and third-party works
+keep their own rights. These licenses cover only original authored synthesis,
+code and derived tables. The Citation Style Language style in references/ is
+CC-BY-SA-3.0 from its authors.
