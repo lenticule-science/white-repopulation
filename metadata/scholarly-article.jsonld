@@ -77,6 +77,9 @@
       "inDefinedTermSet": "OECD FORD"
     }
   ],
+  "sameAs": [
+    "swh:1:rel:38fe7c944eb716249e88dbf8511acdd1ade7e809"
+  ],
   "isBasedOn": [
     "https://github.com/lenticule-science/white-repopulation"
   ],

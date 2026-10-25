@@ -122,6 +122,9 @@ care:
     does not reproduce identifying detail beyond what its published sources
     already make public.
 related-identifiers:
+  - relation: isIdenticalTo
+    identifier: swh:1:rel:38fe7c944eb716249e88dbf8511acdd1ade7e809
+    scheme: swh
   - relation: isSupplementedBy
     identifier: https://github.com/lenticule-science/sociology-science-services-section
     scheme: url

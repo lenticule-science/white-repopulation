@@ -78,7 +78,7 @@ See [docs/reproducibility.md](docs/reproducibility.md).
 
 ## Cite
 
-Use the **Cite this repository** button (from [`CITATION.cff`](CITATION.cff)), or cite the archived release DOI once one is minted. No DOI exists yet.
+Use the **Cite this repository** button (from [`CITATION.cff`](CITATION.cff)). The v0.2.0 release is archived by Software Heritage as [`swh:1:rel:38fe7c944eb716249e88dbf8511acdd1ade7e809`](https://archive.softwareheritage.org/swh:1:rel:38fe7c944eb716249e88dbf8511acdd1ade7e809), a persistent identifier that resolves to the exact tagged source. No DOI is assigned.
 
 ## Licenses and governance
 
