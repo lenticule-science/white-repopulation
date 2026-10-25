@@ -12,10 +12,10 @@
     "node": ">=24.2.0"
   },
   "devDependencies": {
-    "@red-cup-engineering/research-claim-reproduction-service": "github:red-cup-engineering/research-claim-reproduction-service#24e9230278f4877fdf8b4125f640e83efbacdac9",
-    "@red-cup-engineering/chart-specification-rendering-service": "github:red-cup-engineering/chart-specification-rendering-service#7b940f136318d60b0b6c859baa3b3c5e38057240",
-    "@red-cup-engineering/project-document-through-pandoc-service": "github:red-cup-engineering/project-document-through-pandoc-service#d544551c1869b9e64076ebdd820fcdba307665ce",
-    "@red-cup-engineering/prov-o-provenance-service": "github:red-cup-engineering/prov-o-provenance-service#6f067ec6cfb9d27b7fe508bdaa6d7672210e9888",
-    "@red-cup-engineering/research-release-metadata-service": "github:red-cup-engineering/research-release-metadata-service#4c94e2199599cdd51056dcb013bd0cf50d81a720"
+    "@red-cup-engineering/research-claim-reproduction-service": "github:red-cup-engineering/research-claim-reproduction-service#aace0a4f05d31a07f76447c1b19ee477c977203c",
+    "@red-cup-engineering/chart-specification-rendering-service": "github:red-cup-engineering/chart-specification-rendering-service#784b321210c5ca2f31261d0e1a0231fdfb1d9e5f",
+    "@red-cup-engineering/project-document-through-pandoc-service": "github:red-cup-engineering/project-document-through-pandoc-service#9a90f5c41bdaf2754b9b42748e5d67ed763facc7",
+    "@red-cup-engineering/prov-o-provenance-service": "github:red-cup-engineering/prov-o-provenance-service#b5464136decfd5835f428f1942efab25718b2cb8",
+    "@red-cup-engineering/research-release-metadata-service": "github:red-cup-engineering/research-release-metadata-service#397de4eef4afb5f9cb1e6ccd322335e0c00b7e0b"
   }
 }
