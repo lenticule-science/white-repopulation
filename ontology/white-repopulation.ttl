@@ -514,10 +514,10 @@ wr:LegislativeEvent a owl:Class ;
 wr:LegislativeState a owl:Class ;
     rdfs:label "Legislative state"@en ;
     rdfs:comment "The state of a legislative event. Exactly the three individuals below."@en ;
-    owl:equivalentClass [ a owl:Class ; owl:oneOf ( wr:Enacted wr:BillIntroducedNotEnacted wr:HouseApprovedSenatePostponed ) ] .
+    owl:equivalentClass [ a owl:Class ; owl:oneOf ( wr:Enacted wr:BillIntroducedNotEnacted wr:GroupApprovedSenatePostponed ) ] .
 wr:Enacted a wr:LegislativeState ; rdfs:label "enacted"@en ; rdfs:comment "Became law."@en .
 wr:BillIntroducedNotEnacted a wr:LegislativeState ; rdfs:label "bill introduced, not enacted"@en ; rdfs:comment "A proposal; not law and not observable enforcement."@en .
-wr:HouseApprovedSenatePostponed a wr:LegislativeState ; rdfs:label "house approved, senate postponed"@en ; rdfs:comment "Passed one house and postponed indefinitely by the other; not law. Requires a later disposition."@en .
+wr:GroupApprovedSenatePostponed a wr:LegislativeState ; rdfs:label "house approved, senate postponed"@en ; rdfs:comment "Passed one house and postponed indefinitely by the other; not law. Requires a later disposition."@en .
 
 wr:legislativeState a owl:ObjectProperty ; rdfs:domain wr:LegislativeEvent ; rdfs:range wr:LegislativeState .
 wr:eventDate a owl:DatatypeProperty ; rdfs:domain wr:LegislativeEvent ; rdfs:range xsd:date .

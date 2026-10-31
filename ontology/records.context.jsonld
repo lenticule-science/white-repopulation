@@ -44,7 +44,7 @@
 
     "enacted": "wr:Enacted",
     "bill-introduced-not-enacted": "wr:BillIntroducedNotEnacted",
-    "house-approved-senate-postponed": "wr:HouseApprovedSenatePostponed",
+    "house-approved-senate-postponed": "wr:GroupApprovedSenatePostponed",
 
     "full-primary-text": "wr:FullPrimaryText",
     "publisher-abstract": "wr:PublisherAbstract",

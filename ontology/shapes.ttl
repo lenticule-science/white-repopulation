@@ -174,7 +174,7 @@ wrs:LegislativeEventShape
     sh:nodeKind sh:IRI ;
     sh:property [ sh:path wr:eventDate ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
     sh:property [ sh:path wr:legislativeState ; sh:minCount 1 ; sh:maxCount 1 ;
-        sh:in ( wr:Enacted wr:BillIntroducedNotEnacted wr:HouseApprovedSenatePostponed ) ;
+        sh:in ( wr:Enacted wr:BillIntroducedNotEnacted wr:GroupApprovedSenatePostponed ) ;
         sh:message "An event's state is one of the three legislative states." ] ;
     sh:property [ sh:path wr:legalObject ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
     sh:property [ sh:path wr:criterion ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
@@ -187,7 +187,7 @@ wrs:LegislativeEventShape
     ) ;
     # A proposal one house passed and the other postponed is not law, and says how it ended.
     sh:or (
-        [ sh:path wr:legislativeState ; sh:not [ sh:hasValue wr:HouseApprovedSenatePostponed ] ]
+        [ sh:path wr:legislativeState ; sh:not [ sh:hasValue wr:GroupApprovedSenatePostponed ] ]
         [ sh:path wr:laterDisposition ; sh:minCount 1 ]
     ) .
 
