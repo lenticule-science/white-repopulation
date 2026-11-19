@@ -1,0 +1,25 @@
+# Pandoc build settings shared by every output format.
+bibliography: references/references.yaml
+csl: references/chicago-author-date.csl
+nocite: "@*"
+link-citations: true
+toc: true
+toc-depth: 2
+lang: en-US
+papersize: letter
+geometry: margin=1in
+fontsize: 11pt
+mainfont: TeX Gyre Pagella
+sansfont: TeX Gyre Heros
+monofont: DejaVu Sans Mono
+colorlinks: true
+linkcolor: wrlink
+urlcolor: wrlink
+citecolor: wrlink
+# The link colour wrlink is defined by headerIncludes in manuscript.json; the
+# renderer also adds the reproducibility header (fixed PDF trailer /ID).
+# Declarations rendered by the renderer's shipped paper-declarations filter (not citation metadata).
+ethics: >-
+  Documentary historical analysis of published and archival sources. No human
+  participants were recruited and no private personal data were collected.
+conflicts-of-interest: None declared.

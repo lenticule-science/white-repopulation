@@ -1,0 +1,60 @@
+# Shapes for the 561 Group root ontology (./ontology.ttl). Hand-declared with
+# the ontology; see the note at the head of ontology.ttl.
+#
+# OntologyMetadataShape holds every owl:Ontology in the data graph that sits in
+# a 561 Group IRI space (https://561.group/ns/ or /knowledge/): house
+# ontologies state who they are, which version they are, and under what
+# license. W3C and third-party ontologies in the same graph are not ours to
+# constrain, so the shape is satisfied by any ontology outside those spaces.
+# RecordShape holds anything typed ns:Record.
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns:      <https://561.group/ns/> .
+
+ns:OntologyMetadataShape
+    a sh:NodeShape ;
+    rdfs:label "561 Group ontology metadata"@en ;
+    sh:targetClass owl:Ontology ;
+    sh:or (
+        [ sh:not [ sh:pattern "^https://561\\.group/(ns|knowledge)/" ] ]
+        ns:OntologyMetadataBody
+    ) .
+
+ns:OntologyMetadataBody
+    a sh:NodeShape ;
+    rdfs:label "561 Group ontology metadata, required body"@en ;
+    sh:property [
+        sh:path dcterms:title ; sh:minCount 1 ; sh:nodeKind sh:Literal ;
+        sh:message "A 561 Group ontology states a dcterms:title." ] ;
+    sh:property [
+        sh:path dcterms:description ; sh:minCount 1 ; sh:nodeKind sh:Literal ;
+        sh:message "A 561 Group ontology states a dcterms:description." ] ;
+    sh:property [
+        sh:path dcterms:license ; sh:minCount 1 ; sh:nodeKind sh:IRI ;
+        sh:message "A 561 Group ontology states a dcterms:license IRI." ] ;
+    sh:property [
+        sh:path owl:versionIRI ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ;
+        sh:message "A 561 Group ontology states exactly one owl:versionIRI." ] ;
+    sh:property [
+        sh:path owl:versionInfo ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ;
+        sh:message "A 561 Group ontology states exactly one owl:versionInfo." ] ;
+    sh:property [
+        sh:path owl:imports ; sh:minCount 1 ; sh:nodeKind sh:IRI ;
+        sh:message "A 561 Group ontology imports at least one ontology (vocabularies import the root)." ] .
+
+ns:RecordShape
+    a sh:NodeShape ;
+    rdfs:label "Record"@en ;
+    sh:targetClass ns:Record ;
+    sh:property [
+        sh:path ns:recordKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ;
+        sh:message "A Record states its kind discriminator exactly once." ] ;
+    sh:property [ sh:path ns:readStatus ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path ns:limitation ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path ns:forbiddenInference ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path ns:unmeasured ; sh:datatype xsd:string ] .

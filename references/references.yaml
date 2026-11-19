@@ -1,0 +1,634 @@
+references:
+  - id: abs2024
+    type: webpage
+    title: National, state and territory population, December 2024
+    author:
+      - literal: Australian Bureau of Statistics
+    container-title: ABS national resident population estimates, reference period December 2024, released June 19 2025
+    issued:
+      date-parts:
+        - [2025]
+    URL: https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2024
+  - id: alphonso2023
+    type: article-journal
+    title: Expropriating Reproduction, Generating Property—Enslaved Childbearing, Property Law & Racial Capitalism in the American South
+    author:
+      - family: Alphonso
+        given: Gwendoline
+    container-title: APSA Preprints, version 1 (September 2023)
+    issued:
+      date-parts:
+        - [2023]
+    DOI: 10.33774/apsa-2023-2nnzm
+  - id: brophy-troutman2016
+    type: article-journal
+    title: The Eugenics Movement in North Carolina
+    author:
+      - literal: Alfred L. Brophy and Elizabeth Troutman
+    issued:
+      date-parts:
+        - [2016]
+  - id: caron2008
+    type: chapter
+    title: Race Suicide, Eugenics, and Contraception, 1900–1930
+    author:
+      - family: Caron
+        given: Simone M.
+    container-title: Who Chooses? American Reproductive History since 1830, ch. 3, pp. 44–80
+    issued:
+      date-parts:
+        - [2008]
+    DOI: 10.5744/florida/9780813031996.003.0003
+  - id: case-banks-marksberry1823
+    type: legal_case
+    title: Banks' Administrator v. Marksberry
+    author:
+      - literal: Kentucky Court of Appeals
+      - family: report
+        given: court
+    container-title: 13 Ky. 275 (3 Litt. 275), 1823
+    issued:
+      date-parts:
+        - [1823]
+  - id: case-covington-mcentire1842
+    type: legal_case
+    title: Covington v. McEntire
+    author:
+      - literal: Supreme Court of North Carolina
+      - family: J.
+        given: opinion by Gaston
+    container-title: 37 N.C. 316 (2 Ired. Eq. 316), December 1842
+    issued:
+      date-parts:
+        - [1842]
+  - id: case-johnson-johnson1848
+    type: legal_case
+    title: Johnson's Administrator v. Johnson's Heirs
+    author:
+      - literal: Court of Appeals of Kentucky
+      - family: Simpson
+        given: opinion by Judge
+    container-title: 47 Ky. 470 (8 B. Mon. 470), decided June 15, 1848
+    issued:
+      date-parts:
+        - [1848]
+  - id: case-nelson-nelson1849
+    type: legal_case
+    title: Nelson v. Nelson
+    author:
+      - literal: Supreme Court of North Carolina
+      - family: C.J.
+        given: opinion by Ruffin
+    container-title: 41 N.C. 409 (6 Ired. Eq. 409), December term 1849
+    issued:
+      date-parts:
+        - [1849]
+  - id: case-smith-milman1839
+    type: legal_case
+    title: Smith v. Milman
+    author:
+      - literal: Superior Court of Delaware
+      - family: Clayton
+        given: opinion by Chief Justice John M.
+    container-title: 2 Del. 497, decided July 5, 1839
+    issued:
+      date-parts:
+        - [1839]
+  - id: census-nonhispanic-white2024
+    type: report
+    title: New Estimates Highlight Differences in Growth Between the U.S. Hispanic and Non-Hispanic Populations
+    author:
+      - family: Bureau
+        given: U.S. Census
+    container-title: U.S. Census Bureau press release, population estimates 2022–2023
+    issued:
+      date-parts:
+        - [2024]
+    URL: https://www.census.gov/newsroom/press-releases/2024/population-estimates-characteristics.html
+  - id: clymer2012
+    type: book
+    title: "Blood, Truth, and Consequences: Partus Sequitur Ventrem and the Problem of Legal Title"
+    author:
+      - family: Clymer
+        given: Jeffory A.
+    publisher: "Family Money: Property, Race, and Literature in the Nineteenth Century, ch. 2, pp. 43–70"
+    issued:
+      date-parts:
+        - [2012]
+    DOI: 10.1093/acprof:oso/9780199897704.003.0002
+  - id: coleman2013
+    type: book
+    title: "That the Blood Stay Pure: African Americans, Native Americans, and the Predicament of Race and Identity in Virginia"
+    author:
+      - family: Coleman
+        given: Arica L.
+    publisher: Indiana University Press, Blacks in the Diaspora series
+    issued:
+      date-parts:
+        - [2013]
+    URL: https://www.jstor.org/stable/j.ctt16gzn5n
+  - id: constitution1787
+    type: legislation
+    title: Constitution of the United States, Article I, Section 2 (apportionment enumeration)
+    author:
+      - family: Constitution
+        given: Constitutional Convention / U.S.
+    container-title: National Archives, transcription of founding constitutional text
+    issued:
+      date-parts:
+        - [1787]
+    URL: https://www.archives.gov/founding-docs/constitution-transcript
+  - id: cook-george-major1930
+    type: webpage
+    title: George Major Cook (1860–1930)
+    author:
+      - family: Watkinson
+        given: Patricia Ferguson
+      - literal: Dictionary of Virginia Biography
+    container-title: Encyclopedia Virginia / Dictionary of Virginia Biography, entry updated May 2026
+    issued:
+      date-parts:
+        - [2020]
+  - id: cooper2017
+    type: book
+    title: "Family Values: Between Neoliberalism and the New Social Conservatism"
+    author:
+      - family: Cooper
+        given: Melinda
+    publisher: Zone Books / Near Futures series, 2017
+    issued:
+      date-parts:
+        - [2017]
+  - id: djeliid2024
+    type: article-journal
+    title: "“The master wished to reproduce”: slavery, forced intimacy, and enslavers’ interference in sexual relationships in the antebellum South, 1808–1861"
+    author:
+      - family: Djeliid
+        given: Aisha
+    container-title: American Nineteenth Century History 25(1):21–43
+    issued:
+      date-parts:
+        - [2024]
+    DOI: 10.1080/14664658.2024.2317499
+  - id: everett-randolph1936
+    type: interview
+    title: "Sam and Louisa Everett: Federal Writers' Project interview"
+    author:
+      - family: Everett
+        given: Sam
+      - family: Everett
+        given: Louisa
+      - family: (interviewer)
+        given: Pearl Randolph
+      - family: (editor)
+        given: John A. Simms
+    container-title: Federal Writers' Project, Florida Narratives, Volume III, reprinted by Library of Congress
+    issued:
+      date-parts:
+        - [1936]
+  - id: franklin1751
+    type: pamphlet
+    title: Observations Concerning the Increase of Mankind, Peopling of Countries, etc.
+    author:
+      - family: Franklin
+        given: Benjamin
+    issued:
+      date-parts:
+        - [1751]
+    URL: https://cooperative-individualism.org/franklin-benjamin_observations-concerning-the-increase-of-mankind-1751.htm
+  - id: fraser2016
+    type: article-journal
+    title: Contradictions of Capital and Care
+    author:
+      - family: Fraser
+        given: Nancy
+    container-title: New Left Review II/100, July–August 2016
+    issued:
+      date-parts:
+        - [2016]
+  - id: gibson-jung2002
+    type: report
+    title: Historical Census Statistics on Population Totals by Race, 1790 to 1990, and by Hispanic Origin, 1970 to 1990
+    author:
+      - literal: Campbell Gibson and Kay Jung
+    issued:
+      date-parts:
+        - [2002]
+  - id: ginsburgh-jackson2019
+    type: chapter
+    title: Settler Societies
+    author:
+      - literal: N. Ginsburgh and W. Jackson
+    container-title: A Companion to African History, chapter 5, Wiley, pp. 77–91
+    issued:
+      date-parts:
+        - [2019]
+    DOI: 10.1002/9781119063551.ch5
+  - id: guglielmo2003
+    type: book
+    title: "White on Arrival: Italians, Race, Color, and Power in Chicago, 1890–1945"
+    author:
+      - family: Guglielmo
+        given: Thomas A.
+    publisher: Oxford University Press
+    issued:
+      date-parts:
+        - [2003]
+    DOI: 10.1093/oso/9780195155433.001.0001
+  - id: hacker-haines-jaremski2021
+    type: article-journal
+    title: "Early Fertility Decline in the United States: Tests of Alternative Hypotheses using New IPUMS Complete-Count Census Microdata and Enhanced County-Level Data"
+    author:
+      - family: Hacker
+        given: J. David
+      - family: Haines
+        given: Michael R.
+      - family: Jaremski
+        given: Matthew
+    container-title: Research in Economic History 37:89–128
+    issued:
+      date-parts:
+        - [2021]
+    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9409409/
+  - id: hacker-roberts2019
+    type: article-journal
+    title: "Fertility Decline in the United States, 1850–1930: New Evidence from Complete-Count Datasets"
+    author:
+      - family: Hacker
+        given: J. David
+      - family: Roberts
+        given: Evan
+    container-title: Annales de démographie historique 138(2):143–177
+    issued:
+      date-parts:
+        - [2019]
+    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9255892/
+  - id: hacker2003
+    type: article-journal
+    title: Rethinking the ‘Early’ Decline of Marital Fertility in the United States
+    author:
+      - family: Hacker
+        given: J. David
+    container-title: Demography 40(4):605–620
+    issued:
+      date-parts:
+        - [2003]
+    DOI: 10.1353/dem.2003.0035
+  - id: hacker2020
+    type: article-journal
+    title: "From ‘20. and odd’ to 10 million: The growth of the slave population in the United States"
+    author:
+      - family: Hacker
+        given: J. David
+    container-title: "Slavery & Abolition 41(4): 840–855"
+    issued:
+      date-parts:
+        - [2020]
+    DOI: 10.1080/0144039X.2020.1755502
+  - id: haines-hacker2006
+    type: report
+    title: "The Puzzle of the Antebellum Fertility Decline in the United States: New Evidence and Reconsideration"
+    author:
+      - family: Haines
+        given: Michael R.
+      - family: Hacker
+        given: J. David
+    container-title: NBER Working Paper 12571
+    issued:
+      date-parts:
+        - [2006]
+    URL: https://www.nber.org/papers/w12571
+  - id: haines-sutch2006
+    type: report
+    title: "National population and the demographic components of change: 1790–2000"
+    author:
+      - literal: Michael R. Haines and Richard Sutch
+    container-title: "Historical Statistics of the United States: Millennial Edition, Table Aa9–Aa14"
+    issued:
+      date-parts:
+        - [2006]
+    URL: https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdAa9-14.html
+  - id: haines1994
+    type: report
+    title: The Population of the United States, 1790–1920
+    author:
+      - family: Haines
+        given: Michael R.
+    container-title: NBER Historical Working Paper 56
+    issued:
+      date-parts:
+        - [1994]
+    DOI: 10.3386/h0056
+  - id: haines2006
+    type: report
+    title: "Components of population growth, by decade: 1790–2000"
+    author:
+      - family: Haines
+        given: Michael R.
+    container-title: "Historical Statistics of the United States: Millennial Edition, Table Aa15–Aa21"
+    issued:
+      date-parts:
+        - [2006]
+    URL: https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdAa15-21.html
+  - id: harris1993
+    type: article-journal
+    title: Whiteness as Property
+    author:
+      - family: Harris
+        given: Cheryl I.
+    container-title: Harvard Law Review 106(8):1707–1791
+    issued:
+      date-parts:
+        - [1993]
+    URL: https://harvardlawreview.org/wp-content/uploads/1993/06/1707-1791_Online.pdf
+  - id: jefferson-eppes1820
+    type: personal_communication
+    title: Letter to John Wayles Eppes, June 30, 1820
+    author:
+      - family: Jefferson
+        given: Thomas
+      - family: Eppes
+        given: recipient John Wayles
+    container-title: Thomas Jefferson Papers; Founders Online Jefferson/98-01-02-1352; Virginia Humanities annotated transcription
+    issued:
+      date-parts:
+        - [1820]
+  - id: jefferson-yancey1819
+    type: personal_communication
+    title: Letter to Joel Yancey, January 17, 1819
+    author:
+      - family: Jefferson
+        given: Thomas
+      - family: Yancey
+        given: recipient Joel
+    container-title: "Jefferson Papers: Retirement Series vol.13 p.582; Founders Online identifier Jefferson/03-13-02-0522"
+    issued:
+      date-parts:
+        - [1819]
+  - id: kearney-levine-pardue2022
+    type: article-journal
+    title: The Puzzle of Falling US Birth Rates since the Great Recession
+    author:
+      - family: Kearney
+        given: Melissa S.
+      - family: Levine
+        given: Phillip B.
+      - family: Pardue
+        given: Luke
+    container-title: Journal of Economic Perspectives 36(1):151–176
+    issued:
+      date-parts:
+        - [2022]
+  - id: maillard2007
+    type: article-journal
+    title: "The Pocahontas Exception: The Exemption of American Indian Ancestry from Racial Purity Law"
+    author:
+      - family: Maillard
+        given: Kevin Noble
+    container-title: Michigan Journal of Race & Law 12(2):351 ff.
+    issued:
+      date-parts:
+        - [2007]
+  - id: morgan2021
+    type: book
+    title: "Reckoning with Slavery: Gender, Kinship, and Capitalism in the Early Black Atlantic"
+    author:
+      - family: Morgan
+        given: Jennifer L.
+    publisher: Duke University Press
+    issued:
+      date-parts:
+        - [2021]
+    DOI: 10.1215/9781478021452
+  - id: murray2022
+    type: article-journal
+    title: Abortion, Sterilization, and the Universe of Reproductive Rights
+    author:
+      - family: Murray
+        given: Melissa
+    container-title: "William & Mary Law Review 63(5): 1599 ff."
+    issued:
+      date-parts:
+        - [2022]
+    URL: https://scholarship.law.wm.edu/wmlr/vol63/iss5/4/
+  - id: national-archives1850
+    type: webpage
+    title: "Seventh Census: Schedule 1 Free Inhabitants and Schedule 2 Slave Inhabitants (instructions and surviving schedules)"
+    author:
+      - literal: U.S. National Archives and Records Administration
+    container-title: National Archives, 1850 census research guide and original 1850 enumerator instructions
+    issued:
+      date-parts:
+        - [1850]
+    URL: https://www.archives.gov/research/census/1850
+  - id: nc-eugenics-board1966
+    type: report
+    title: Biennial Report, July 1, 1964 to June 30, 1966
+    author:
+      - literal: Eugenics Board of North Carolina
+    issued:
+      date-parts:
+        - [1966]
+  - id: nearing1911
+    type: article-magazine
+    title: Race Suicide vs Overpopulation
+    author:
+      - family: Nearing
+        given: Scott
+    issued:
+      date-parts:
+        - [1911]
+    URL: https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_78/January_1911/Race_Suicide_vs_Overpopulation
+  - id: nicholls2026
+    type: article-journal
+    title: "Settler Sociology: Eugenic Responses to Imperial Crises in the 20th Century"
+    author:
+      - family: Nicholls
+        given: Heidi
+    container-title: Sociology Lens 39(3):427–435
+    issued:
+      date-parts:
+        - [2026]
+    DOI: 10.1111/johs.70062
+  - id: olson2025
+    type: article-journal
+    title: "“Restoration” and Representation: Legislative Consequences of Black Disfranchisement in the American South, 1879–1916"
+    author:
+      - family: Olson
+        given: Michael P.
+    container-title: American Journal of Political Science 69:387–405
+    issued:
+      date-parts:
+        - [2025]
+    DOI: 10.1111/ajps.12868
+  - id: pemberton2008
+    type: article-journal
+    title: "Wild pedigrees: the way forward"
+    author:
+      - family: Pemberton
+        given: J. M.
+    issued:
+      date-parts:
+        - [2008]
+  - id: perez-pereira2022
+    type: article-journal
+    title: Prediction of the minimum effective size of a population viable in the long term
+    author:
+      - family: Pérez-Pereira
+        given: Noelia
+      - family: Wang
+        given: Jinliang
+      - family: Quesada
+        given: Humberto
+      - family: Caballero
+        given: Armando
+    container-title: "Biodiversity and Conservation 31: 2763–2780"
+    issued:
+      date-parts:
+        - [2022]
+    DOI: 10.1007/s10531-022-02456-z
+  - id: reader2023
+    type: article-journal
+    title: "An Itchin ’Roun the Heart You Can’t Get at to Scratch: Exploring the Emotion of Love in Black Enslaved Communities of the Nineteenth Century"
+    author:
+      - family: Reader
+        given: Xavier
+    container-title: Journal of American Studies 57(4):463–489
+    issued:
+      date-parts:
+        - [2023]
+  - id: roosevelt1913
+    type: personal_communication
+    title: Letter to Charles Davenport, 3 January 1913
+    author:
+      - family: Roosevelt
+        given: Theodore
+    issued:
+      date-parts:
+        - [1913]
+    URL: https://dnalc.cshl.edu/view/11219-T-Roosevelt-letter-to-C-Davenport-about-degenerates-reproducing-.html
+  - id: solinger2017
+    type: webpage
+    title: Politics of Reproductive Rights in 20th-Century America
+    author:
+      - family: Solinger
+        given: Rickie
+    container-title: Oxford Research Encyclopedia of American History
+    issued:
+      date-parts:
+        - [2017]
+    DOI: 10.1093/acrefore/9780199329175.013.430
+  - id: statistics-canada2024
+    type: report
+    title: "Canada's population estimates: Strong population growth in 2023"
+    author:
+      - family: Canada
+        given: Statistics
+    container-title: Statistics Canada, The Daily, March 27 2024
+    issued:
+      date-parts:
+        - [2024]
+    URL: https://www150.statcan.gc.ca/n1/daily-quotidien/240327/dq240327c-eng.htm
+  - id: stubblefield2007
+    type: article-journal
+    title: "Beyond the Pale: Tainted Whiteness, Cognitive Disability, and Eugenic Sterilization"
+    author:
+      - family: Stubblefield
+        given: Anna
+    issued:
+      date-parts:
+        - [2007]
+  - id: tabery-et-al2023
+    type: article-journal
+    title: "Victims of eugenic sterilisation in Utah: cohort demographics and estimate of living survivors"
+    author:
+      - family: James Tabery
+        given: Nicole L. Novak, Lida Sarafraz, Aubrey Mansfield
+    issued:
+      date-parts:
+        - [2023]
+  - id: virginia-assembly1662
+    type: legislation
+    title: Negro womens children to serve according to the condition of the mother (Act XII)
+    author:
+      - family: Assembly
+        given: Virginia General
+    container-title: Hening, The Statutes at Large 2:170 (1823 transcription of 1662 act)
+    issued:
+      date-parts:
+        - [1662]
+    URL: https://encyclopediavirginia.org/primary-documents/negro-womens-children-to-serve-according-to-the-condition-of-the-mother-1662/
+  - id: virginia-assembly1924
+    type: legislation
+    title: Preservation of Racial Integrity (1924)
+    author:
+      - family: Assembly
+        given: Virginia General
+    container-title: Acts of Assembly of the Commonwealth of Virginia; original statute
+    issued:
+      date-parts:
+        - [1924]
+    URL: https://encyclopediavirginia.org/primary-documents/preservation-of-racial-integrity-1924/
+  - id: virginia-code1930
+    type: legislation
+    title: Colored Persons and Indians Defined
+    author:
+      - family: Assembly
+        given: Virginia General
+    container-title: Code of Virginia as Amended to Adjournment of General Assembly 1930, section 67, page 26
+    issued:
+      date-parts:
+        - [1930]
+  - id: virginia-humanities1926
+    type: webpage
+    title: Racial Integrity Laws (1924–1930)
+    author:
+      - family: Virginia
+        given: Virginia Humanities / Encyclopedia
+    container-title: Encyclopedia Virginia historical synthesis
+    issued:
+      date-parts:
+        - [2020]
+    URL: https://encyclopediavirginia.org/entries/racial-integrity-laws-1924-1930/
+  - id: wanamaker2014
+    type: article-journal
+    title: "Fertility and the Price of Children: Evidence from Slavery and Slave Emancipation"
+    author:
+      - family: Wanamaker
+        given: Marianne H.
+    container-title: "Journal of Economic History 74(4): 1045–1071"
+    issued:
+      date-parts:
+        - [2014]
+    DOI: 10.1017/S0022050714000850
+  - id: wolfe2006
+    type: article-journal
+    title: Settler colonialism and the elimination of the native
+    author:
+      - family: Wolfe
+        given: Patrick
+    container-title: "Journal of Genocide Research 8(4): 387–409"
+    issued:
+      date-parts:
+        - [2006]
+    DOI: 10.1080/14623520601056240
+  - id: wulf2023
+    type: post-weblog
+    title: "Making Partus: Law, Power, and Heritable Slavery in 18th-Century British America"
+    author:
+      - family: Wulf
+        given: Karin
+    container-title: Age of Revolutions, May 1, 2023
+    issued:
+      date-parts:
+        - [2023]
+  - id: younis2026
+    type: article-journal
+    title: "Lineages of a conspiracy: the great replacement and demography"
+    author:
+      - family: Younis
+        given: Musab
+    issued:
+      date-parts:
+        - [2026]
+    DOI: 10.1177/03063968261422608
